@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Men Grooming > Shaving</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for filters categories */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #94a3b8;
+      border-radius: 3px;
+    }
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #94a3b8 transparent;
+    }
+    /* Ellipses for longer text */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    /* Card Hover Glow */
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col font-sans">
+
+  <!-- Top Navigation -->
+  <header class="bg-slate-100 py-2 px-4 border-b border-slate-300 select-none">
+    <nav class="container mx-auto flex flex-wrap gap-3 text-xs text-slate-700 font-medium items-center justify-center md:justify-start">
+      <a href="#" class="hover:text-teal-600">Covid Essentials</a>
+      <a href="#" class="hover:text-teal-600">Diabetes</a>
+      <a href="#" class="hover:text-teal-600">Cardiac Care</a>
+      <a href="#" class="hover:text-teal-600">Stomach Care</a>
+      <a href="#" class="hover:text-teal-600">Ayurvedic</a>
+      <a href="#" class="hover:text-teal-600">Homeopathy</a>
+      <a href="#" class="hover:text-teal-600">Fitness</a>
+      <a href="#" class="hover:text-teal-600">Mom & Baby</a>
+      <a href="#" class="hover:text-teal-600">Devices</a>
+      <a href="#" class="hover:text-teal-600">Surgicals</a>
+      <a href="#" class="hover:text-teal-600">Sexual Wellness</a>
+      <a href="#" class="hover:text-teal-600">Treatments</a>
+      <a href="#" class="hover:text-teal-600">Skin Care</a>
+      <a href="#" class="hover:text-teal-600">Personal Care</a>
+    </nav>
+  </header>
+
+  <!-- Page Main Wrapper -->
+  <main class="container mx-auto flex flex-col md:flex-row gap-6 mt-4 flex-grow">
+
+    <!-- Left Side Categories & Filters -->
+    <aside class="w-full md:w-72 flex flex-col gap-6 sticky top-4 h-fit">
+      <!-- Breadcrumb -->
+        <nav class="w-full text-teal-700 text-sm font-medium" aria-label="Breadcrumb">
+          <ol class="flex flex-row flex-nowrap items-center gap-1">
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Home</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Non-Prescription</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Men Grooming</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1 text-teal-900 font-semibold">
+              Shaving
+            </li>
+          </ol>
+        </nav>
+
+      <!-- Categories Section -->
+      <section aria-label="Categories" class="bg-white rounded-md shadow overflow-hidden py-4 px-4">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Categories</h2>
+        <div class="max-h-64 overflow-y-auto scrollbar-thin pr-1">
+          <div>
+            <button aria-expanded="true" aria-controls="fragMenu" class="flex items-center w-full text-left text-slate-800 font-semibold mb-1 focus:outline-none" id="fragHeading">
+              <svg class="mr-2 h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 9l4 4 4-4"/></svg>
+              Men's Grooming
+
+            </button>
+            <ul id="fragMenu" class="pl-6 text-sm text-slate-600 space-y-0.5" role="region" aria-labelledby="fragHeading">
+              <li><a href="#" class="hover:underline ">Beard Care</a></li>
+              <li><a href="#" class="hover:underline font-semibold text-teal-700">Shaving </a></li>
+
+            </ul>
+          </div>
+          <div>
+            <button aria-expanded="false" aria-controls="makeupMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Make-Up</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div>
+          <div>
+            <button aria-expanded="false" aria-controls="hairMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Hair</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div>
+          <!-- More categories can be added similarly -->
+        </div>
+      </section>
+
+      <!-- Filters Section -->
+      <section aria-label="Filters" class="bg-white rounded-md shadow py-4 px-4 overflow-y-auto scrollbar-thin max-h-[70vh]">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Filters</h2>
+
+       <!-- Brands Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Brands</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="brand-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search brands" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Alan Truman" />Alan Truman (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Amazing Earth" />Amazing Earth (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Andis" />Andis (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Axe" />Axe (6)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Babila" />Babila (13)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Baldessarini" />Baldessarini (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Beardo" />Beardo (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Beautiliss Professional" />Beautiliss Professional (3)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Beurer" />Beurer (4)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bioayurveda" />Bioayurveda (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Body Café" />Body Café (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bombae" />Bombae (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bombay Shaving Company" />Bombay Shaving Company (27)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Braun" />Braun (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bronson Professional" />Bronson Professional (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Cinthol" />Cinthol (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Depot" />Depot (11)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dettol" />Dettol (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Elovera" />Elovera (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ferragamo" />Ferragamo (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Gans" />Gans (4)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Gatsby" />Gatsby (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Gillette" />Gillette (113)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hajamat" />Hajamat (13)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hunter 1114" />Hunter 1114 (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="India Grooming Club" />India Grooming Club (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Jaguar" />Jaguar (1)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Letsshave" />Letsshave (6)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Mancode" />Mancode (3)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Marks & Spencer" />Marks & Spencer (3)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Menhood" />Menhood (3)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Nivea" />Nivea (6)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Old Spice" />Old Spice (15)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Pearl" />Pearl (9)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Philips" />Philips (11)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Porsche" />Porsche (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Protouch" />Protouch (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="S.Oliver" />S.Oliver (5)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sirona" />Sirona (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Tabac" />Tabac (10)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="The Man Company" />The Man Company (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Truefitt & Hill" />Truefitt & Hill (11)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Uncle Tony" />Uncle Tony (12)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vega" />Vega (24)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vega Professional" />Vega Professional (17)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vgr" />Vgr (64)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vi-John" />Vi-John (17)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Wahl" />Wahl (10)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Wild Stone" />Wild Stone (2)</label></div>
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Winston" />Winston (3)</label></div>
+
+              </div>
+            </div>
+
+            <!-- Manufacturers Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Manufacturers</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="manufacturer-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search manufacturers" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Gillette India Limited" />Gillette India Limited (113)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="VGR INDIA" />VGR INDIA (64)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Vega Industries Pvt Ltd" />Vega Industries Pvt Ltd (30)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Visage Lines Personal Care Private Limited" />Visage Lines Personal Care Private Limited (21)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Beauty Concepts Pvt. Ltd" />Beauty Concepts Pvt. Ltd (19)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Vi-John Health Care India Limited" />Vi-John Health Care India Limited (17)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Procter & Gamble Hygiene And Health Care Limited" />Procter & Gamble Hygiene And Health Care Limited (15)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Babila Industries Pvt.Ltd" />Babila Industries Pvt.Ltd (13)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Black Pepper Marketing Private Limited" />Black Pepper Marketing Private Limited (13)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Lloyds Loxuries Ltd" />Lloyds Loxuries Ltd (11)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="SSIZ INTERNATIONAL PRIVATE LIMITED" />SSIZ INTERNATIONAL PRIVATE LIMITED (11)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Philips India Limited" />Philips India Limited (10)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Wahl India Grooming Products Pvt.Ltd." />Wahl India Grooming Products Pvt.Ltd. (10)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Madhav Metal Industries" />Madhav Metal Industries (9)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Rise Appliances Private Limited" />Rise Appliances Private Limited (9)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Bombay Shaving Company" />Bombay Shaving Company (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hindustan Unilever Limited" />Hindustan Unilever Limited (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Letsshave Pvt. Ltd." />Letsshave Pvt. Ltd. (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Nivea India Pvt Ltd" />Nivea India Pvt Ltd (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dofey Ventures Pvt. Ltd" />Dofey Ventures Pvt. Ltd (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Natureal Care" />Natureal Care (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Beurer India Pvt. Ltd." />Beurer India Pvt. Ltd. (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="ORB International" />ORB International (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="PRIMESPOT RETAIL PVT. LTD" />PRIMESPOT RETAIL PVT. LTD (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Pesco Products" />Pesco Products (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Macobs Technologies Limited" />Macobs Technologies Limited (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Marks & Spencer Reliance India Pvt Ltd" />Marks & Spencer Reliance India Pvt Ltd (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Saanvi Cosmetics Private Limited" />Saanvi Cosmetics Private Limited (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Winston Electronics Private Limited" />Winston Electronics Private Limited (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Edgewell Personal Care LLC" />Edgewell Personal Care LLC (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Godrej Consumer Products Ltd" />Godrej Consumer Products Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="IGC Lifestyle Pvt Ltd" />IGC Lifestyle Pvt Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Mcnroe Consumer Products Pvt Ltd" />Mcnroe Consumer Products Pvt Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="SKINTOUCH BEAUTY PRIVATE LIMITED" />SKINTOUCH BEAUTY PRIVATE LIMITED (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Sirona Hygiene Private Limited" />Sirona Hygiene Private Limited (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="The Man Company" />The Man Company (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="VEGA INDUSTRIES PRIVATE LTD" />VEGA INDUSTRIES PRIVATE LTD (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="ABK Imports Pvt. Ltd" />ABK Imports Pvt. Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Arganshe Pvt Ltd" />Arganshe Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Beauty Essentials Marketing Pvt. Ltd" />Beauty Essentials Marketing Pvt. Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Emmbros Overseas Lifestyle Pvt Ltd" />Emmbros Overseas Lifestyle Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Gardenia Cosmocare Pvt Ltd" />Gardenia Cosmocare Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Glenmark Pharmaceuticals Ltd" />Glenmark Pharmaceuticals Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="PID Imports India Private Limited" />PID Imports India Private Limited (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Patanjali Ayurved Ltd" />Patanjali Ayurved Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Philips India Ltd" />Philips India Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Planet Herbs Lifesciences Pvt Ltd" />Planet Herbs Lifesciences Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Procter & Gamble" />Procter & Gamble (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Reckitt Benckiser Healthcare India Pvt Ltd" />Reckitt Benckiser Healthcare India Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Stella Industries Ltd." />Stella Industries Ltd. (1)</label></div>
+
+
+              </div>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Categories</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="category-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search categories" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Aftershave Lotion" />Aftershave Lotion (47)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Pre & Post Shaves" />Pre & Post Shaves (16)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Razors & Cartridges" />Razors & Cartridges (136)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shavers" />Shavers (25)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shaving Brushes" />Shaving Brushes (9)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shaving Creams" />Shaving Creams (58)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shaving Foams" />Shaving Foams (40)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shaving Gels" />Shaving Gels (9)</label></div>
+                <div><label><input type="checkbox" class="category-checkbox mr-2" value="Trimmers" />Trimmers (152)</label></div>
+
+              </div>
+            </div>
+
+
+        <!-- Price Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Price Range (₹)</h3>
+          <div class="flex gap-2">
+            <input type="number" id="price-min" placeholder="Min" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+            <input type="number" id="price-max" placeholder="Max" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+          </div>
+        </div>
+
+        <!-- Discount Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Minimum Discount (%)</h3>
+          <input type="number" id="discount-min" placeholder="e.g. 10" min="0" max="100" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"/>
+        </div>
+
+        <!-- Availability Filter -->
+        <div>
+          <label class="inline-flex items-center space-x-2 text-sm text-slate-800 font-semibold">
+            <input type="checkbox" id="exclude-out-stock" />
+            <span>Exclude out of stock</span>
+          </label>
+        </div>
+
+        <!-- Clear filters button -->
+        <button id="clear-filters" type="button" class="mt-4 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-md text-sm w-full font-semibold">Clear Filters</button>
+      </section>
+    </aside>
+
+    <!-- Main Content: Banner, Sorting, Products -->
+    <section class="flex-1 flex flex-col gap-5">
+      <!-- Banner -->
+      <div aria-label="Product banner" class="bg-white rounded-md shadow h-40 flex items-center justify-center overflow-hidden">
+        <img 
+          src="https://www.netmeds.com/images/category/v1/3420/shaving.jpg" 
+          alt="Elegant perfume bottles for women fragrance displayed in a row on white background with soft shadows" 
+          class="object-contain h-full"
+          onerror="this.style.display='none'" 
+        />
+      </div>
+
+      <!-- Showing & Sort -->
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-700 font-semibold gap-3">
+        <div>
+          Showing <span id="shown-count">20</span> of <span id="total-count">651</span> items
+        </div>
+        <div class="flex gap-2 items-center flex-wrap justify-center md:justify-start">
+          <span>Sort by:</span>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-teal-500 text-teal-600 font-semibold" data-sort="popularity" aria-pressed="true">Popularity</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="high-to-low" aria-pressed="false">High to Low</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="low-to-high" aria-pressed="false">Low to High</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="discount" aria-pressed="false">Discount</button>
+        </div>
+      </div>
+
+      <!-- All products container -->
+      <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <!-- Product cards will be inserted dynamically here -->
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Pagination" class="flex justify-center items-center mt-8 mb-12 space-x-3 select-none">
+        <button id="prev-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200 disabled:opacity-50" disabled>Prev</button>
+        <div id="page-numbers" class="flex space-x-2 font-semibold text-slate-700"></div>
+        <button id="next-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200">Next</button>
+      </nav>
+
+      <!-- Footer-like area with text info -->
+      <article aria-label="Shaving Products Information"
+          class="bg-white rounded-lg shadow-md border border-slate-200 p-6 mb-10 max-w-7xl mx-auto leading-relaxed text-slate-800 text-[15px] sm:text-base space-y-6">
+
+      <!-- Title -->
+      <h2 class="text-2xl font-extrabold text-slate-900 border-b pb-2 border-slate-300">Shaving Products</h2>
+
+      <!-- Intro -->
+      <p>Shaving products are personal care items used by both men and women to remove unwanted hair from the face, legs, underarms, and other parts of the body. Some common shaving products include razors, shaving creams, gels, foams, aftershave lotions, and balms. Electric razors and disposable razors are also popular options. Shaving products can come in a variety of scents and formulas, including those designed for sensitive skin or specific hair types.</p>
+
+      <p>Maintain your grooming routine with high-quality shaving essentials that prioritize comfort, skin health, and a close shave.</p>
+
+      <!-- Categories -->
+      <div class="space-y-4">
+      <h3 class="text-lg font-semibold text-slate-800 border-b border-slate-200 pb-1">Categories for Shaving Products</h3>
+
+      <div class="space-y-3">
+      <div>
+        <h4 class="font-semibold text-slate-700">Razors</h4>
+        <p>Includes manual razors, disposable razors, cartridge razors, and electric razors for various preferences and skin types.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-700">Shaving Creams and Gels</h4>
+        <p>Lubricate and protect the skin during shaving. Available in cream, gel, foam, and oil-based forms to suit different skin needs.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-700">Aftershaves</h4>
+        <p>Used post-shave to soothe and moisturize the skin. Available as balms, lotions, and splashes.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-700">Pre-Shave Products</h4>
+        <p>Help prepare the skin and soften the hair to reduce the risk of irritation during shaving.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-700">Shaving Brushes</h4>
+        <p>Useful for generating rich lather and lifting hair to achieve a smoother shave.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-700">Styptic Pencils</h4>
+        <p>Quickly stop bleeding from minor nicks and cuts caused during shaving.</p>
+      </div>
+      </div>
+      </div>
+
+      <!-- Importance -->
+      <div class="space-y-4">
+      <h3 class="text-lg font-semibold text-slate-800 border-b border-slate-200 pb-1">Importance of Shaving Essentials</h3>
+      <p>Shaving products are essential for personal grooming and hygiene. They help achieve a clean and smooth shave while minimizing cuts, razor burns, and ingrown hairs. Lubricants like shaving creams or gels allow razors to glide effortlessly, while aftershave products soothe and hydrate the skin. High-quality shaving products extend the life of razors and help maintain healthy skin.</p>
+      </div>
+
+      <!-- FAQs -->
+      <div class="space-y-4">
+      <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-slate-300">FAQs</h2>
+
+      <div>
+      <h4 class="font-semibold">Which product is best for shaving?</h4>
+      <p>It depends on personal preference and skin type. A quality razor, paired with a lubricating shaving cream or gel, and followed by a soothing aftershave balm or lotion is a great starting combination.</p>
+      </div>
+
+      <div>
+      <h4 class="font-semibold">Which products can I use while shaving?</h4>
+      <p>Use a shaving cream or gel to soften hair, a sharp razor for a clean cut, and an aftershave to soothe the skin. Disinfect your tools regularly for hygiene and safety.</p>
+      </div>
+      </div>
+
+      <!-- Manufacturer -->
+      <div class="space-y-2">
+      <h4 class="font-semibold">Shop by Top Manufacturers</h4>
+      <p>
+      <a href="#" class="text-teal-700 hover:underline">Gillette India Limited</a> |
+      <a href="#" class="text-teal-700 hover:underline">VGR INDIA</a> |
+      <a href="#" class="text-teal-700 hover:underline">Vi-John Health Care India Limited</a> |
+      <a href="#" class="text-teal-700 hover:underline">Madhav Metal Industries</a> |
+      <a href="#" class="text-teal-700 hover:underline">Letsshave Private Limited</a>
+      </p>
+      </div>
+
+      <!-- Offline Info -->
+      <div>
+      <h4 class="font-semibold">Availability</h4>
+      <p>
+      <span class="font-medium">Available at 1000+ Offline Stores</span><br>
+      <span class="font-medium">PAN India Delivery via Netmeds</span>
+      </p>
+      </div>
+      </article>
+
+
+    </section>
+
+  </main>
+
+  <!-- Cart modal/popup -->
+  <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden z-50 p-4">
+    <div class="bg-white rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto relative shadow-lg">
+      <header class="p-4 border-b border-slate-300 flex justify-between items-center">
+        <h2 class="text-lg font-semibold text-slate-900">Your Cart (<span id="cart-count">0</span>)</h2>
+        <button id="close-cart" aria-label="Close cart" class="text-slate-700 hover:text-teal-600 font-bold">&times;</button>
+      </header>
+      <div id="cart-items" class="p-4 flex flex-col gap-4 min-h-[120px] max-h-[400px] overflow-y-auto text-sm text-slate-800">
+        <p class="text-center text-slate-500" id="empty-cart-msg">Your cart is empty.</p>
+      </div>
+      <footer class="p-4 border-t border-slate-300 flex items-center justify-between">
+        <div>
+          <strong>Total:</strong> ₹ <span id="cart-total">0.00</span>
+        </div>
+        <button id="checkout-btn" class="bg-teal-600 hover:bg-teal-700 rounded px-4 py-2 text-white font-semibold disabled:opacity-50" disabled>Checkout</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating Cart Button -->
+  <button id="cart-btn" aria-label="Open Cart" class="fixed bottom-8 right-8 bg-teal-600 p-4 rounded-full shadow-lg text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l3-8H6.4M7 13l-2 5m5-5v6m4-6v6m4-6v6M16 21a1 1 0 11-2 0 1 1 0 012 0zM7 21a1 1 0 10-2 0 1 1 0 002 0z"/></svg>
+    <span id="cart-badge" class="absolute top-0 right-0 bg-red-600 rounded-full text-xs px-1.5 py-0.5 -mt-1 -mr-1 font-bold hidden"></span>
+  </button>
+
+  <script>
+    (() => {
+      // Sample product data array
+      const allProducts = [
+  {
+    id: 1,
+    name: "Uncle Tony Shaving Razor - Blue 1's",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 419.16,
+    originalPrice: 499.00,
+    discountPercent: 16,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932466/uncle_tony_shaving_razor_blue_1s_0_0.jpg",
+    market: "Dofey Ventures Pvt. Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 2,
+    name: "Uncle Tony Shaving Razor - Yellow",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 419.16,
+    originalPrice: 499.00,
+    discountPercent: 16,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932468/uncle_tony_shaving_razor_yellow_1s_0_0.jpg",
+    market: "Dofey Ventures Pvt. Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 3,
+    name: "Uncle Tony Razor Blades 2's",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 399.00,
+    originalPrice: 399.00,
+    discountPercent: 0,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932475/uncle_tony_razor_blades_2s_0_0.jpg",
+    market: "Edgewell Personal Care LLC",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 4,
+    name: "India Grooming Club Matte black Shaving Razor Handle 1's",
+    brand: "India Grooming Club",
+    category: ["Men's Grooming", "Shaving"],
+    price: 1800.00,
+    originalPrice: 2000.00,
+    discountPercent: 10,
+    image: "https://www.netmeds.com/images/product-v1/150x150/959819/igc_matte_black_shaving_razor_handle_1s_0_0.jpg",
+    market: "IGC Lifestyle Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 5,
+    name: "Uncle Tony Shaving Razor - Black",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 419.16,
+    originalPrice: 499.00,
+    discountPercent: 16,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932467/uncle_tony_shaving_razor_black_1s_0_0.jpg",
+    market: "Dofey Ventures Pvt. Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 6,
+    name: "Gillette Shaving Cream Regular 70 gm",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 71.25,
+    originalPrice: 75.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13888/gillette_shaving_cream_regular_70_gm_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 7,
+    name: "Uncle Tony Razor Blades 4's",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 671.16,
+    originalPrice: 799.00,
+    discountPercent: 16,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932473/uncle_tony_razor_blades_4s_0_0.jpg",
+    market: "Edgewell Personal Care LLC",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 8,
+    name: "Uncle Tony Shaving Razor - Red",
+    brand: "Uncle Tony",
+    category: ["Men's Grooming", "Shaving"],
+    price: 419.16,
+    originalPrice: 499.00,
+    discountPercent: 16,
+    image: "https://www.netmeds.com/images/product-v1/150x150/932465/uncle_tony_shaving_razor_red_1s_0_0.jpg",
+    market: "Dofey Ventures Pvt. Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 9,
+    name: "Pearl Shaving Set with Twist To Open Razor - Gold",
+    brand: "Pearl",
+    category: ["Men's Grooming", "Shaving"],
+    price: 2880.00,
+    originalPrice: 3000.00,
+    discountPercent: 4,
+    image: "https://www.netmeds.com/images/product-v1/150x150/926164/pearl_shaving_sets_srb_511g_gold_1s_0_0.jpg",
+    market: "Madhav Metal Industries",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 10,
+    name: "Pearl Shaving Brush (SMB-501 SY)",
+    brand: "Pearl",
+    category: ["Men's Grooming", "Shaving"],
+    price: 864.00,
+    originalPrice: 900.00,
+    discountPercent: 4,
+    image: "https://www.netmeds.com/images/product-v1/150x150/926157/pearl_shaving_brush_smb_501_sy_1s_0_1.jpg",
+    market: "Madhav Metal Industries",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 11,
+    name: "Gillette Vector Plus Manual Shaving Razor 1's",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 76.00,
+    originalPrice: 80.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1086666/gillette_vector_plus_manual_shaving_razor_1s_568120_0_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 12,
+    name: "Gillette 7'O Clock Super Platinum Stainless Blade 10's",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 114.00,
+    originalPrice: 120.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/821962/gillette_7o_clock_super_platinum_stainless_blade_10s_808202_0_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 13,
+    name: "Gillette Guard Razor with Platinum Coated Blade",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 22.25,
+    originalPrice: 25.00,
+    discountPercent: 11,
+    image: "https://www.netmeds.com/images/product-v1/150x150/924687/gillette_guard_platinum_blade_1s_0_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 14,
+    name: "Gillette 7 'o' Clock Ready II Disposable Razor",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 16.00,
+    originalPrice: 16.00,
+    discountPercent: 0,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13843/gillette_7_o_clock_ready_ii_disposable_razor_808200_0_1.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 15,
+    name: "Elovera Lotion 150ml",
+    brand: "Elovera",
+    category: ["Otc Deals", "Shaving"],
+    price: 339.30,
+    originalPrice: 435.00,
+    discountPercent: 22,
+    image: "https://www.netmeds.com/images/product-v1/150x150/38276/elovera_lotion_150ml_34564_0_1.jpg",
+    market: "Glenmark Pharmaceuticals Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 16,
+    name: "Gillette Mach 3 Turbo Cartridges 2's",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 352.50,
+    originalPrice: 375.00,
+    discountPercent: 6,
+    image: "https://www.netmeds.com/images/product-v1/150x150/14956/gillette_mach_3_turbo_cartridges_2_s_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 17,
+    name: "Old Spice After Shave Lotion - Original 50 ml",
+    brand: "Old Spice",
+    category: ["Men's Grooming", "Shaving"],
+    price: 122.20,
+    originalPrice: 130.00,
+    discountPercent: 6,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13945/old_spice_after_shave_lotion_original_50_ml_0.jpg",
+    market: "Procter & Gamble Hygiene And Health Care Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 18,
+    name: "Gillette Series Shave Gel Sensitive Skin with Aloe 25 gm",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 46.55,
+    originalPrice: 49.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/414163/gillette_series_shave_gel_sensitive_skin_with_aloe_25_gm_0_2.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 19,
+    name: "Gillette Shaving Cream Regular 30 gm",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 38.00,
+    originalPrice: 40.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13887/gillette_shaving_cream_regular_30_gm_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 20,
+    name: "Gillette Series Shave Gel Sensitive Skin with Aloe 60 gm",
+    brand: "Gillette",
+    category: ["Men's Grooming", "Shaving"],
+    price: 94.05,
+    originalPrice: 99.00,
+    discountPercent: 5,
+    image: "https://www.netmeds.com/images/product-v1/150x150/858397/gillette_series_shave_gel_sensitive_skin_with_aloe_60_gm_1_0.jpg",
+    market: "Gillette India Limited",
+    stock: true,
+    popularity: 0
+  }
+];
+
+
+
+      const PRODUCTS_PER_PAGE = 12;
+
+      // Internal state for filters and sort
+      let filters = {
+        brands: new Set(),
+        priceMin: null,
+        priceMax: null,
+        discountMin: 0,
+        excludeOutStock: false,
+      };
+      let currentSort = "popularity"; // popularity, high-to-low, low-to-high, discount
+      let currentPage = 1;
+
+      // Cart State
+      let cart = {};
+
+      // Elements
+      const productsContainer = document.getElementById("products-container");
+      const brandSearchInput = document.getElementById("brand-search");
+      const brandCheckboxes = document.querySelectorAll(".brand-checkbox");
+      const priceMinInput = document.getElementById("price-min");
+      const priceMaxInput = document.getElementById("price-max");
+      const discountMinInput = document.getElementById("discount-min");
+      const excludeOutStockCheckbox = document.getElementById("exclude-out-stock");
+      const clearFiltersBtn = document.getElementById("clear-filters");
+      const shownCountEl = document.getElementById("shown-count");
+      const totalCountEl = document.getElementById("total-count");
+      const sortButtons = document.querySelectorAll(".sort-btn");
+      const prevPageBtn = document.getElementById("prev-page");
+      const nextPageBtn = document.getElementById("next-page");
+      const pageNumbersContainer = document.getElementById("page-numbers");
+      const cartBtn = document.getElementById("cart-btn");
+      const cartModal = document.getElementById("cart-modal");
+      const closeCartBtn = document.getElementById("close-cart");
+      const cartItemsContainer = document.getElementById("cart-items");
+      const cartCountEl = document.getElementById("cart-count");
+      const cartBadge = document.getElementById("cart-badge");
+      const cartTotalEl = document.getElementById("cart-total");
+      const emptyCartMsg = document.getElementById("empty-cart-msg");
+      const checkoutBtn = document.getElementById("checkout-btn");
+
+      // Utility Functions
+      function sortProducts(products, sortKey) {
+        const sorted = [...products];
+        switch (sortKey) {
+          case "popularity":
+            sorted.sort((a, b) => b.popularity - a.popularity);
+            break;
+          case "high-to-low":
+            sorted.sort((a, b) => b.price - a.price);
+            break;
+          case "low-to-high":
+            sorted.sort((a, b) => a.price - b.price);
+            break;
+          case "discount":
+            sorted.sort((a, b) => (b.discountPercent || 0) - (a.discountPercent || 0));
+            break;
+          default:
+            break;
+        }
+        return sorted;
+      }
+
+      function filterProducts(products) {
+        return products.filter((prod) => {
+          if (filters.brands.size > 0 && !filters.brands.has(prod.brand)) return false;
+          if (filters.priceMin !== null && prod.price < filters.priceMin) return false;
+          if (filters.priceMax !== null && prod.price > filters.priceMax) return false;
+          if ((prod.discountPercent || 0) < filters.discountMin) return false;
+          if (filters.excludeOutStock && !prod.stock) return false;
+          return true;
+        });
+      }
+
+      function paginateProducts(products, page) {
+        const start = (page - 1) * PRODUCTS_PER_PAGE;
+        return products.slice(start, start + PRODUCTS_PER_PAGE);
+      }
+
+      function updateSortButtons() {
+        sortButtons.forEach(btn => {
+          const pressed = btn.dataset.sort === currentSort;
+          btn.setAttribute("aria-pressed", pressed);
+          if (pressed) {
+            btn.classList.add("border-teal-500", "text-teal-600");
+            btn.classList.remove("border-slate-300", "text-slate-600");
+          } else {
+            btn.classList.add("border-slate-300", "text-slate-600");
+            btn.classList.remove("border-teal-500", "text-teal-600");
+          }
+        });
+      }
+
+      // Rendering Functions
+      function renderProductCards(products) {
+        productsContainer.innerHTML = "";
+        if (products.length === 0) {
+          productsContainer.innerHTML = '<p class="col-span-full text-center py-12 text-slate-600">No products match your filters.</p>';
+          return;
+        }
+        products.forEach(product => {
+          const productEl = document.createElement("article");
+          productEl.className = "bg-white rounded-md p-4 shadow product-card flex flex-col";
+
+          // image with placeholder & alt text from name
+          const imgEl = document.createElement("img");
+          imgEl.src = product.image;
+          imgEl.alt = product.name + " - product image";
+          imgEl.className = "object-contain h-48 w-full mb-3 rounded-md";
+          imgEl.onerror = () => { imgEl.style.display = "none"; };
+          productEl.appendChild(imgEl);
+
+          // Product name
+          const nameEl = document.createElement("h3");
+          nameEl.textContent = product.name;
+          nameEl.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          productEl.appendChild(nameEl);
+
+          // Brands & categories tags
+          const tagsContainer = document.createElement("div");
+          tagsContainer.className = "mb-2 flex flex-wrap gap-2";
+          product.category.forEach(cat => {
+            const tag = document.createElement("span");
+            tag.textContent = cat;
+            tag.className = "bg-teal-100 text-teal-800 text-xs px-2 py-0.5 rounded-full select-none";
+            tagsContainer.appendChild(tag);
+          });
+          productEl.appendChild(tagsContainer);
+
+          // Market
+          const marketEl = document.createElement("p");
+          marketEl.className = "italic text-xs text-slate-600 mb-1";
+          marketEl.textContent = `Mkt: ${product.market}`;
+          productEl.appendChild(marketEl);
+
+          // Price & Discount
+          const priceContainer = document.createElement("div");
+          priceContainer.className = "mb-3 text-sm font-semibold text-slate-900 flex items-baseline gap-2";
+          if (product.discountPercent > 0 && product.originalPrice) {
+            const discountedPrice = document.createElement("span");
+            discountedPrice.textContent = `₹ ${product.price.toFixed(2)}`;
+            discountedPrice.className = "text-teal-700";
+            priceContainer.appendChild(discountedPrice);
+
+            const originalPrice = document.createElement("span");
+            originalPrice.textContent = `₹ ${product.originalPrice.toFixed(2)}`;
+            originalPrice.className = "line-through text-slate-500 text-xs";
+            priceContainer.appendChild(originalPrice);
+          } else {
+            priceContainer.textContent = `MRP ₹ ${product.price.toFixed(2)}`;
+          }
+          productEl.appendChild(priceContainer);
+
+          // Stock status - dim Add To Cart if out stock
+          const addToCartBtn = document.createElement("button");
+          addToCartBtn.type = "button";
+          addToCartBtn.textContent = product.stock ? "ADD TO CART" : "OUT OF STOCK";
+          addToCartBtn.disabled = !product.stock;
+          addToCartBtn.className = `${product.stock ? "bg-teal-600 hover:bg-teal-700" : "bg-gray-400 cursor-not-allowed"} text-white font-semibold py-2 rounded w-full transition-colors duration-200`;
+          addToCartBtn.setAttribute("aria-label", (product.stock ? "Add " : "Out of stock ") + product.name + " to Cart");
+          addToCartBtn.addEventListener("click", () => addToCart(product.id));
+          productEl.appendChild(addToCartBtn);
+
+          productsContainer.appendChild(productEl);
+        });
+      }
+
+      function updatePagination(totalItems, currentPage) {
+        pageNumbersContainer.innerHTML = "";
+        const totalPages = Math.ceil(totalItems / PRODUCTS_PER_PAGE);
+        // show up to 5 page numbers, centered around currentPage if possible
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        if (endPage - startPage < 4) {
+          startPage = Math.max(1, endPage - 4);
+        }
+        for (let i = startPage; i <= endPage; i++) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.textContent = i;
+          btn.className = `px-3 py-1 rounded ${i === currentPage ? "bg-teal-600 text-white" : "bg-white border border-slate-300 hover:bg-slate-200"}`;
+          btn.setAttribute("aria-current", i === currentPage ? "page" : "false");
+          btn.addEventListener("click", () => {
+            currentPage = i;
+            renderFilteredSortedPaginated();
+          });
+          pageNumbersContainer.appendChild(btn);
+        }
+        prevPageBtn.disabled = currentPage === 1;
+        nextPageBtn.disabled = currentPage >= totalPages;
+      }
+
+      // Filters handlers
+      function onFiltersChange() {
+        // update filters object from UI inputs
+        // brands
+        filters.brands = new Set(Array.from(brandCheckboxes).filter(cb => cb.checked).map(cb => cb.value));
+        // price
+        filters.priceMin = priceMinInput.value ? parseFloat(priceMinInput.value) : null;
+        filters.priceMax = priceMaxInput.value ? parseFloat(priceMaxInput.value) : null;
+        // discount
+        filters.discountMin = discountMinInput.value ? parseFloat(discountMinInput.value) : 0;
+        // excluding out of stock
+        filters.excludeOutStock = excludeOutStockCheckbox.checked;
+
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Filtering brand list with search box
+      function onBrandSearch() {
+        const searchTerm = brandSearchInput.value.toLowerCase();
+        brandCheckboxes.forEach(cb => {
+          const label = cb.parentElement.textContent.toLowerCase();
+          cb.parentElement.style.display = label.includes(searchTerm) ? "block" : "none";
+        });
+      }
+
+      // Reset filters UI & state
+      function clearFilters() {
+        brandCheckboxes.forEach(cb => cb.checked = false);
+        priceMinInput.value = "";
+        priceMaxInput.value = "";
+        discountMinInput.value = "";
+        excludeOutStockCheckbox.checked = false;
+
+        filters = {
+          brands: new Set(),
+          priceMin: null,
+          priceMax: null,
+          discountMin: 0,
+          excludeOutStock: false,
+        };
+        currentPage = 1;
+
+        renderFilteredSortedPaginated();
+      }
+
+      // Sorting handlers
+      function onSortBtnClick(event) {
+        const btn = event.currentTarget;
+        const sortKey = btn.dataset.sort;
+        if (sortKey === currentSort) return;
+        currentSort = sortKey;
+        updateSortButtons();
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Pagination buttons click handlers
+      prevPageBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderFilteredSortedPaginated();
+        }
+      });
+      nextPageBtn.addEventListener("click", () => {
+        const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderFilteredSortedPaginated();
+        }
+      });
+
+      // Cart Management Functions
+
+      // Load cart from localStorage or create empty if not exists
+      function loadCart() {
+        const cartJson = localStorage.getItem("perfume_cart");
+        if (cartJson) {
+          cart = JSON.parse(cartJson);
+        } else {
+          cart = {};
+        }
+        updateCartBadge();
+      }
+
+      // Save current cart state to localStorage
+      function saveCart() {
+        localStorage.setItem("perfume_cart", JSON.stringify(cart));
+      }
+
+      // Add product to cart or increase quantity if already added
+      function addToCart(productId) {
+        if (!cart[productId]) {
+          cart[productId] = 1;
+        } else {
+          cart[productId]++;
+        }
+        saveCart();
+        updateCartBadge();
+
+        // Open cart modal to show newly added item
+        openCart();
+        renderCartItems();
+      }
+
+      // Remove product from cart
+      function removeFromCart(productId) {
+        delete cart[productId];
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update product quantity in cart
+      function updateQuantity(productId, newQty) {
+        if (newQty < 1) return;
+        cart[productId] = newQty;
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update cart icon badge count
+      function updateCartBadge() {
+        const count = Object.values(cart).reduce((a,b) => a + b, 0);
+        cartCountEl.textContent = count;
+        if (count > 0) {
+          cartBadge.textContent = count > 99 ? "99+" : count;
+          cartBadge.classList.remove("hidden");
+        } else {
+          cartBadge.classList.add("hidden");
+        }
+      }
+
+      // Open cart modal
+      function openCart() {
+        cartModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // disable page scrolling
+      }
+
+      // Close cart modal
+      function closeCart() {
+        cartModal.classList.add("hidden");
+        document.body.style.overflow = ""; // enable page scrolling
+      }
+
+      // Render cart items in modal
+      function renderCartItems() {
+        cartItemsContainer.innerHTML = "";
+        const productIds = Object.keys(cart);
+        if (productIds.length === 0) {
+          emptyCartMsg.style.display = "block";
+          cartTotalEl.textContent = "0.00";
+          checkoutBtn.disabled = true;
+          return;
+        }
+        emptyCartMsg.style.display = "none";
+
+        let total = 0;
+        productIds.forEach(pid => {
+          const prod = allProducts.find(p => p.id == pid);
+          if (!prod) return;
+
+          const qty = cart[pid];
+          total += prod.price * qty;
+
+          const itemDiv = document.createElement("div");
+          itemDiv.className = "flex items-center gap-3 border-b border-slate-200 pb-3";
+
+          const img = document.createElement("img");
+          img.src = prod.image;
+          img.alt = prod.name + " image";
+          img.className = "w-16 h-20 object-contain rounded-md flex-shrink-0";
+          img.onerror = () => { img.style.display = "none"; };
+          itemDiv.appendChild(img);
+
+          const details = document.createElement("div");
+          details.className = "flex-grow";
+
+          const title = document.createElement("p");
+          title.textContent = prod.name;
+          title.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          details.appendChild(title);
+
+          const priceQty = document.createElement("p");
+          priceQty.textContent = `₹${prod.price.toFixed(2)} x ${qty} = ₹${(prod.price * qty).toFixed(2)}`;
+          priceQty.className = "text-xs text-slate-700";
+          details.appendChild(priceQty);
+
+          itemDiv.appendChild(details);
+
+          // Quantity controls
+          const qtyControls = document.createElement("div");
+          qtyControls.className = "flex flex-col gap-1 items-center";
+
+          const qtyInput = document.createElement("input");
+          qtyInput.type = "number";
+          qtyInput.min = "1";
+          qtyInput.value = qty;
+          qtyInput.className = "w-12 border border-slate-300 rounded text-center text-sm focus:outline-none focus:ring-1 focus:ring-teal-500";
+          qtyInput.addEventListener("change", (e) => {
+            let newVal = parseInt(e.target.value);
+            if (isNaN(newVal) || newVal < 1) {
+              e.target.value = qty; // reset invalid
+              return;
+            }
+            updateQuantity(pid, newVal);
+          });
+          qtyControls.appendChild(qtyInput);
+
+          const removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.textContent = "Remove";
+          removeBtn.className = "text-xs text-red-600 hover:underline";
+          removeBtn.addEventListener("click", () => removeFromCart(pid));
+          qtyControls.appendChild(removeBtn);
+
+          itemDiv.appendChild(qtyControls);
+
+          cartItemsContainer.appendChild(itemDiv);
+        });
+        cartTotalEl.textContent = total.toFixed(2);
+        checkoutBtn.disabled = false;
+      }
+
+      // Debounce utility for search input
+      function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+
+      // Page render based on current filters and sorting
+      let filteredProducts = [];
+      function renderFilteredSortedPaginated() {
+        filteredProducts = filterProducts(allProducts);
+        totalCountEl.textContent = filteredProducts.length;
+        updatePagination(filteredProducts.length, currentPage);
+        const paginated = paginateProducts(sortProducts(filteredProducts, currentSort), currentPage);
+        renderProductCards(paginated);
+        shownCountEl.textContent = paginated.length;
+      }
+
+      // Initialization of events
+      function init() {
+        // Brands checkboxes change
+        brandCheckboxes.forEach(cb => cb.addEventListener("change", onFiltersChange));
+        // Filter inputs change
+        priceMinInput.addEventListener("input", onFiltersChange);
+        priceMaxInput.addEventListener("input", onFiltersChange);
+        discountMinInput.addEventListener("input", onFiltersChange);
+        excludeOutStockCheckbox.addEventListener("change", onFiltersChange);
+        clearFiltersBtn.addEventListener("click", () => {
+          clearFilters();
+          brandSearchInput.value = "";
+        });
+
+        // Brand search input debounce 
+        brandSearchInput.addEventListener("input", debounce(onBrandSearch, 200));
+
+        // Sort buttons
+        sortButtons.forEach(btn => btn.addEventListener("click", onSortBtnClick));
+
+        // Cart button & modal
+        cartBtn.addEventListener("click", () => {
+          openCart();
+          renderCartItems();
+        });
+        closeCartBtn.addEventListener("click", closeCart);
+        checkoutBtn.addEventListener("click", () => {
+          alert("Thank you for your purchase! Cart checkout functionality can be implemented here.");
+          cart = {};
+          saveCart();
+          updateCartBadge();
+          renderCartItems();
+          closeCart();
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !cartModal.classList.contains("hidden")) {
+            closeCart();
+          }
+        });
+
+        // Initial render
+        loadCart();
+        updateSortButtons();
+        renderFilteredSortedPaginated();
+      }
+
+      // Run initialization on page load
+      document.addEventListener("DOMContentLoaded", init);
+    })();
+  </script>
+</body>
+</html>

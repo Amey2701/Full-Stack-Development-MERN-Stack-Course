@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health_Conditions_Stomach_Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for filters categories */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #94a3b8;
+      border-radius: 3px;
+    }
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #94a3b8 transparent;
+    }
+    /* Ellipses for longer text */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    /* Card Hover Glow */
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col font-sans">
+
+  <!-- Top Navigation -->
+  <header class="bg-slate-100 py-2 px-4 border-b border-slate-300 select-none">
+    <nav class="container mx-auto flex flex-wrap gap-3 text-xs text-slate-700 font-medium items-center justify-center md:justify-start">
+      <a href="#" class="hover:text-teal-600">Covid Essentials</a>
+      <a href="#" class="hover:text-teal-600">Diabetes</a>
+      <a href="#" class="hover:text-teal-600">Cardiac Care</a>
+      <a href="#" class="hover:text-teal-600">Stomach Care</a>
+      <a href="#" class="hover:text-teal-600">Ayurvedic</a>
+      <a href="#" class="hover:text-teal-600">Homeopathy</a>
+      <a href="#" class="hover:text-teal-600">Fitness</a>
+      <a href="#" class="hover:text-teal-600">Mom & Baby</a>
+      <a href="#" class="hover:text-teal-600">Devices</a>
+      <a href="#" class="hover:text-teal-600">Surgicals</a>
+      <a href="#" class="hover:text-teal-600">Sexual Wellness</a>
+      <a href="#" class="hover:text-teal-600">Treatments</a>
+      <a href="#" class="hover:text-teal-600">Skin Care</a>
+      <a href="#" class="hover:text-teal-600">Personal Care</a>
+    </nav>
+  </header>
+
+  <!-- Page Main Wrapper -->
+  <main class="container mx-auto flex flex-col md:flex-row gap-6 mt-4 flex-grow">
+
+    <!-- Left Side Categories & Filters -->
+    <aside class="w-full md:w-72 flex flex-col gap-6 sticky top-4 h-fit">
+      <!-- Breadcrumb -->
+        <nav class="w-full text-teal-700 text-sm font-medium" aria-label="Breadcrumb">
+          <ol class="flex flex-row flex-nowrap items-center gap-1">
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Home</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Non-Prescription</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Health Conditions </a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1 text-teal-900 font-semibold">
+              Stomach Care
+            </li>
+          </ol>
+        </nav>
+
+      <!-- Categories Section -->
+      <section aria-label="Categories" class="bg-white rounded-md shadow overflow-hidden py-4 px-4">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Categories</h2>
+        <div class="max-h-64 overflow-y-auto scrollbar-thin pr-1">
+          <div>
+            <button aria-expanded="true" aria-controls="fragMenu" class="flex items-center w-full text-left text-slate-800 font-semibold mb-1 focus:outline-none" id="fragHeading">
+              <svg class="mr-2 h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 9l4 4 4-4"/></svg>
+              Health Conditions
+
+            </button>
+            <ul id="fragMenu" class="pl-6 text-sm text-slate-600 space-y-0.5" role="region" aria-labelledby="fragHeading">
+              
+              <li><a href="#" class="hover:underline">Brain Care</a></li>
+    <li><a href="#" class="hover:underline">Bone And Joint Pain</a></li>
+    <li><a href="#" class="hover:underline">Liver Care</a></li>
+    <li><a href="#" class="hover:underline font-semibold text-teal-700">Stomach Care</a></li>
+    <li><a href="#" class="hover:underline">Diabetic Care</a></li>
+    <li><a href="#" class="hover:underline">Lung Care</a></li>
+    <li><a href="#" class="hover:underline">Piles Care</a></li>
+    <li><a href="#" class="hover:underline">Mental Care</a></li>
+    <li><a href="#" class="hover:underline">Cold And Fever</a></li>
+    <li><a href="#" class="hover:underline">Women's Care</a></li>
+    <li><a href="#" class="hover:underline">Weight Care</a></li>
+    <li><a href="#" class="hover:underline">De-Addiction</a></li>
+    <li><a href="#" class="hover:underline">Cardiac Care</a></li>
+    <li><a href="#" class="hover:underline">Immunity Care</a></li>
+
+            </ul>
+          </div>
+          <!-- <div>
+            <button aria-expanded="false" aria-controls="makeupMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Make-Up</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div>
+          <div>
+            <button aria-expanded="false" aria-controls="hairMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Hair</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div> -->
+          <!-- More categories can be added similarly -->
+        </div>
+      </section>
+
+      <!-- Filters Section -->
+      <section aria-label="Filters" class="bg-white rounded-md shadow py-4 px-4 overflow-y-auto scrollbar-thin max-h-[70vh]">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Filters</h2>
+
+       <!-- Brands Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Brands</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="brand-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search brands" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                <div><label><input type="checkbox" class="brand-checkbox mr-2" value="APTISYP" />APTISYP (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Adven" />Adven (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Aimil" />Aimil (11)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Allen" />Allen (6)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Aptizooom" />Aptizooom (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Axiom" />Axiom (4)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ayurvet" />Ayurvet (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Baby Organo" />Baby Organo (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Baidyanath" />Baidyanath (10)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Baidyanath (Nagpur)" />Baidyanath (Nagpur) (15)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Baidyanath Nagpur" />Baidyanath Nagpur (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bakson'S" />Bakson'S (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Balance Ayurveda" />Balance Ayurveda (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bio-India" />Bio-India (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bioforce" />Bioforce (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bixa Botanical" />Bixa Botanical (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bjain" />Bjain (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Cremaffin" />Cremaffin (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dabur" />Dabur (34)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Digene" />Digene (1)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dr. Wellmans" />Dr. Wellmans (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dr.Willmar Schwabe" />Dr.Willmar Schwabe (6)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="German's" />German's (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hapdco" />Hapdco (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hapro" />Hapro (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Haslab" />Haslab (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Healwell" />Healwell (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Himalaya" />Himalaya (7)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Inlife" />Inlife (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Jiva Ayurveda" />Jiva Ayurveda (6)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Kairali" />Kairali (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Kapiva" />Kapiva (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Kerala Ayurveda" />Kerala Ayurveda (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ldd Bioscience" />Ldd Bioscience (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Lord's" />Lord's (6)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Nipco" />Nipco (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Patanjali" />Patanjali (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Pet Saffa" />Pet Saffa (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Planet Ayurveda" />Planet Ayurveda (9)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Polycrol" />Polycrol (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Pravek" />Pravek (12)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Reckeweg" />Reckeweg (10)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sbl" />Sbl (21)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sheneed" />Sheneed (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Similia" />Similia (2)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Softovac" />Softovac (4)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sri Sri Tattva" />Sri Sri Tattva (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Swadeshi" />Swadeshi (18)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vansaar" />Vansaar (3)</label></div>
+    <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Zandu" />Zandu (10)</label></div>
+                
+              </div>
+            </div>
+
+            <!-- Manufacturers Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Manufacturers</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="manufacturer-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search manufacturers" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                 <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dabur India Ltd" />Dabur India Ltd (34)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="SBL Pvt. Ltd" />SBL Pvt. Ltd (21)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Swadeshi Ayurved" />Swadeshi Ayurved (18)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Shree Baidyanath Ayurved Bhawan Pvt Ltd,Nagpur" />Shree Baidyanath Ayurved Bhawan Pvt Ltd,Nagpur (14)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Pravek Kalp Pvt Ltd" />Pravek Kalp Pvt Ltd (12)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Shree Baidyanath Ayurved Bhawan Pvt Ltd" />Shree Baidyanath Ayurved Bhawan Pvt Ltd (12)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Aimil Pharmaceuticals (India) Limited" />Aimil Pharmaceuticals (India) Limited (11)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dr. Roshanlal Aggarwal & Sons P. Ltd" />Dr. Roshanlal Aggarwal & Sons P. Ltd (10)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Emami Ltd" />Emami Ltd (10)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Planet Ayurveda" />Planet Ayurveda (9)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Himalaya Wellness Company" />Himalaya Wellness Company (7)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Allen Homoeo & Herbal Products Ltd" />Allen Homoeo & Herbal Products Ltd (6)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dr. Willmar Schwabe India Pvt. Ltd." />Dr. Willmar Schwabe India Pvt. Ltd (6)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Jiva Ayurvedic Pharmacy Ltd" />Jiva Ayurvedic Pharmacy Ltd (6)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Lords Homoeopathic Labaratory Pvt. Ltd." />Lords Homoeopathic Labaratory Pvt. Ltd (6)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Axiom Ayurveda Private Limited" />Axiom Ayurveda Private Limited (4)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Lupin Ltd" />Lupin Ltd (4)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Adven Biotech Pvt Ltd" />Adven Biotech Pvt Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Balance Ayurveda Private Limited" />Balance Ayurveda Private Limited (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Bjain Pharmaceuticals Pvt. Ltd" />Bjain Pharmaceuticals Pvt. Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dr.Wellmans Homoeopathic Lab (I) Pvt Ltd" />Dr.Wellmans Homoeopathic Lab (I) Pvt Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="German Homoeo Care And Cure Pvt. Ltd." />German Homoeo Care And Cure Pvt. Ltd. (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hahnemann Pure Drug Co.Pvt.Ltd" />Hahnemann Pure Drug Co.Pvt.Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hahnemann Scientific Laboratory (India) Pvt. Ltd." />Hahnemann Scientific Laboratory (India) Pvt. Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Healwell International Limited" />Healwell International Limited (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Kerala Ayurveda Limited" />Kerala Ayurveda Limited (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="LDD Bioscience Pvt. Ltd." />LDD Bioscience Pvt. Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Piramal Pharma Limited" />Piramal Pharma Limited (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Riaan Wellness Pvt Ltd" />Riaan Wellness Pvt Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Sriveda Sattva Pvt Ltd" />Sriveda Sattva Pvt Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="West Coast Pharmaceuticals Works Ltd." />West Coast Pharmaceuticals Works Ltd (3)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Abbott India Ltd" />Abbott India Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Adret Retail Pvt Ltd (Kapiva)" />Adret Retail Pvt Ltd (Kapiva) (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Ayurvet Limited" />Ayurvet Limited (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Bakson Drugs & Pharmaceuticals Pvt.Ltd." />Bakson Drugs & Pharmaceuticals Pvt.Ltd. (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Divisa Herbals Pvt Ltd" />Divisa Herbals Pvt Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hapro Homeo-Chem (P) Ltd." />Hapro Homeo-Chem (P) Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Inlife Pharma Pvt Ltd" />Inlife Pharma Pvt Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Kairali Ayurvedic Products Pvt Ltd" />Kairali Ayurvedic Products Pvt Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Nipco Homeopathic Products" />Nipco Homeopathic Products (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Patanjali Ayurved Ltd" />Patanjali Ayurved Ltd (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="S A Herbal Bioactives LLP" />S A Herbal Bioactives LLP (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Similia Homoeo Laboratory" />Similia Homoeo Laboratory (2)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Alchem Phytoceuticals Ltd" />Alchem Phytoceuticals Ltd (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Amore Health Essentials Pvt Ltd" />Amore Health Essentials Pvt Ltd (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Bio-India Pharma Pvt. Ltd" />Bio-India Pharma Pvt. Ltd (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Charak Pharma Pvt Ltd" />Charak Pharma Pvt Ltd (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Green Cross Health Innovation" />Green Cross Health Innovation (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Herbs Nutriproducts Private Limited" />Herbs Nutriproducts Private Limited (1)</label></div>
+    <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hering Pharma" />Hering Pharma (1)</label></div>
+              </div>
+            </div>
+
+            <!-- Categories Filter -->
+            <!-- <div class="mb-5">
+              <h3 class="font-semibold mb-2">Categories</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="category-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search categories" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                 <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Balm" />Beard Balm (8)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Colour" />Beard Colour (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Comb" />Beard Comb (6)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Cream" />Beard Cream (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Kits" />Beard Kits (10)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Oil" />Beard Oil (33)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Serum" />Beard Serum (3)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Shampoo" />Beard Shampoo (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Softener" />Beard Softener (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Wash" />Beard Wash (9)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Beard Wax" />Beard Wax (3)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Moustache Wax" />Moustache Wax (13)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Hair Cream" />Hair Cream (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Hair Mask" />Hair Mask (2)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shampoo" />Shampoo (1)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Scalp Treatments" />Scalp Treatments (3)</label></div>
+              </div>
+            </div> -->
+
+
+        <!-- Price Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Price Range (₹)</h3>
+          <div class="flex gap-2">
+            <input type="number" id="price-min" placeholder="Min" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+            <input type="number" id="price-max" placeholder="Max" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+          </div>
+        </div>
+
+        <!-- Discount Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Minimum Discount (%)</h3>
+          <input type="number" id="discount-min" placeholder="e.g. 10" min="0" max="100" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"/>
+        </div>
+
+        <!-- Availability Filter -->
+        <div>
+          <label class="inline-flex items-center space-x-2 text-sm text-slate-800 font-semibold">
+            <input type="checkbox" id="exclude-out-stock" />
+            <span>Exclude out of stock</span>
+          </label>
+        </div>
+
+        <!-- Clear filters button -->
+        <button id="clear-filters" type="button" class="mt-4 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-md text-sm w-full font-semibold">Clear Filters</button>
+      </section>
+    </aside>
+
+    <!-- Main Content: Banner, Sorting, Products -->
+    <section class="flex-1 flex flex-col gap-5">
+      <!-- Banner -->
+      <div aria-label="Product banner" class="bg-white rounded-md shadow h-40 flex items-center justify-center overflow-hidden">
+        <img 
+          src=" https://www.hamdard.in/img/slider/stomach-care.jpg" 
+          alt="Elegant perfume bottles for women fragrance displayed in a row on white background with soft shadows" 
+          class="object-contain h-full"
+          onerror="this.style.display='none'" 
+        />
+      </div>
+
+      <!-- Showing & Sort -->
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-700 font-semibold gap-3">
+        <div>
+          Showing <span id="shown-count">20</span> of <span id="total-count">651</span> items
+        </div>
+        <div class="flex gap-2 items-center flex-wrap justify-center md:justify-start">
+          <span>Sort by:</span>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-teal-500 text-teal-600 font-semibold" data-sort="popularity" aria-pressed="true">Popularity</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="high-to-low" aria-pressed="false">High to Low</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="low-to-high" aria-pressed="false">Low to High</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="discount" aria-pressed="false">Discount</button>
+        </div>
+      </div>
+
+      <!-- All products container -->
+      <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <!-- Product cards will be inserted dynamically here -->
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Pagination" class="flex justify-center items-center mt-8 mb-12 space-x-3 select-none">
+        <button id="prev-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200 disabled:opacity-50" disabled>Prev</button>
+        <div id="page-numbers" class="flex space-x-2 font-semibold text-slate-700"></div>
+        <button id="next-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200">Next</button>
+      </nav>
+
+     
+
+    </section>
+
+  </main>
+
+  <!-- Cart modal/popup -->
+  <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden z-50 p-4">
+    <div class="bg-white rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto relative shadow-lg">
+      <header class="p-4 border-b border-slate-300 flex justify-between items-center">
+        <h2 class="text-lg font-semibold text-slate-900">Your Cart (<span id="cart-count">0</span>)</h2>
+        <button id="close-cart" aria-label="Close cart" class="text-slate-700 hover:text-teal-600 font-bold">&times;</button>
+      </header>
+      <div id="cart-items" class="p-4 flex flex-col gap-4 min-h-[120px] max-h-[400px] overflow-y-auto text-sm text-slate-800">
+        <p class="text-center text-slate-500" id="empty-cart-msg">Your cart is empty.</p>
+      </div>
+      <footer class="p-4 border-t border-slate-300 flex items-center justify-between">
+        <div>
+          <strong>Total:</strong> ₹ <span id="cart-total">0.00</span>
+        </div>
+        <button id="checkout-btn" class="bg-teal-600 hover:bg-teal-700 rounded px-4 py-2 text-white font-semibold disabled:opacity-50" disabled>Checkout</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating Cart Button -->
+  <button id="cart-btn" aria-label="Open Cart" class="fixed bottom-8 right-8 bg-teal-600 p-4 rounded-full shadow-lg text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l3-8H6.4M7 13l-2 5m5-5v6m4-6v6m4-6v6M16 21a1 1 0 11-2 0 1 1 0 012 0zM7 21a1 1 0 10-2 0 1 1 0 002 0z"/></svg>
+    <span id="cart-badge" class="absolute top-0 right-0 bg-red-600 rounded-full text-xs px-1.5 py-0.5 -mt-1 -mr-1 font-bold hidden"></span>
+  </button>
+
+  <script>
+    (() => {
+      // Sample product data array
+      const allProducts = [
+  {
+    id: 1,
+    name: "Lama Isobael Granules 200 gm",
+    brand: "Lama",
+    category: ["Ayush", "Ayurvedic"],
+    price: 274.50,
+    discountPercent: 10,
+    originalPrice: 305.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/921409/lama_isobael_granules_200_gm_0_0.jpg", // Add actual image URL if available
+    market: "Lama Pharmaceuticals",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 2,
+    name: "Cremaffin Constipation Relief Liquid - Mixed Fruit 450ml",
+    brand: "Cremaffin",
+    category: ["Treatments", "Stomach Care"],
+    price: 308.78,
+    discountPercent: 17,
+    originalPrice: 372.02,
+    image: "https://www.netmeds.com/images/product-v1/150x150/896043/cremaffin_constipation_relief_liquid_mixed_fruit_450ml_85687_0_5.jpg",
+    market: "Abbott India Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 3,
+    name: "Gaviscon Liquid - Peppermint Flavor 150 ml",
+    brand: "Gaviscon",
+    category: ["Treatments", "Stomach Care"],
+    price: 168.96,
+    discountPercent: 14,
+    originalPrice: 196.46,
+    image: "https://www.netmeds.com/images/product-v1/150x150/100346/gaviscon_liquid_peppermint_flavor_150_ml_0_1.jpg",
+    market: "Reckitt Benckiser Healthcare India Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 4,
+    name: "Dr. Reckeweg R7 Hepagalen Liver and Gallbladder Drops 22 ml",
+    brand: "Dr. Reckeweg",
+    category: ["Ayush", "Homeopathy"],
+    price: 239.40,
+    discountPercent: 24,
+    originalPrice: 315.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/826137/dr_reckeweg_r7_hepagalen_drops_22_ml_0.jpg",
+    market: "Dr. Roshanlal Aggarwal & Sons P. Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 5,
+    name: "Dr.Juneja's Petsaffa Tablet 30's",
+    brand: "Dr.Juneja's",
+    category: ["Ayush", "Ayurvedic"],
+    price: 73.50,
+    discountPercent: 25,
+    originalPrice: 98.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/857354/dr_junejas_petsaffa_tablet_30s_102630_0_1.jpg",
+    market: "Divisa Herbals Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 6,
+    name: "Kapiva Triphala Juice 1 litre",
+    brand: "Kapiva",
+    category: ["Ayush", "Ayurvedic"],
+    price: 249.67,
+    discountPercent: 16.5,
+    originalPrice: 299.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/899277/kapiva_triphala_juice_1_litre_0_2.jpg",
+    market: "Adret Retail Pvt Ltd (Kapiva)",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 7,
+    name: "Baidyanath Gaisantak Bati Tablet 100's",
+    brand: "Baidyanath",
+    category: ["Ayush", "Ayurvedic"],
+    price: 152.00,
+    discountPercent: 5,
+    originalPrice: 160.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/823678/baidyanath_gaisantak_bati_tablet_100_s_0.jpg",
+    market: "Shree Baidyanath Ayurved Bhawan Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 8,
+    name: "Himalaya Himcocid-SF Suspension - Mint Flavour 200 ml",
+    brand: "Himalaya",
+    category: ["Ayush", "Ayurvedic"],
+    price: 121.50,
+    discountPercent: 10,
+    originalPrice: 135.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/349916/himalaya_himcocid_sf_suspension_mint_flavour_200_ml_42334_0_1.jpg",
+    market: "Himalaya Wellness Company",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 9,
+    name: "Jiva Ayurveda Aam Pachak Churna 100 gm",
+    brand: "Jiva Ayurveda",
+    category: ["Ayush", "Ayurvedic"],
+    price: 174.80,
+    discountPercent: 8,
+    originalPrice: 190.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/825768/jiva_ayurveda_aam_pachak_churna_100_gm_64079_0_1.jpg",
+    market: "Jiva Ayurvedic Pharmacy Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 10,
+    name: "Dabur Janma Ghunti Digestive Tonic 125 ml",
+    brand: "Dabur",
+    category: ["Ayush", "Ayurvedic"],
+    price: 73.50,
+    discountPercent: 2,
+    originalPrice: 75.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1090566/dabur_janma_ghunti_digestive_tonic_125_ml_558559_0_0.jpg",
+    market: "Dabur India Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 11,
+    name: "Digene Acidity & Gas Relief Tablets - Orange Flavour 15's",
+    brand: "Digene",
+    category: ["Treatments", "Stomach Care"],
+    price: 24.82,
+    discountPercent: 15,
+    originalPrice: 29.20,
+    image: "https://www.netmeds.com/images/product-v1/150x150/896036/digene_acidity_gas_relief_tablets_orange_flavour_15s_744673_0_1.jpg",
+    market: "Abbott India Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 12,
+    name: "Dabur Pudin Hara Pearls Capsule 10's",
+    brand: "Dabur",
+    category: ["Ayush", "Ayurvedic"],
+    price: 33.25,
+    discountPercent: 5,
+    originalPrice: 35.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/15917/dabur_pudin_hara_pearls_capsule_10_s_0.jpg",
+    market: "Dabur India Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 13,
+    name: "SBL Liv T Syrup 500 ml",
+    brand: "SBL",
+    category: ["Ayush", "Homeopathy"],
+    price: 255.50,
+    discountPercent: 27,
+    originalPrice: 350.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/849168/sbl_liv_t_syrup_500_ml_0.jpg",
+    market: "SBL Pvt. Ltd.",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 14,
+    name: "Dabur Hajmola Imli Digestive Tablets 120's",
+    brand: "Dabur",
+    category: ["Ayush", "Ayurvedic"],
+    price: 66.50,
+    discountPercent: 5,
+    originalPrice: 70.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/840449/dabur_hajmola_imli_digestive_tablets_120s_71386_0_1.jpg",
+    market: "Dabur India Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 15,
+    name: "Himalaya Gasex Tablet 100's",
+    brand: "Himalaya",
+    category: ["Ayush", "Ayurvedic"],
+    price: 186.00,
+    discountPercent: 7,
+    originalPrice: 200.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/331497/himalaya_gasex_tablet_100_s_0.jpg",
+    market: "Himalaya Wellness Company",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 16,
+    name: "SBL Nixocid Tablets 25 gm",
+    brand: "SBL",
+    category: ["Ayush", "Homeopathy"],
+    price: 125.40,
+    discountPercent: 24,
+    originalPrice: 165.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/821932/sbl_nixocid_tablets_25_gm_0.jpg",
+    market: "SBL Pvt. Ltd.",
+    stock: true,
+    popularity: 0
+  }
+];
+
+
+      const PRODUCTS_PER_PAGE = 12;
+
+      // Internal state for filters and sort
+      let filters = {
+        brands: new Set(),
+        priceMin: null,
+        priceMax: null,
+        discountMin: 0,
+        excludeOutStock: false,
+      };
+      let currentSort = "popularity"; // popularity, high-to-low, low-to-high, discount
+      let currentPage = 1;
+
+      // Cart State
+      let cart = {};
+
+      // Elements
+      const productsContainer = document.getElementById("products-container");
+      const brandSearchInput = document.getElementById("brand-search");
+      const brandCheckboxes = document.querySelectorAll(".brand-checkbox");
+      const priceMinInput = document.getElementById("price-min");
+      const priceMaxInput = document.getElementById("price-max");
+      const discountMinInput = document.getElementById("discount-min");
+      const excludeOutStockCheckbox = document.getElementById("exclude-out-stock");
+      const clearFiltersBtn = document.getElementById("clear-filters");
+      const shownCountEl = document.getElementById("shown-count");
+      const totalCountEl = document.getElementById("total-count");
+      const sortButtons = document.querySelectorAll(".sort-btn");
+      const prevPageBtn = document.getElementById("prev-page");
+      const nextPageBtn = document.getElementById("next-page");
+      const pageNumbersContainer = document.getElementById("page-numbers");
+      const cartBtn = document.getElementById("cart-btn");
+      const cartModal = document.getElementById("cart-modal");
+      const closeCartBtn = document.getElementById("close-cart");
+      const cartItemsContainer = document.getElementById("cart-items");
+      const cartCountEl = document.getElementById("cart-count");
+      const cartBadge = document.getElementById("cart-badge");
+      const cartTotalEl = document.getElementById("cart-total");
+      const emptyCartMsg = document.getElementById("empty-cart-msg");
+      const checkoutBtn = document.getElementById("checkout-btn");
+
+      // Utility Functions
+      function sortProducts(products, sortKey) {
+        const sorted = [...products];
+        switch (sortKey) {
+          case "popularity":
+            sorted.sort((a, b) => b.popularity - a.popularity);
+            break;
+          case "high-to-low":
+            sorted.sort((a, b) => b.price - a.price);
+            break;
+          case "low-to-high":
+            sorted.sort((a, b) => a.price - b.price);
+            break;
+          case "discount":
+            sorted.sort((a, b) => (b.discountPercent || 0) - (a.discountPercent || 0));
+            break;
+          default:
+            break;
+        }
+        return sorted;
+      }
+
+      function filterProducts(products) {
+        return products.filter((prod) => {
+          if (filters.brands.size > 0 && !filters.brands.has(prod.brand)) return false;
+          if (filters.priceMin !== null && prod.price < filters.priceMin) return false;
+          if (filters.priceMax !== null && prod.price > filters.priceMax) return false;
+          if ((prod.discountPercent || 0) < filters.discountMin) return false;
+          if (filters.excludeOutStock && !prod.stock) return false;
+          return true;
+        });
+      }
+
+      function paginateProducts(products, page) {
+        const start = (page - 1) * PRODUCTS_PER_PAGE;
+        return products.slice(start, start + PRODUCTS_PER_PAGE);
+      }
+
+      function updateSortButtons() {
+        sortButtons.forEach(btn => {
+          const pressed = btn.dataset.sort === currentSort;
+          btn.setAttribute("aria-pressed", pressed);
+          if (pressed) {
+            btn.classList.add("border-teal-500", "text-teal-600");
+            btn.classList.remove("border-slate-300", "text-slate-600");
+          } else {
+            btn.classList.add("border-slate-300", "text-slate-600");
+            btn.classList.remove("border-teal-500", "text-teal-600");
+          }
+        });
+      }
+
+      // Rendering Functions
+      function renderProductCards(products) {
+        productsContainer.innerHTML = "";
+        if (products.length === 0) {
+          productsContainer.innerHTML = '<p class="col-span-full text-center py-12 text-slate-600">No products match your filters.</p>';
+          return;
+        }
+        products.forEach(product => {
+          const productEl = document.createElement("article");
+          productEl.className = "bg-white rounded-md p-4 shadow product-card flex flex-col";
+
+          // image with placeholder & alt text from name
+          const imgEl = document.createElement("img");
+          imgEl.src = product.image;
+          imgEl.alt = product.name + " - product image";
+          imgEl.className = "object-contain h-48 w-full mb-3 rounded-md";
+          imgEl.onerror = () => { imgEl.style.display = "none"; };
+          productEl.appendChild(imgEl);
+
+          // Product name
+          const nameEl = document.createElement("h3");
+          nameEl.textContent = product.name;
+          nameEl.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          productEl.appendChild(nameEl);
+
+          // Brands & categories tags
+          const tagsContainer = document.createElement("div");
+          tagsContainer.className = "mb-2 flex flex-wrap gap-2";
+          product.category.forEach(cat => {
+            const tag = document.createElement("span");
+            tag.textContent = cat;
+            tag.className = "bg-teal-100 text-teal-800 text-xs px-2 py-0.5 rounded-full select-none";
+            tagsContainer.appendChild(tag);
+          });
+          productEl.appendChild(tagsContainer);
+
+          // Market
+          const marketEl = document.createElement("p");
+          marketEl.className = "italic text-xs text-slate-600 mb-1";
+          marketEl.textContent = `Mkt: ${product.market}`;
+          productEl.appendChild(marketEl);
+
+          // Price & Discount
+          const priceContainer = document.createElement("div");
+          priceContainer.className = "mb-3 text-sm font-semibold text-slate-900 flex items-baseline gap-2";
+          if (product.discountPercent > 0 && product.originalPrice) {
+            const discountedPrice = document.createElement("span");
+            discountedPrice.textContent = `₹ ${product.price.toFixed(2)}`;
+            discountedPrice.className = "text-teal-700";
+            priceContainer.appendChild(discountedPrice);
+
+            const originalPrice = document.createElement("span");
+            originalPrice.textContent = `₹ ${product.originalPrice.toFixed(2)}`;
+            originalPrice.className = "line-through text-slate-500 text-xs";
+            priceContainer.appendChild(originalPrice);
+          } else {
+            priceContainer.textContent = `MRP ₹ ${product.price.toFixed(2)}`;
+          }
+          productEl.appendChild(priceContainer);
+
+          // Stock status - dim Add To Cart if out stock
+          const addToCartBtn = document.createElement("button");
+          addToCartBtn.type = "button";
+          addToCartBtn.textContent = product.stock ? "ADD TO CART" : "OUT OF STOCK";
+          addToCartBtn.disabled = !product.stock;
+          addToCartBtn.className = `${product.stock ? "bg-teal-600 hover:bg-teal-700" : "bg-gray-400 cursor-not-allowed"} text-white font-semibold py-2 rounded w-full transition-colors duration-200`;
+          addToCartBtn.setAttribute("aria-label", (product.stock ? "Add " : "Out of stock ") + product.name + " to Cart");
+          addToCartBtn.addEventListener("click", () => addToCart(product.id));
+          productEl.appendChild(addToCartBtn);
+
+          productsContainer.appendChild(productEl);
+        });
+      }
+
+      function updatePagination(totalItems, currentPage) {
+        pageNumbersContainer.innerHTML = "";
+        const totalPages = Math.ceil(totalItems / PRODUCTS_PER_PAGE);
+        // show up to 5 page numbers, centered around currentPage if possible
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        if (endPage - startPage < 4) {
+          startPage = Math.max(1, endPage - 4);
+        }
+        for (let i = startPage; i <= endPage; i++) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.textContent = i;
+          btn.className = `px-3 py-1 rounded ${i === currentPage ? "bg-teal-600 text-white" : "bg-white border border-slate-300 hover:bg-slate-200"}`;
+          btn.setAttribute("aria-current", i === currentPage ? "page" : "false");
+          btn.addEventListener("click", () => {
+            currentPage = i;
+            renderFilteredSortedPaginated();
+          });
+          pageNumbersContainer.appendChild(btn);
+        }
+        prevPageBtn.disabled = currentPage === 1;
+        nextPageBtn.disabled = currentPage >= totalPages;
+      }
+
+      // Filters handlers
+      function onFiltersChange() {
+        // update filters object from UI inputs
+        // brands
+        filters.brands = new Set(Array.from(brandCheckboxes).filter(cb => cb.checked).map(cb => cb.value));
+        // price
+        filters.priceMin = priceMinInput.value ? parseFloat(priceMinInput.value) : null;
+        filters.priceMax = priceMaxInput.value ? parseFloat(priceMaxInput.value) : null;
+        // discount
+        filters.discountMin = discountMinInput.value ? parseFloat(discountMinInput.value) : 0;
+        // excluding out of stock
+        filters.excludeOutStock = excludeOutStockCheckbox.checked;
+
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Filtering brand list with search box
+      function onBrandSearch() {
+        const searchTerm = brandSearchInput.value.toLowerCase();
+        brandCheckboxes.forEach(cb => {
+          const label = cb.parentElement.textContent.toLowerCase();
+          cb.parentElement.style.display = label.includes(searchTerm) ? "block" : "none";
+        });
+      }
+
+      // Reset filters UI & state
+      function clearFilters() {
+        brandCheckboxes.forEach(cb => cb.checked = false);
+        priceMinInput.value = "";
+        priceMaxInput.value = "";
+        discountMinInput.value = "";
+        excludeOutStockCheckbox.checked = false;
+
+        filters = {
+          brands: new Set(),
+          priceMin: null,
+          priceMax: null,
+          discountMin: 0,
+          excludeOutStock: false,
+        };
+        currentPage = 1;
+
+        renderFilteredSortedPaginated();
+      }
+
+      // Sorting handlers
+      function onSortBtnClick(event) {
+        const btn = event.currentTarget;
+        const sortKey = btn.dataset.sort;
+        if (sortKey === currentSort) return;
+        currentSort = sortKey;
+        updateSortButtons();
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Pagination buttons click handlers
+      prevPageBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderFilteredSortedPaginated();
+        }
+      });
+      nextPageBtn.addEventListener("click", () => {
+        const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderFilteredSortedPaginated();
+        }
+      });
+
+      // Cart Management Functions
+
+      // Load cart from localStorage or create empty if not exists
+      function loadCart() {
+        const cartJson = localStorage.getItem("perfume_cart");
+        if (cartJson) {
+          cart = JSON.parse(cartJson);
+        } else {
+          cart = {};
+        }
+        updateCartBadge();
+      }
+
+      // Save current cart state to localStorage
+      function saveCart() {
+        localStorage.setItem("perfume_cart", JSON.stringify(cart));
+      }
+
+      // Add product to cart or increase quantity if already added
+      function addToCart(productId) {
+        if (!cart[productId]) {
+          cart[productId] = 1;
+        } else {
+          cart[productId]++;
+        }
+        saveCart();
+        updateCartBadge();
+
+        // Open cart modal to show newly added item
+        openCart();
+        renderCartItems();
+      }
+
+      // Remove product from cart
+      function removeFromCart(productId) {
+        delete cart[productId];
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update product quantity in cart
+      function updateQuantity(productId, newQty) {
+        if (newQty < 1) return;
+        cart[productId] = newQty;
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update cart icon badge count
+      function updateCartBadge() {
+        const count = Object.values(cart).reduce((a,b) => a + b, 0);
+        cartCountEl.textContent = count;
+        if (count > 0) {
+          cartBadge.textContent = count > 99 ? "99+" : count;
+          cartBadge.classList.remove("hidden");
+        } else {
+          cartBadge.classList.add("hidden");
+        }
+      }
+
+      // Open cart modal
+      function openCart() {
+        cartModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // disable page scrolling
+      }
+
+      // Close cart modal
+      function closeCart() {
+        cartModal.classList.add("hidden");
+        document.body.style.overflow = ""; // enable page scrolling
+      }
+
+      // Render cart items in modal
+      function renderCartItems() {
+        cartItemsContainer.innerHTML = "";
+        const productIds = Object.keys(cart);
+        if (productIds.length === 0) {
+          emptyCartMsg.style.display = "block";
+          cartTotalEl.textContent = "0.00";
+          checkoutBtn.disabled = true;
+          return;
+        }
+        emptyCartMsg.style.display = "none";
+
+        let total = 0;
+        productIds.forEach(pid => {
+          const prod = allProducts.find(p => p.id == pid);
+          if (!prod) return;
+
+          const qty = cart[pid];
+          total += prod.price * qty;
+
+          const itemDiv = document.createElement("div");
+          itemDiv.className = "flex items-center gap-3 border-b border-slate-200 pb-3";
+
+          const img = document.createElement("img");
+          img.src = prod.image;
+          img.alt = prod.name + " image";
+          img.className = "w-16 h-20 object-contain rounded-md flex-shrink-0";
+          img.onerror = () => { img.style.display = "none"; };
+          itemDiv.appendChild(img);
+
+          const details = document.createElement("div");
+          details.className = "flex-grow";
+
+          const title = document.createElement("p");
+          title.textContent = prod.name;
+          title.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          details.appendChild(title);
+
+          const priceQty = document.createElement("p");
+          priceQty.textContent = `₹${prod.price.toFixed(2)} x ${qty} = ₹${(prod.price * qty).toFixed(2)}`;
+          priceQty.className = "text-xs text-slate-700";
+          details.appendChild(priceQty);
+
+          itemDiv.appendChild(details);
+
+          // Quantity controls
+          const qtyControls = document.createElement("div");
+          qtyControls.className = "flex flex-col gap-1 items-center";
+
+          const qtyInput = document.createElement("input");
+          qtyInput.type = "number";
+          qtyInput.min = "1";
+          qtyInput.value = qty;
+          qtyInput.className = "w-12 border border-slate-300 rounded text-center text-sm focus:outline-none focus:ring-1 focus:ring-teal-500";
+          qtyInput.addEventListener("change", (e) => {
+            let newVal = parseInt(e.target.value);
+            if (isNaN(newVal) || newVal < 1) {
+              e.target.value = qty; // reset invalid
+              return;
+            }
+            updateQuantity(pid, newVal);
+          });
+          qtyControls.appendChild(qtyInput);
+
+          const removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.textContent = "Remove";
+          removeBtn.className = "text-xs text-red-600 hover:underline";
+          removeBtn.addEventListener("click", () => removeFromCart(pid));
+          qtyControls.appendChild(removeBtn);
+
+          itemDiv.appendChild(qtyControls);
+
+          cartItemsContainer.appendChild(itemDiv);
+        });
+        cartTotalEl.textContent = total.toFixed(2);
+        checkoutBtn.disabled = false;
+      }
+
+      // Debounce utility for search input
+      function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+
+      // Page render based on current filters and sorting
+      let filteredProducts = [];
+      function renderFilteredSortedPaginated() {
+        filteredProducts = filterProducts(allProducts);
+        totalCountEl.textContent = filteredProducts.length;
+        updatePagination(filteredProducts.length, currentPage);
+        const paginated = paginateProducts(sortProducts(filteredProducts, currentSort), currentPage);
+        renderProductCards(paginated);
+        shownCountEl.textContent = paginated.length;
+      }
+
+      // Initialization of events
+      function init() {
+        // Brands checkboxes change
+        brandCheckboxes.forEach(cb => cb.addEventListener("change", onFiltersChange));
+        // Filter inputs change
+        priceMinInput.addEventListener("input", onFiltersChange);
+        priceMaxInput.addEventListener("input", onFiltersChange);
+        discountMinInput.addEventListener("input", onFiltersChange);
+        excludeOutStockCheckbox.addEventListener("change", onFiltersChange);
+        clearFiltersBtn.addEventListener("click", () => {
+          clearFilters();
+          brandSearchInput.value = "";
+        });
+
+        // Brand search input debounce 
+        brandSearchInput.addEventListener("input", debounce(onBrandSearch, 200));
+
+        // Sort buttons
+        sortButtons.forEach(btn => btn.addEventListener("click", onSortBtnClick));
+
+        // Cart button & modal
+        cartBtn.addEventListener("click", () => {
+          openCart();
+          renderCartItems();
+        });
+        closeCartBtn.addEventListener("click", closeCart);
+        checkoutBtn.addEventListener("click", () => {
+          alert("Thank you for your purchase! Cart checkout functionality can be implemented here.");
+          cart = {};
+          saveCart();
+          updateCartBadge();
+          renderCartItems();
+          closeCart();
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !cartModal.classList.contains("hidden")) {
+            closeCart();
+          }
+        });
+
+        // Initial render
+        loadCart();
+        updateSortButtons();
+        renderFilteredSortedPaginated();
+      }
+
+      // Run initialization on page load
+      document.addEventListener("DOMContentLoaded", init);
+    })();
+  </script>
+</body>
+</html>

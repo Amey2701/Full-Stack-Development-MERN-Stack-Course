@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Mom & Baby > Feminine Hygiene </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for filters categories */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #94a3b8;
+      border-radius: 3px;
+    }
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #94a3b8 transparent;
+    }
+    /* Ellipses for longer text */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    /* Card Hover Glow */
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col font-sans">
+
+  <!-- Top Navigation -->
+  <header class="bg-slate-100 py-2 px-4 border-b border-slate-300 select-none">
+    <nav class="container mx-auto flex flex-wrap gap-3 text-xs text-slate-700 font-medium items-center justify-center md:justify-start">
+      <a href="#" class="hover:text-teal-600">Covid Essentials</a>
+      <a href="#" class="hover:text-teal-600">Diabetes</a>
+      <a href="#" class="hover:text-teal-600">Cardiac Care</a>
+      <a href="#" class="hover:text-teal-600">Stomach Care</a>
+      <a href="#" class="hover:text-teal-600">Ayurvedic</a>
+      <a href="#" class="hover:text-teal-600">Homeopathy</a>
+      <a href="#" class="hover:text-teal-600">Fitness</a>
+      <a href="#" class="hover:text-teal-600">Mom & Baby</a>
+      <a href="#" class="hover:text-teal-600">Devices</a>
+      <a href="#" class="hover:text-teal-600">Surgicals</a>
+      <a href="#" class="hover:text-teal-600">Sexual Wellness</a>
+      <a href="#" class="hover:text-teal-600">Treatments</a>
+      <a href="#" class="hover:text-teal-600">Skin Care</a>
+      <a href="#" class="hover:text-teal-600">Personal Care</a>
+    </nav>
+  </header>
+
+  <!-- Page Main Wrapper -->
+  <main class="container mx-auto flex flex-col md:flex-row gap-6 mt-4 flex-grow">
+
+    <!-- Left Side Categories & Filters -->
+    <aside class="w-full md:w-72 flex flex-col gap-6 sticky top-4 h-fit">
+      <!-- Breadcrumb -->
+        <nav class="w-full text-teal-700 text-sm font-medium" aria-label="Breadcrumb">
+          <ol class="flex flex-row flex-nowrap items-center gap-1">
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Home</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline">Non-Prescription</a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <a href="#" class="hover:underline"> Mom & Baby  </a>
+              <span>›</span>
+            </li>
+            <li class="flex items-center gap-1 text-teal-900 font-semibold">
+              Feminine Hygiene
+            </li>
+          </ol>
+        </nav>
+
+      <!-- Categories Section -->
+      <section aria-label="Categories" class="bg-white rounded-md shadow overflow-hidden py-4 px-4">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Categories</h2>
+        <div class="max-h-64 overflow-y-auto scrollbar-thin pr-1">
+          <div>
+            <button aria-expanded="true" aria-controls="fragMenu" class="flex items-center w-full text-left text-slate-800 font-semibold mb-1 focus:outline-none" id="fragHeading">
+              <svg class="mr-2 h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 9l4 4 4-4"/></svg>
+                Mom & Baby
+            </button>
+            <ul id="fragMenu" class="pl-6 text-sm text-slate-600 space-y-0.5" role="region" aria-labelledby="fragHeading">
+              <li><a href="#" class="hover:underline ">Baby Care </a></li>
+              <li><a href="#" class="hover:underline font-semibold text-teal-700">Feminine Hygiene </a></li>
+              <li><a href="#" class="hover:underline ">Maternity Care </a></li>
+              <li><a href="#" class="hover:underline ">Toys & Games </a></li>
+              <li><a href="#" class="hover:underline ">Baby Bath Time </a></li>
+              <li><a href="#" class="hover:underline ">Maternity Accessories</a></li>
+              <li><a href="#" class="hover:underline ">Baby Care </a></li>
+
+            </ul>
+          </div>
+          <div>
+            <button aria-expanded="false" aria-controls="makeupMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Make-Up</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div>
+          <div>
+            <button aria-expanded="false" aria-controls="hairMenu" class="flex w-full items-center justify-between text-left text-slate-700 font-semibold border-t border-slate-200 py-1 focus:outline-none">
+              <span>Hair</span>
+              <svg class="h-4 w-4 fill-current transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15l4-4 4 4"/></svg>
+            </button>
+          </div>
+          <!-- More categories can be added similarly -->
+        </div>
+      </section>
+
+      <!-- Filters Section -->
+      <section aria-label="Filters" class="bg-white rounded-md shadow py-4 px-4 overflow-y-auto scrollbar-thin max-h-[70vh]">
+        <h2 class="font-semibold text-slate-800 mb-3 border-b border-slate-300 pb-2">Filters</h2>
+
+       <!-- Brands Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Brands</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="brand-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search brands" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                <!-- Updated Baby Product Brand Checkboxes -->
+                    <!-- Brands Checkbox Filter -->
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ambitech" />Ambitech (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Amrutanjan" />Amrutanjan (14)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Babila" />Babila (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bella" />Bella (34)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Biosoft" />Biosoft (18)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Blenior" />Blenior (5)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bodyguard" />Bodyguard (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Bombae" />Bombae (4)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Carefree" />Carefree (6)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dabur" />Dabur (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Dynamic" />Dynamic (5)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Everteen" />Everteen (13)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Eviction" />Eviction (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ezy" />Ezy (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Fem" />Fem (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Flawless Finishing Touch" />Flawless Finishing Touch (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Furr" />Furr (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Gillette" />Gillette (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Goli Soda" />Goli Soda (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Gynocup" />Gynocup (1)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hi Life" />Hi Life (6)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Hiphop" />Hiphop (9)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="I-Activ" />I-Activ (5)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Icare" />Icare (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Inari" />Inari (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Intimus" />Intimus (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Jiva Ayurveda" />Jiva Ayurveda (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Kai" />Kai (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Letsshave" />Letsshave (5)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Mildcares" />Mildcares (7)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Mjoy" />Mjoy (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Mom & World" />Mom & World (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Neud" />Neud (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Ob" />Ob (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Pee Safe" />Pee Safe (21)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Rica" />Rica (36)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sanfe" />Sanfe (5)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sanity" />Sanity (4)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Seni" />Seni (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sirona" />Sirona (66)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Sofy" />Sofy (31)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Stayfree" />Stayfree (38)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="The Woman's Company" />The Woman's Company (19)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Torque" />Torque (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Veet" />Veet (12)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vega" />Vega (7)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Velvet" />Velvet (3)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Vwash" />Vwash (2)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Whisper" />Whisper (46)</label></div>
+                  <div><label><input type="checkbox" class="brand-checkbox mr-2" value="Worryfree" />Worryfree (9)</label></div>
+
+
+              </div>
+            </div>
+
+            <!-- Manufacturers Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Manufacturers</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="manufacturer-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search manufacturers" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                 <!-- Updated Manufacturer Checkboxes -->
+                    <!-- Manufacturers Checkbox Filter -->
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Sirona Hygiene Private Limited" />Sirona Hygiene Private Limited (68)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Johnson & Johnson Pvt Ltd" />Johnson & Johnson Pvt Ltd (46)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Procter & Gamble Hygiene And Health Care Limited" />Procter & Gamble Hygiene And Health Care Limited (45)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Bellapremier Happy Hygienecare Pvt Ltd" />Bellapremier Happy Hygienecare Pvt Ltd (36)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Esskay Beauty Resources Pvt Ltd" />Esskay Beauty Resources Pvt Ltd (36)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Unicharm India Pvt Ltd" />Unicharm India Pvt Ltd (31)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Redcliffe Hygiene Private Limited" />Redcliffe Hygiene Private Limited (22)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="SSIZ INTERNATIONAL PRIVATE LIMITED" />SSIZ INTERNATIONAL PRIVATE LIMITED (18)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Women's India Care Pvt Ltd" />Women's India Care Pvt Ltd (15)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Amrutanjan Health Care Ltd" />Amrutanjan Health Care Ltd (14)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Wet & Dry Personal Care Pvt Ltd" />Wet & Dry Personal Care Pvt Ltd (13)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Reckitt Benckiser Healthcare India Pvt Ltd" />Reckitt Benckiser Healthcare India Pvt Ltd (12)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Crescenzia Tradetech Private Limited" />Crescenzia Tradetech Private Limited (9)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Elegare Beauty Private Limited" />Elegare Beauty Private Limited (9)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Jam International" />Jam International (9)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Mild Cares Private Limited" />Mild Cares Private Limited (8)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Vega Industries Pvt Ltd" />Vega Industries Pvt Ltd (7)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dabur India Ltd" />Dabur India Ltd (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hi Life Products Private Limited" />Hi Life Products Private Limited (6)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Beauty Concepts Pvt. Ltd" />Beauty Concepts Pvt. Ltd (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Letsshave Pvt. Ltd." />Letsshave Pvt. Ltd. (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Piramal Pharma Limited" />Piramal Pharma Limited (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Redroom Technology Private Limited" />Redroom Technology Private Limited (5)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="The Woman's Company" />The Woman's Company (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Visage Lines Personal Care Private Limited" />Visage Lines Personal Care Private Limited (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Wevolve Consumer Private Limited" />Wevolve Consumer Private Limited (4)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Ambitech Healthcare Pvt Ltd" />Ambitech Healthcare Pvt Ltd (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Auro Mira Medi Aids" />Auro Mira Medi Aids (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="DYNAMIC TECHNO MEDICAL PVT LTD" />DYNAMIC TECHNO MEDICAL PVT LTD (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Emmbros Overseas Lifestyle Pvt Ltd" />Emmbros Overseas Lifestyle Pvt Ltd (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Gillette India Limited" />Gillette India Limited (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="HLL Lifecare Limited" />HLL Lifecare Limited (3)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Dynamic Techno Medicals Pvt.Ltd" />Dynamic Techno Medicals Pvt.Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Hindustan Unilever Limited" />Hindustan Unilever Limited (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Jiva Ayurvedic Pharmacy Ltd" />Jiva Ayurvedic Pharmacy Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Kai Manufacturing India Pvt. Ltd" />Kai Manufacturing India Pvt. Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Torque Pharmaceuticals Pvt Ltd" />Torque Pharmaceuticals Pvt Ltd (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Wet And Dry Personal Care Pvt. Ltd." />Wet And Dry Personal Care Pvt. Ltd. (2)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Babila Industries Pvt.Ltd" />Babila Industries Pvt.Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="GOLI SODA Sustainable Solutions Private Limited" />GOLI SODA Sustainable Solutions Private Limited (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Naturexpert Ayurvedic Pvt Ltd" />Naturexpert Ayurvedic Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="PROZONE HYGIENE INDIA LLP" />PROZONE HYGIENE INDIA LLP (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Pittie Consumer Private Limited" />Pittie Consumer Private Limited (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Procter & Gamble" />Procter & Gamble (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Sava India Personal Care Private Limited" />Sava India Personal Care Private Limited (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="Shield Health Care Pvt Ltd" />Shield Health Care Pvt Ltd (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="VCare Herbal Concepts Pvt Limited" />VCare Herbal Concepts Pvt Limited (1)</label></div>
+                <div><label><input type="checkbox" class="manufacturer-checkbox mr-2" value="VEGA BIOTEC PVT LTD" />VEGA BIOTEC PVT LTD (1)</label></div>
+
+              </div>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="mb-5">
+              <h3 class="font-semibold mb-2">Categories</h3>
+              <div class="relative text-slate-600 mb-2">
+                <input type="search" id="category-search" placeholder="Search..." class="w-full border border-slate-300 rounded-md pl-8 pr-3 py-1 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500" aria-label="Search categories" />
+                <svg class="absolute left-2 top-2.5 h-4 w-4 fill-current text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <div class="max-h-48 overflow-y-auto scrollbar-thin pl-1 text-sm text-slate-700 space-y-2 border border-slate-200 rounded-md px-3 py-2">
+                 <!-- Updated Categories Checkboxes -->
+                    <!-- Categories Checkbox Filter -->
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Menstrual Cups" />Menstrual Cups (52)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Panty Liners" />Panty Liners (34)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Sanitary Napkins" />Sanitary Napkins (213)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Shaving & Hair Removal" />Shaving & Hair Removal (143)</label></div>
+                  <div><label><input type="checkbox" class="category-checkbox mr-2" value="Tampons" />Tampons (40)</label></div>
+              </div>
+            </div>
+
+
+        <!-- Price Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Price Range (₹)</h3>
+          <div class="flex gap-2">
+            <input type="number" id="price-min" placeholder="Min" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+            <input type="number" id="price-max" placeholder="Max" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500" min="0"/>
+          </div>
+        </div>
+
+        <!-- Discount Filter -->
+        <div class="mb-4">
+          <h3 class="font-semibold mb-2">Minimum Discount (%)</h3>
+          <input type="number" id="discount-min" placeholder="e.g. 10" min="0" max="100" class="w-20 border border-slate-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-teal-500"/>
+        </div>
+
+        <!-- Availability Filter -->
+        <div>
+          <label class="inline-flex items-center space-x-2 text-sm text-slate-800 font-semibold">
+            <input type="checkbox" id="exclude-out-stock" />
+            <span>Exclude out of stock</span>
+          </label>
+        </div>
+
+        <!-- Clear filters button -->
+        <button id="clear-filters" type="button" class="mt-4 bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-md text-sm w-full font-semibold">Clear Filters</button>
+      </section>
+    </aside>
+
+    <!-- Main Content: Banner, Sorting, Products -->
+    <section class="flex-1 flex flex-col gap-5">
+      <!-- Banner -->
+      <div aria-label="Product banner" class="bg-white rounded-md shadow h-40 flex items-center justify-center overflow-hidden">
+        <img 
+          src="https://www.netmeds.com/images/category/3087/feminine_hygeine_0.jpg" 
+          alt="Elegant perfume bottles for women fragrance displayed in a row on white background with soft shadows" 
+          class="object-contain h-full"
+          onerror="this.style.display='none'" 
+        />
+      </div>
+
+      <!-- Showing & Sort -->
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-700 font-semibold gap-3">
+        <div>
+          Showing <span id="shown-count">20</span> of <span id="total-count">651</span> items
+        </div>
+        <div class="flex gap-2 items-center flex-wrap justify-center md:justify-start">
+          <span>Sort by:</span>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-teal-500 text-teal-600 font-semibold" data-sort="popularity" aria-pressed="true">Popularity</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="high-to-low" aria-pressed="false">High to Low</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="low-to-high" aria-pressed="false">Low to High</button>
+          <button type="button" class="sort-btn px-3 py-1 rounded-full border border-slate-300 text-slate-600 font-semibold" data-sort="discount" aria-pressed="false">Discount</button>
+        </div>
+      </div>
+
+      <!-- All products container -->
+      <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <!-- Product cards will be inserted dynamically here -->
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Pagination" class="flex justify-center items-center mt-8 mb-12 space-x-3 select-none">
+        <button id="prev-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200 disabled:opacity-50" disabled>Prev</button>
+        <div id="page-numbers" class="flex space-x-2 font-semibold text-slate-700"></div>
+        <button id="next-page" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-200">Next</button>
+      </nav>
+
+      <!-- Footer-like area with text info -->
+          <article aria-label="Feminine Hygiene Information"
+          class="bg-white rounded-lg shadow-md border border-slate-200 p-6 mb-10 max-w-7xl mx-auto leading-relaxed text-slate-800 text-[15px] sm:text-base space-y-6">
+
+          <!-- Title -->
+          <h2 class="text-2xl font-extrabold text-slate-900 border-b pb-2 border-slate-300">Feminine Hygiene</h2>
+
+          <!-- Intro -->
+          <p>As a woman, you are expected to manage many responsibilities—from career and home to family and children. But it's just as important to care for yourself, especially your intimate hygiene. A woman’s intimate area is a sensitive region that requires regular upkeep—not only for hygiene but also for overall health.</p>
+
+          <p>Here’s a breakdown of essential feminine hygiene areas and products you might need to stay fresh, clean, and healthy.</p>
+
+          <!-- Categories -->
+          <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-slate-800 border-b border-slate-200 pb-1">Key Hygiene Areas</h3>
+
+              <div class="space-y-3">
+                  <div>
+                      <h4 class="font-semibold text-slate-700">Intimate Care</h4>
+                      <p>Maintaining vaginal health is crucial. Use gentle, pH-balanced washes specifically formulated for intimate areas. Avoid regular soap, which can disrupt the natural pH and cause irritation or infections.</p>
+                  </div>
+                  <div>
+                      <h4 class="font-semibold text-slate-700">Menstrual Care</h4>
+                      <p>Choose the right menstrual product—be it sanitary pads, tampons, or menstrual cups—based on your comfort and needs. Select products made with soft, breathable materials to prevent rashes or imbalances.</p>
+                  </div>
+                  <div>
+                      <h4 class="font-semibold text-slate-700">Hair Removal</h4>
+                      <p>Trimming with scissors is often the safest for sensitive skin. If shaving, use clean razors and consider anti-irritation products. For waxing, professional salons are recommended to prevent ingrown hairs and skin damage.</p>
+                  </div>
+                  <div>
+                      <h4 class="font-semibold text-slate-700">Daily Protection</h4>
+                      <p>Panty liners and anti-bacterial wipes can help you stay fresh on the go. Use breathable cotton underwear and avoid synthetic fabrics to maintain ventilation and reduce discomfort.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="space-y-4">
+              <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-slate-300">FAQs</h2>
+
+              <div>
+                  <h4 class="font-semibold">How do women maintain proper hygiene?</h4>
+                  <p>Maintain cleanliness by gently washing the intimate area with warm water once a day. Avoid harsh products that may affect the natural pH balance. Menstrual hygiene should be a top priority during your cycle.</p>
+              </div>
+
+              <div>
+                  <h4 class="font-semibold">How often should you clean your intimate area?</h4>
+                  <p>Once daily is typically enough, but more frequent washing may be needed during menstruation. Over-washing can lead to dryness and irritation, so balance is key.</p>
+              </div>
+          </div>
+
+          <!-- Manufacturers -->
+          <div class="space-y-2">
+              <h4 class="font-semibold">Shop by Top Manufacturers</h4>
+              <p>
+                  <a href="#" class="text-teal-700 hover:underline">Procter & Gamble Hygiene And Health Care Limited</a> |
+                  <a href="#" class="text-teal-700 hover:underline">Sirona Hygiene Private Limited</a> |
+                  <a href="#" class="text-teal-700 hover:underline">Bellapremier Happy Hygienecare Pvt Ltd</a> |
+                  <a href="#" class="text-teal-700 hover:underline">Esskay Beauty Resources Pvt Ltd</a> |
+                  <a href="#" class="text-teal-700 hover:underline">Johnson & Johnson Pvt Ltd</a>
+              </p>
+          </div>
+
+          <!-- Online Shopping Note -->
+          <div>
+              <h4 class="font-semibold">Where to Buy</h4>
+              <p>You can explore and purchase a wide range of feminine hygiene products online from trusted platforms like Netmeds, offering doorstep delivery and detailed product information.</p>
+          </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Cart modal/popup -->
+  <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden z-50 p-4">
+    <div class="bg-white rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto relative shadow-lg">
+      <header class="p-4 border-b border-slate-300 flex justify-between items-center">
+        <h2 class="text-lg font-semibold text-slate-900">Your Cart (<span id="cart-count">0</span>)</h2>
+        <button id="close-cart" aria-label="Close cart" class="text-slate-700 hover:text-teal-600 font-bold">&times;</button>
+      </header>
+      <div id="cart-items" class="p-4 flex flex-col gap-4 min-h-[120px] max-h-[400px] overflow-y-auto text-sm text-slate-800">
+        <p class="text-center text-slate-500" id="empty-cart-msg">Your cart is empty.</p>
+      </div>
+      <footer class="p-4 border-t border-slate-300 flex items-center justify-between">
+        <div>
+          <strong>Total:</strong> ₹ <span id="cart-total">0.00</span>
+        </div>
+        <button id="checkout-btn" class="bg-teal-600 hover:bg-teal-700 rounded px-4 py-2 text-white font-semibold disabled:opacity-50" disabled>Checkout</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating Cart Button -->
+  <button id="cart-btn" aria-label="Open Cart" class="fixed bottom-8 right-8 bg-teal-600 p-4 rounded-full shadow-lg text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l3-8H6.4M7 13l-2 5m5-5v6m4-6v6m4-6v6M16 21a1 1 0 11-2 0 1 1 0 012 0zM7 21a1 1 0 10-2 0 1 1 0 002 0z"/></svg>
+    <span id="cart-badge" class="absolute top-0 right-0 bg-red-600 rounded-full text-xs px-1.5 py-0.5 -mt-1 -mr-1 font-bold hidden"></span>
+  </button>
+
+  <script>
+    (() => {
+      // Sample product data array
+      const allProducts = [
+  {
+    id: 1,
+    name: "Stayfree Secure Dry Cover with Wings Sanitary Pads (XL) 6's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 47.00,
+    discountPercent: 6,
+    originalPrice: 50.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1069743/stayfree_secure_dry_cover_with_wings_sanitary_pads_xl_6s_497933_0_0.jpg", // add image URL if needed
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 2,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Regular Dry Value Pack 18's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 55.30,
+    discountPercent: 21,
+    originalPrice: 70.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1110755/amrutanjan_comfy_snug_fit_sanitary_pads_regular_dry_value_pack_18s_645811_0_2.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 3,
+    name: "Stayfree Secure Cottony Soft Cover with Wings Sanitary Pads - Regular 18's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 98.70,
+    discountPercent: 6,
+    originalPrice: 105.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1073123/stayfree_secure_cottony_soft_regular_with_wings_sanitary_pad_18s_508877_0_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 4,
+    name: "Stayfree Secure Cottony Pads (XL) 18's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 116.56,
+    discountPercent: 6,
+    originalPrice: 124.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1064778/stayfree_secure_cottony_pads_xl_18s_485805_0_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 5,
+    name: "Stayfree Secure Cottony Soft Regular with Wings Sanitary Pad 6's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 34.78,
+    discountPercent: 6,
+    originalPrice: 37.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1069189/stayfree_secure_cottony_soft_regular_with_wings_sanitary_pad_6s_494251_0_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 6,
+    name: "Stayfree Advanced Ultra-Comfort with Wings (XL) 28's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 352.50,
+    discountPercent: 6,
+    originalPrice: 375.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13802/stayfree_advanced_ultra_comfort_with_wings_xl_28_s_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 7,
+    name: "Stayfree Advanced Ultra-Comfort with Wings (XL) 14's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 173.90,
+    discountPercent: 6,
+    originalPrice: 185.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13803/stayfree_advanced_ultra_comfort_with_wings_xl_14_s_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 8,
+    name: "Stayfree Advanced Ultra-Comfort with Wings (XL) 7's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 89.30,
+    discountPercent: 6,
+    originalPrice: 95.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13807/stayfree_advanced_ultra_comfort_with_wings_xl_7_s_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 9,
+    name: "i-activ Menstrual Cup (M)",
+    brand: "i-activ",
+    category: ["Health Conditions", "Women's Care"],
+    price: 239.40,
+    discountPercent: 40,
+    originalPrice: 399.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/921769/i_activ_menstrual_cup_m_0_1.jpg",
+    market: "Piramal Pharma Limited",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 10,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Dry (XL) Value Pack 18's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 71.10,
+    discountPercent: 21,
+    originalPrice: 90.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1088067/amrutanjan_comfy_snug_fit_sanitary_pads_dry_xl_value_pack_18s_548321_0_2.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  },
+    {
+    id: 11,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Regular 6's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 20.54,
+    discountPercent: 21,
+    originalPrice: 26.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/919969/amrutanjan_comfy_snug_fit_sanitary_pads_regular_6s_128407_0_2.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 12,
+    name: "Stayfree Secure Cottony with Wings Sanitary Pads (XL) 6's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 42.30,
+    discountPercent: 6,
+    originalPrice: 45.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/801428/stayfree_secure_cottony_with_wings_sanitary_pads_xl_6s_56490_0_1.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 13,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Extra Long 6's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 25.28,
+    discountPercent: 21,
+    originalPrice: 32.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/919970/amrutanjan_comfy_snug_fit_sanitary_pads_extra_long_6s_0_0.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 14,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Dry XL 6's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 25.28,
+    discountPercent: 21,
+    originalPrice: 32.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1143336/amrutanjan_comfy_snug_fit_sanitary_pads_dry_xl_6s_758277_0_0.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 15,
+    name: "Stayfree Dry Max Ultra-Dry Wings 16's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 178.60,
+    discountPercent: 6,
+    originalPrice: 190.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/404745/stayfree_dry_max_ultra_dry_wings_16_s_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 16,
+    name: "Carefree Super Dry Panty Liners (Regular) 20's",
+    brand: "Carefree",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 93.06,
+    discountPercent: 6,
+    originalPrice: 99.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/13705/carefree_super_dry_panty_liners_regular_20_s_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 17,
+    name: "Veet Full Body Waxing Kit - Normal Skin Strips 20's",
+    brand: "Veet",
+    category: ["Hair Care", "Hair Treatment"],
+    price: 258.24,
+    discountPercent: 4,
+    originalPrice: 269.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/884765/veet_full_body_waxing_kit_normal_skin_strips_20s_80575_0_2.jpg",
+    market: "Reckitt Benckiser Healthcare India Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 18,
+    name: "Dynamic Newmom Maternity Pads - Maxi Pads 4's + Panty 1's",
+    brand: "Newmom",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 148.80,
+    discountPercent: 20,
+    originalPrice: 186.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/976274/dynamic_newmom_maternity_pad_maxi_pad_5s_0_1.jpg",
+    market: "DYNAMIC TECHNO MEDICAL PVT LTD",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 19,
+    name: "Stayfree Secure Dry Cover with Wings Sanitary Pads - Regular 6's",
+    brand: "Stayfree",
+    category: ["Health Conditions", "Women's Care"],
+    price: 33.60,
+    discountPercent: 4,
+    originalPrice: 35.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/1069712/stayfree_secure_dry_cover_with_wings_sanitary_pads_regular_6s_496549_0_0.jpg",
+    market: "Johnson & Johnson Pvt Ltd",
+    stock: true,
+    popularity: 0
+  },
+  {
+    id: 20,
+    name: "Amrutanjan Comfy Snug Fit Sanitary Pads - Value Pack 18's",
+    brand: "Amrutanjan",
+    category: ["Mom & Baby", "Feminine Hygiene"],
+    price: 71.10,
+    discountPercent: 21,
+    originalPrice: 90.00,
+    image: "https://www.netmeds.com/images/product-v1/150x150/919972/amrutanjan_comfy_snug_fit_sanitary_pads_value_pack_18s_128419_0_2.jpg",
+    market: "Amrutanjan Health Care Ltd",
+    stock: true,
+    popularity: 0
+  }
+];
+
+      const PRODUCTS_PER_PAGE = 12;
+
+      // Internal state for filters and sort
+      let filters = {
+        brands: new Set(),
+        priceMin: null,
+        priceMax: null,
+        discountMin: 0,
+        excludeOutStock: false,
+      };
+      let currentSort = "popularity"; // popularity, high-to-low, low-to-high, discount
+      let currentPage = 1;
+
+      // Cart State
+      let cart = {};
+
+      // Elements
+      const productsContainer = document.getElementById("products-container");
+      const brandSearchInput = document.getElementById("brand-search");
+      const brandCheckboxes = document.querySelectorAll(".brand-checkbox");
+      const priceMinInput = document.getElementById("price-min");
+      const priceMaxInput = document.getElementById("price-max");
+      const discountMinInput = document.getElementById("discount-min");
+      const excludeOutStockCheckbox = document.getElementById("exclude-out-stock");
+      const clearFiltersBtn = document.getElementById("clear-filters");
+      const shownCountEl = document.getElementById("shown-count");
+      const totalCountEl = document.getElementById("total-count");
+      const sortButtons = document.querySelectorAll(".sort-btn");
+      const prevPageBtn = document.getElementById("prev-page");
+      const nextPageBtn = document.getElementById("next-page");
+      const pageNumbersContainer = document.getElementById("page-numbers");
+      const cartBtn = document.getElementById("cart-btn");
+      const cartModal = document.getElementById("cart-modal");
+      const closeCartBtn = document.getElementById("close-cart");
+      const cartItemsContainer = document.getElementById("cart-items");
+      const cartCountEl = document.getElementById("cart-count");
+      const cartBadge = document.getElementById("cart-badge");
+      const cartTotalEl = document.getElementById("cart-total");
+      const emptyCartMsg = document.getElementById("empty-cart-msg");
+      const checkoutBtn = document.getElementById("checkout-btn");
+
+      // Utility Functions
+      function sortProducts(products, sortKey) {
+        const sorted = [...products];
+        switch (sortKey) {
+          case "popularity":
+            sorted.sort((a, b) => b.popularity - a.popularity);
+            break;
+          case "high-to-low":
+            sorted.sort((a, b) => b.price - a.price);
+            break;
+          case "low-to-high":
+            sorted.sort((a, b) => a.price - b.price);
+            break;
+          case "discount":
+            sorted.sort((a, b) => (b.discountPercent || 0) - (a.discountPercent || 0));
+            break;
+          default:
+            break;
+        }
+        return sorted;
+      }
+
+      function filterProducts(products) {
+        return products.filter((prod) => {
+          if (filters.brands.size > 0 && !filters.brands.has(prod.brand)) return false;
+          if (filters.priceMin !== null && prod.price < filters.priceMin) return false;
+          if (filters.priceMax !== null && prod.price > filters.priceMax) return false;
+          if ((prod.discountPercent || 0) < filters.discountMin) return false;
+          if (filters.excludeOutStock && !prod.stock) return false;
+          return true;
+        });
+      }
+
+      function paginateProducts(products, page) {
+        const start = (page - 1) * PRODUCTS_PER_PAGE;
+        return products.slice(start, start + PRODUCTS_PER_PAGE);
+      }
+
+      function updateSortButtons() {
+        sortButtons.forEach(btn => {
+          const pressed = btn.dataset.sort === currentSort;
+          btn.setAttribute("aria-pressed", pressed);
+          if (pressed) {
+            btn.classList.add("border-teal-500", "text-teal-600");
+            btn.classList.remove("border-slate-300", "text-slate-600");
+          } else {
+            btn.classList.add("border-slate-300", "text-slate-600");
+            btn.classList.remove("border-teal-500", "text-teal-600");
+          }
+        });
+      }
+
+      // Rendering Functions
+      function renderProductCards(products) {
+        productsContainer.innerHTML = "";
+        if (products.length === 0) {
+          productsContainer.innerHTML = '<p class="col-span-full text-center py-12 text-slate-600">No products match your filters.</p>';
+          return;
+        }
+        products.forEach(product => {
+          const productEl = document.createElement("article");
+          productEl.className = "bg-white rounded-md p-4 shadow product-card flex flex-col";
+
+          // image with placeholder & alt text from name
+          const imgEl = document.createElement("img");
+          imgEl.src = product.image;
+          imgEl.alt = product.name + " - product image";
+          imgEl.className = "object-contain h-48 w-full mb-3 rounded-md";
+          imgEl.onerror = () => { imgEl.style.display = "none"; };
+          productEl.appendChild(imgEl);
+
+          // Product name
+          const nameEl = document.createElement("h3");
+          nameEl.textContent = product.name;
+          nameEl.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          productEl.appendChild(nameEl);
+
+          // Brands & categories tags
+          const tagsContainer = document.createElement("div");
+          tagsContainer.className = "mb-2 flex flex-wrap gap-2";
+          product.category.forEach(cat => {
+            const tag = document.createElement("span");
+            tag.textContent = cat;
+            tag.className = "bg-teal-100 text-teal-800 text-xs px-2 py-0.5 rounded-full select-none";
+            tagsContainer.appendChild(tag);
+          });
+          productEl.appendChild(tagsContainer);
+
+          // Market
+          const marketEl = document.createElement("p");
+          marketEl.className = "italic text-xs text-slate-600 mb-1";
+          marketEl.textContent = `Mkt: ${product.market}`;
+          productEl.appendChild(marketEl);
+
+          // Price & Discount
+          const priceContainer = document.createElement("div");
+          priceContainer.className = "mb-3 text-sm font-semibold text-slate-900 flex items-baseline gap-2";
+          if (product.discountPercent > 0 && product.originalPrice) {
+            const discountedPrice = document.createElement("span");
+            discountedPrice.textContent = `₹ ${product.price.toFixed(2)}`;
+            discountedPrice.className = "text-teal-700";
+            priceContainer.appendChild(discountedPrice);
+
+            const originalPrice = document.createElement("span");
+            originalPrice.textContent = `₹ ${product.originalPrice.toFixed(2)}`;
+            originalPrice.className = "line-through text-slate-500 text-xs";
+            priceContainer.appendChild(originalPrice);
+          } else {
+            priceContainer.textContent = `MRP ₹ ${product.price.toFixed(2)}`;
+          }
+          productEl.appendChild(priceContainer);
+
+          // Stock status - dim Add To Cart if out stock
+          const addToCartBtn = document.createElement("button");
+          addToCartBtn.type = "button";
+          addToCartBtn.textContent = product.stock ? "ADD TO CART" : "OUT OF STOCK";
+          addToCartBtn.disabled = !product.stock;
+          addToCartBtn.className = `${product.stock ? "bg-teal-600 hover:bg-teal-700" : "bg-gray-400 cursor-not-allowed"} text-white font-semibold py-2 rounded w-full transition-colors duration-200`;
+          addToCartBtn.setAttribute("aria-label", (product.stock ? "Add " : "Out of stock ") + product.name + " to Cart");
+          addToCartBtn.addEventListener("click", () => addToCart(product.id));
+          productEl.appendChild(addToCartBtn);
+
+          productsContainer.appendChild(productEl);
+        });
+      }
+
+      function updatePagination(totalItems, currentPage) {
+        pageNumbersContainer.innerHTML = "";
+        const totalPages = Math.ceil(totalItems / PRODUCTS_PER_PAGE);
+        // show up to 5 page numbers, centered around currentPage if possible
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        if (endPage - startPage < 4) {
+          startPage = Math.max(1, endPage - 4);
+        }
+        for (let i = startPage; i <= endPage; i++) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.textContent = i;
+          btn.className = `px-3 py-1 rounded ${i === currentPage ? "bg-teal-600 text-white" : "bg-white border border-slate-300 hover:bg-slate-200"}`;
+          btn.setAttribute("aria-current", i === currentPage ? "page" : "false");
+          btn.addEventListener("click", () => {
+            currentPage = i;
+            renderFilteredSortedPaginated();
+          });
+          pageNumbersContainer.appendChild(btn);
+        }
+        prevPageBtn.disabled = currentPage === 1;
+        nextPageBtn.disabled = currentPage >= totalPages;
+      }
+
+      // Filters handlers
+      function onFiltersChange() {
+        // update filters object from UI inputs
+        // brands
+        filters.brands = new Set(Array.from(brandCheckboxes).filter(cb => cb.checked).map(cb => cb.value));
+        // price
+        filters.priceMin = priceMinInput.value ? parseFloat(priceMinInput.value) : null;
+        filters.priceMax = priceMaxInput.value ? parseFloat(priceMaxInput.value) : null;
+        // discount
+        filters.discountMin = discountMinInput.value ? parseFloat(discountMinInput.value) : 0;
+        // excluding out of stock
+        filters.excludeOutStock = excludeOutStockCheckbox.checked;
+
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Filtering brand list with search box
+      function onBrandSearch() {
+        const searchTerm = brandSearchInput.value.toLowerCase();
+        brandCheckboxes.forEach(cb => {
+          const label = cb.parentElement.textContent.toLowerCase();
+          cb.parentElement.style.display = label.includes(searchTerm) ? "block" : "none";
+        });
+      }
+
+      // Reset filters UI & state
+      function clearFilters() {
+        brandCheckboxes.forEach(cb => cb.checked = false);
+        priceMinInput.value = "";
+        priceMaxInput.value = "";
+        discountMinInput.value = "";
+        excludeOutStockCheckbox.checked = false;
+
+        filters = {
+          brands: new Set(),
+          priceMin: null,
+          priceMax: null,
+          discountMin: 0,
+          excludeOutStock: false,
+        };
+        currentPage = 1;
+
+        renderFilteredSortedPaginated();
+      }
+
+      // Sorting handlers
+      function onSortBtnClick(event) {
+        const btn = event.currentTarget;
+        const sortKey = btn.dataset.sort;
+        if (sortKey === currentSort) return;
+        currentSort = sortKey;
+        updateSortButtons();
+        currentPage = 1;
+        renderFilteredSortedPaginated();
+      }
+
+      // Pagination buttons click handlers
+      prevPageBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderFilteredSortedPaginated();
+        }
+      });
+      nextPageBtn.addEventListener("click", () => {
+        const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderFilteredSortedPaginated();
+        }
+      });
+
+      // Cart Management Functions
+
+      // Load cart from localStorage or create empty if not exists
+      function loadCart() {
+        const cartJson = localStorage.getItem("perfume_cart");
+        if (cartJson) {
+          cart = JSON.parse(cartJson);
+        } else {
+          cart = {};
+        }
+        updateCartBadge();
+      }
+
+      // Save current cart state to localStorage
+      function saveCart() {
+        localStorage.setItem("perfume_cart", JSON.stringify(cart));
+      }
+
+      // Add product to cart or increase quantity if already added
+      function addToCart(productId) {
+        if (!cart[productId]) {
+          cart[productId] = 1;
+        } else {
+          cart[productId]++;
+        }
+        saveCart();
+        updateCartBadge();
+
+        // Open cart modal to show newly added item
+        openCart();
+        renderCartItems();
+      }
+
+      // Remove product from cart
+      function removeFromCart(productId) {
+        delete cart[productId];
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update product quantity in cart
+      function updateQuantity(productId, newQty) {
+        if (newQty < 1) return;
+        cart[productId] = newQty;
+        saveCart();
+        updateCartBadge();
+        renderCartItems();
+      }
+
+      // Update cart icon badge count
+      function updateCartBadge() {
+        const count = Object.values(cart).reduce((a,b) => a + b, 0);
+        cartCountEl.textContent = count;
+        if (count > 0) {
+          cartBadge.textContent = count > 99 ? "99+" : count;
+          cartBadge.classList.remove("hidden");
+        } else {
+          cartBadge.classList.add("hidden");
+        }
+      }
+
+      // Open cart modal
+      function openCart() {
+        cartModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // disable page scrolling
+      }
+
+      // Close cart modal
+      function closeCart() {
+        cartModal.classList.add("hidden");
+        document.body.style.overflow = ""; // enable page scrolling
+      }
+
+      // Render cart items in modal
+      function renderCartItems() {
+        cartItemsContainer.innerHTML = "";
+        const productIds = Object.keys(cart);
+        if (productIds.length === 0) {
+          emptyCartMsg.style.display = "block";
+          cartTotalEl.textContent = "0.00";
+          checkoutBtn.disabled = true;
+          return;
+        }
+        emptyCartMsg.style.display = "none";
+
+        let total = 0;
+        productIds.forEach(pid => {
+          const prod = allProducts.find(p => p.id == pid);
+          if (!prod) return;
+
+          const qty = cart[pid];
+          total += prod.price * qty;
+
+          const itemDiv = document.createElement("div");
+          itemDiv.className = "flex items-center gap-3 border-b border-slate-200 pb-3";
+
+          const img = document.createElement("img");
+          img.src = prod.image;
+          img.alt = prod.name + " image";
+          img.className = "w-16 h-20 object-contain rounded-md flex-shrink-0";
+          img.onerror = () => { img.style.display = "none"; };
+          itemDiv.appendChild(img);
+
+          const details = document.createElement("div");
+          details.className = "flex-grow";
+
+          const title = document.createElement("p");
+          title.textContent = prod.name;
+          title.className = "font-semibold text-sm text-slate-900 mb-1 line-clamp-2";
+          details.appendChild(title);
+
+          const priceQty = document.createElement("p");
+          priceQty.textContent = `₹${prod.price.toFixed(2)} x ${qty} = ₹${(prod.price * qty).toFixed(2)}`;
+          priceQty.className = "text-xs text-slate-700";
+          details.appendChild(priceQty);
+
+          itemDiv.appendChild(details);
+
+          // Quantity controls
+          const qtyControls = document.createElement("div");
+          qtyControls.className = "flex flex-col gap-1 items-center";
+
+          const qtyInput = document.createElement("input");
+          qtyInput.type = "number";
+          qtyInput.min = "1";
+          qtyInput.value = qty;
+          qtyInput.className = "w-12 border border-slate-300 rounded text-center text-sm focus:outline-none focus:ring-1 focus:ring-teal-500";
+          qtyInput.addEventListener("change", (e) => {
+            let newVal = parseInt(e.target.value);
+            if (isNaN(newVal) || newVal < 1) {
+              e.target.value = qty; // reset invalid
+              return;
+            }
+            updateQuantity(pid, newVal);
+          });
+          qtyControls.appendChild(qtyInput);
+
+          const removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.textContent = "Remove";
+          removeBtn.className = "text-xs text-red-600 hover:underline";
+          removeBtn.addEventListener("click", () => removeFromCart(pid));
+          qtyControls.appendChild(removeBtn);
+
+          itemDiv.appendChild(qtyControls);
+
+          cartItemsContainer.appendChild(itemDiv);
+        });
+        cartTotalEl.textContent = total.toFixed(2);
+        checkoutBtn.disabled = false;
+      }
+
+      // Debounce utility for search input
+      function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+
+      // Page render based on current filters and sorting
+      let filteredProducts = [];
+      function renderFilteredSortedPaginated() {
+        filteredProducts = filterProducts(allProducts);
+        totalCountEl.textContent = filteredProducts.length;
+        updatePagination(filteredProducts.length, currentPage);
+        const paginated = paginateProducts(sortProducts(filteredProducts, currentSort), currentPage);
+        renderProductCards(paginated);
+        shownCountEl.textContent = paginated.length;
+      }
+
+      // Initialization of events
+      function init() {
+        // Brands checkboxes change
+        brandCheckboxes.forEach(cb => cb.addEventListener("change", onFiltersChange));
+        // Filter inputs change
+        priceMinInput.addEventListener("input", onFiltersChange);
+        priceMaxInput.addEventListener("input", onFiltersChange);
+        discountMinInput.addEventListener("input", onFiltersChange);
+        excludeOutStockCheckbox.addEventListener("change", onFiltersChange);
+        clearFiltersBtn.addEventListener("click", () => {
+          clearFilters();
+          brandSearchInput.value = "";
+        });
+
+        // Brand search input debounce 
+        brandSearchInput.addEventListener("input", debounce(onBrandSearch, 200));
+
+        // Sort buttons
+        sortButtons.forEach(btn => btn.addEventListener("click", onSortBtnClick));
+
+        // Cart button & modal
+        cartBtn.addEventListener("click", () => {
+          openCart();
+          renderCartItems();
+        });
+        closeCartBtn.addEventListener("click", closeCart);
+        checkoutBtn.addEventListener("click", () => {
+          alert("Thank you for your purchase! Cart checkout functionality can be implemented here.");
+          cart = {};
+          saveCart();
+          updateCartBadge();
+          renderCartItems();
+          closeCart();
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !cartModal.classList.contains("hidden")) {
+            closeCart();
+          }
+        });
+
+        // Initial render
+        loadCart();
+        updateSortButtons();
+        renderFilteredSortedPaginated();
+      }
+
+      // Run initialization on page load
+      document.addEventListener("DOMContentLoaded", init);
+    })();
+  </script>
+</body>
+</html>

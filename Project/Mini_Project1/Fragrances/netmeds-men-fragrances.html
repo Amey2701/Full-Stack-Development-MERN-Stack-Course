@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Men Fragrances - Netmeds</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Custom scrollbar for category and filters */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f9fafb;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 3px;
+  }
+  /* Category menu items cursor */
+  .category-menu > li > button {
+    cursor: pointer;
+  }
+  /* Disable button scan */
+  button:focus-visible {
+    outline: 2px solid #14b8a6;
+    outline-offset: 2px;
+  }
+  /* Link underline on hover for footer links */
+  footer a:hover {
+    text-decoration: underline;
+  }
+  /* Buttons active state */
+  .btn-sort.active {
+    background-color: #14b8a6;
+    color: white;
+  }
+  /* Disabled style for pagination */
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  /* Heart svg styling */
+  .heart-icon:hover path {
+    stroke: #f87171; /* red tint on hover */
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-700 font-sans">
+<!-- Top navigation menu -->
+<nav aria-label="Primary" class="bg-white border-b px-4 py-3 text-sm text-gray-600 sticky top-0 z-20">
+  <ul class="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto">
+    <li><a href="#" class="hover:text-teal-600">Covid Essentials</a></li>
+    <li><a href="#" class="hover:text-teal-600">Diabetes</a></li>
+    <li><a href="#" class="hover:text-teal-600">Cardiac Care</a></li>
+    <li><a href="#" class="hover:text-teal-600">Stomach Care</a></li>
+    <li><a href="#" class="hover:text-teal-600">Ayurvedic</a></li>
+    <li><a href="#" class="hover:text-teal-600">Homeopathy</a></li>
+    <li><a href="#" class="hover:text-teal-600">Fitness</a></li>
+    <li><a href="#" class="hover:text-teal-600">Mom & Baby</a></li>
+    <li><a href="#" class="hover:text-teal-600">Devices</a></li>
+    <li><a href="#" class="hover:text-teal-600">Surgicals</a></li>
+    <li><a href="#" class="hover:text-teal-600">Sexual Wellness</a></li>
+    <li><a href="#" class="hover:text-teal-600">Treatments</a></li>
+    <li><a href="#" class="hover:text-teal-600">Skin Care</a></li>
+    <li><a href="#" class="hover:text-teal-600">Personal Care</a></li>
+  </ul>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="bg-white px-4 py-3 text-xs max-w-7xl mx-auto text-gray-600 select-none">
+  <nav aria-label="Breadcrumb">
+    <ol class="inline-flex space-x-1">
+      <li>
+        <a href="#" class="hover:text-teal-600 text-teal-700 font-semibold">Home</a>
+        <span class="mx-1">></span>
+      </li>
+      <li>
+        <a href="#" class="hover:text-teal-600 text-teal-700 font-semibold">Non-Prescription</a>
+        <span class="mx-1">></span>
+      </li>
+      <li>
+        <a href="#" class="hover:text-teal-600 text-teal-700 font-semibold">Fragrances</a>
+        <span class="mx-1">></span>
+      </li>
+      <li aria-current="page" class="font-semibold text-gray-900">Men</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Main content container -->
+<main class="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 px-4 lg:px-0 py-6 min-h-screen">
+
+  <!-- Left sidebar -->
+  <aside class="flex-shrink-0 w-full md:w-64 flex flex-col gap-6">
+    <!-- Categories summary -->
+    <div class="bg-white rounded-lg shadow px-5 py-6 sticky top-16 max-h-[400px] overflow-y-auto scrollbar-thin">
+      <h2 class="font-semibold text-gray-800 mb-4">Categories</h2>
+      <ul class="space-y-1 category-menu text-sm text-gray-700">
+        <li>
+          <details open>
+            <summary class="font-semibold cursor-pointer select-none flex justify-between items-center">
+              Fragrances
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <ul class="pl-4 mt-1 space-y-0.5 text-gray-600">
+              <li><a href="#" class="text-teal-700 font-semibold">Men</a></li>
+              <li><a href="#" class="hover:text-teal-600">Unisex</a></li>
+              <li><a href="#" class="hover:text-teal-600">Women</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="font-semibold cursor-pointer select-none flex justify-between items-center">
+              Make-Up
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="font-semibold cursor-pointer select-none flex justify-between items-center">
+              Hair
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+          </details>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Filters -->
+    <div class="bg-white rounded-lg shadow px-5 pt-6 pb-4 sticky top-[calc(4rem+6rem)] max-h-[calc(100vh-9.5rem)] overflow-y-auto scrollbar-thin">
+      <h3 class="font-semibold text-gray-800 mb-5">Filters</h3>
+
+      <!-- Brands filter -->
+      <section aria-labelledby="brands-label" class="mb-6">
+        <h4 id="brands-label" class="font-semibold mb-2 text-gray-700">Brands</h4>
+        <div class="relative text-gray-400">
+          <input
+            type="search"
+            placeholder="Search..."
+            aria-label="Search Brands"
+            class="w-full rounded border border-gray-200 bg-gray-50 py-2 pl-3 pr-8 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400"
+            id="brands-search"
+          />
+          <svg
+            class="w-4 h-4 absolute top-2.5 right-2.5 pointer-events-none"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="11" cy="11" r="7" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="mt-4 max-h-48 overflow-y-auto scrollbar-thin select-none">
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Adidas" />
+            Adidas (58)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Ajmal" />
+            Ajmal (8)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Armaf" />
+            Armaf (30)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Axe" />
+            Axe (30)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Banderas" />
+            Banderas (22)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-brand" value="Beardo" />
+            Beardo (32)
+          </label>
+        </div>
+      </section>
+
+      <!-- Manufacturers filter -->
+      <section aria-labelledby="manufacturers-label" class="mb-6">
+        <h4 id="manufacturers-label" class="font-semibold mb-2 text-gray-700">Manufacturers</h4>
+        <div class="relative text-gray-400">
+          <input
+            type="search"
+            placeholder="Search..."
+            aria-label="Search Manufacturers"
+            class="w-full rounded border border-gray-200 bg-gray-50 py-2 pl-3 pr-8 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400"
+            id="manufacturers-search"
+          />
+          <svg
+            class="w-4 h-4 absolute top-2.5 right-2.5 pointer-events-none"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="11" cy="11" r="7" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="mt-4 max-h-48 overflow-y-auto scrollbar-thin select-none">
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="PRIMESPOT RETAIL PVT. LTD" />
+            PRIMESPOT RETAIL PVT. LTD (218)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="Beauty Concepts Pvt. Ltd" />
+            Beauty Concepts Pvt. Ltd (181)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="House Of EM5" />
+            House Of EM5 (69)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="AA ATTARWAL & CO" />
+            AA ATTARWAL & CO (64)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="Mcnoe Consumer Products Pvt Ltd" />
+            Mcnoe Consumer Products Pvt Ltd (37)
+          </label>
+          <label class="flex items-center gap-2 mb-2 cursor-pointer text-gray-700">
+            <input type="checkbox" class="checkbox-manufacturer" value="Zed Lifestyle Pvt Ltd" />
+            Zed Lifestyle Pvt Ltd (32)
+          </label>
+        </div>
+      </section>
+    </div>
+  </aside>
+
+  <!-- Main product content -->
+  <section class="flex-grow flex flex-col gap-6">
+
+    <!-- Banner image -->
+    <div class="bg-white rounded-lg shadow h-48 overflow-hidden flex justify-center items-center">
+      <img
+        src="https://www.netmeds.com/images/category/v1/3688/men.jpg"
+        alt="Photo of five different men's fragrance deodorants and colognes lined up side by side on a reflective white surface, showing variety of brand bottles from dark black to clear glass with various colored caps."
+        class="max-h-full object-contain"
+        onerror="this.style.display='none'"
+      />
+    </div>
+
+    <!-- Sorting & Items length info -->
+    <div class="flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600 select-none">
+      <div class="mb-3 sm:mb-0">Showing <strong>20</strong> of <strong>971</strong> items</div>
+
+      <div class="flex gap-3 text-xs">
+        <span class="font-semibold text-gray-900 pt-0.5">Sort by:</span>
+        <button class="btn-sort rounded border border-teal-400 px-3 py-1 text-teal-600 hover:bg-teal-100 active" data-sort="popularity" type="button">Popularity</button>
+        <button class="btn-sort rounded border border-gray-300 px-3 py-1 text-gray-700 hover:bg-gray-100" data-sort="high-to-low" type="button">High to Low</button>
+        <button class="btn-sort rounded border border-gray-300 px-3 py-1 text-gray-700 hover:bg-gray-100" data-sort="low-to-high" type="button">Low to High</button>
+        <button class="btn-sort rounded border border-gray-300 px-3 py-1 text-gray-700 hover:bg-gray-100" data-sort="discount" type="button">Discount</button>
+      </div>
+    </div>
+
+    <!-- Products grid -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <!-- Sample single product card replicated & dynamic data fill will follow in script -->
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Pagination" class="flex justify-center mt-6 pagination gap-3">
+      <button class="text-gray-600 border border-gray-300 rounded px-3 py-1" disabled>1</button>
+      <button class="text-teal-600 font-semibold border border-teal-600 rounded px-3 py-1">2</button>
+      <button class="text-gray-600 border border-gray-300 rounded px-3 py-1">3</button>
+      <button class="text-gray-600 border border-gray-300 rounded px-3 py-1">Next</button>
+    </nav>
+
+    <!-- Description and info text section -->
+    <article class="bg-white rounded-lg shadow p-6 text-sm leading-relaxed text-gray-700 max-w-5xl mx-auto">
+      <h2 class="text-base font-semibold mb-3">Men's perfume</h2>
+      <p class="mb-4">
+        Men's perfumes, also known as colognes, are fragrances designed specifically for men. They typically contain a higher percentage of alcohol and a lower concentration of essential oils than <a href="#" class="text-teal-600 hover:underline">women's perfumes</a>, resulting in a lighter and more refreshing scent.
+      </p>
+      <p class="mb-4">
+        Men's perfumes come in a variety of different fragrance families, including fresh, woody, spicy, and oriental. The most popular fragrances for men include citrus, lavender, sandalwood, and musk. Men's perfumes are typically applied to the pulse points on the neck and wrists, and the scent can last for several hours. Some men prefer to use perfumes as a way to enhance their personal style or to create a signature scent that is unique to them.
+      </p>
+      <p class="mb-4">
+        In recent years, there has been a trend towards more natural and organic men's perfumes, with ingredients such as essential oils, herbs, and botanical extracts being used to create unique and sophisticated scents. Overall, men's perfume in India are a popular and essential accessory for many men, providing a finishing touch to their personal grooming routine.
+      </p>
+
+      <h3 class="text-sm font-semibold mt-4 mb-2">Categories for fragrance for men</h3>
+      <p class="mb-2">
+        When it comes to shopping for fragrance for men, there are several categories to consider. Here are some of the most popular categories of fragrances for men:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Woody fragrances: Woody fragrances are warm, earthy scents that typically include notes of cedarwood, sandalwood, and patchouli. These fragrances are often associated with masculinity and are great for fall and winter.</li>
+        <li>Fresh fragrances: Fresh fragrances are light and airy scents that typically include notes of citrus, herbs, and aquatic notes. These fragrances are great for spring and summer and are perfect for men who prefer a clean, refreshing scent.</li>
+        <li>Oriental fragrances: Oriental fragrances are spicy and exotic scents that typically include notes of cinnamon, vanilla, and amber. These fragrances are great for evening wear and are perfect for men who want a bold, mysterious scent.</li>
+        <li>Fougere fragrances: Fougere fragrances are classic scents that typically include notes of lavender, oakmoss, and coumarin. These fragrances are perfect for men who want a timeless, elegant scent.</li>
+        <li>Aromatic fragrances: Aromatic fragrances are herbal scents that typically include notes of basil, rosemary, and thyme. These fragrances are great for casual wear and are perfect for men who prefer a fresh, green scent.</li>
+        <li>Leather fragrances: Leather fragrances are warm and masculine scents that typically include notes of leather, tobacco, and spices. These fragrances are great for fall and winter and are perfect for men who want a bold, rugged scent.</li>
+      </ul>
+
+      <h3 class="text-sm font-semibold mt-4 mb-2">Importance of men's fragrance</h3>
+      <p class="mb-4">
+        Men's fragrance is important for several reasons. Firstly, it helps to enhance one's personal style and overall appearance. A good fragrance can leave a lasting impression on others and boost one's confidence. Secondly, it can have a positive effect on one's mood and mental wellbeing, as certain scents are known to have calming or energising effects. Finally, fragrance can also be used to convey a message or evoke a particular emotion, making it a powerful tool for communication. Overall, men's fragrance plays an important role in personal grooming and self-expression.
+      </p>
+
+      <h3 class="text-sm font-semibold mt-4 mb-2">Which is the best place to buy perfumes for men online?</h3>
+      <p class="mb-4">
+        Netmeds is an <a href="#" class="text-teal-600 hover:underline">online pharmacy</a> that offers a wide range of <a href="#" class="text-teal-600 hover:underline">personal care products</a> including perfumes for men.
+      </p>
+
+      <p class="mb-4">
+        All the non-prescription deos, roll on deos, sprays and perfumes are available at affordable prices on Netmeds and are ideal for everyday use.
+      </p>
+
+      <h3 class="text-sm font-semibold mt-4 mb-2">Shop by Top Manufacturers</h3>
+      <p class="text-teal-600 text-xs">
+        <a href="#" class="underline hover:text-teal-700">Ajmal & Sons</a> |
+        <a href="#" class="underline hover:text-teal-700">Vi-John Health Care India Limited</a> |
+        <a href="#" class="underline hover:text-teal-700">Beauty Concepts Pvt. Ltd</a> |
+        <a href="#" class="underline hover:text-teal-700">AA ATTARWAL & CO</a> |
+        <a href="#" class="underline hover:text-teal-700">PRIMESPOT RETAIL PVT. LTD</a>
+      </p>
+    </article>
+
+  </section>
+</main>
+
+<!-- Footer with benefits and general information -->
+<footer class="bg-gradient-to-b from-white to-cyan-100 mt-12 border-t border-gray-300 pt-8 pb-14 font-sans text-sm text-gray-700">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-24 justify-center items-center text-center md:text-left">
+
+    <!-- Benefits section -->
+    <section aria-label="Benefits" class="flex flex-wrap justify-center gap-8">
+      <div class="flex flex-col justify-center items-center max-w-[10rem]">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/909de17e-2a24-4f8d-aa70-41c089673311.png" alt="Icon of a small pharmacy storefront with red cross, blue shelves, and medicine bottles inside" class="mb-1" />
+        <span class="font-semibold text-lg leading-none">1000+</span>
+        <span>Offline Stores</span>
+      </div>
+      <div class="flex flex-col justify-center items-center max-w-[10rem]">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/19226015-7c9d-4cb8-895d-c3e9ab3ddcc7.png" alt="Icon of a red location pin with white center button, and text of location map service" class="mb-1" />
+        <span class="font-semibold text-lg leading-none">20000+</span>
+        <span>Pincodes Served</span>
+      </div>
+      <div class="flex flex-col justify-center items-center max-w-[10rem]">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0778ff91-8611-4445-b963-8b9316c8b5d2.png" alt="Icon of user silhouette with shirt and hair; symbol for happy customers" class="mb-1" />
+        <span class="font-semibold text-lg leading-none">9M+</span>
+        <span>Happy Customers</span>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Info and links -->
+  <div class="max-w-7xl mx-auto mt-8 px-4 border-t border-gray-300 pt-8 grid gap-8 grid-cols-1 md:grid-cols-7 text-xs text-gray-500 select-none">
+
+    <!-- Logo / tagline -->
+    <div class="md:col-span-2 flex items-center gap-3">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c7a1326-57e6-40e3-bd62-5c9489e79a44.png" alt="Netmeds logo text in teal and black font" width="120" height="32" />
+      <p class="text-gray-400 max-w-xs">
+        Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 9 million happy customers – PAN India.
+      </p>
+    </div>
+
+    <!-- Company links -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Company</h6>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-teal-600">About Netmeds</a></li>
+        <li><a href="#" class="hover:text-teal-600">Customers Speak</a></li>
+        <li><a href="#" class="hover:text-teal-600">In the News</a></li>
+        <li><a href="#" class="hover:text-teal-600">Career</a></li>
+        <li><a href="#" class="hover:text-teal-600">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Our Policies</h6>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-teal-600">Terms and Conditions</a></li>
+        <li><a href="#" class="hover:text-teal-600">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Fees and Payments Policy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Shipping and Delivery Policy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Return, Refund and Cancellation Policy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Editorial Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Shopping -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Shopping</h6>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-teal-600">Browse by A-Z</a></li>
+        <li><a href="#" class="hover:text-teal-600">Browse by Manufacturers</a></li>
+        <li><a href="#" class="hover:text-teal-600">Health Articles</a></li>
+        <li><a href="#" class="hover:text-teal-600">Offers / Coupons</a></li>
+        <li><a href="#" class="hover:text-teal-600">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Popular categories -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Popular Categories</h6>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-teal-600">Fitness</a></li>
+        <li><a href="#" class="hover:text-teal-600">Devices</a></li>
+        <li><a href="#" class="hover:text-teal-600">Personal Care</a></li>
+        <li><a href="#" class="hover:text-teal-600">Ayurveda</a></li>
+        <li><a href="#" class="hover:text-teal-600">Homeopathy</a></li>
+        <li><a href="#" class="hover:text-teal-600">Treatments</a></li>
+        <li><a href="#" class="hover:text-teal-600">Sexual Wellness</a></li>
+        <li><a href="#" class="hover:text-teal-600">Surgicals</a></li>
+      </ul>
+    </div>
+
+    <!-- Social links -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Social</h6>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-teal-600">Patients Alike</a></li>
+        <li><a href="#" class="hover:text-teal-600">Facebook</a></li>
+        <li><a href="#" class="hover:text-teal-600">Twitter</a></li>
+        <li><a href="#" class="hover:text-teal-600">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-teal-600">Youtube</a></li>
+        <li><a href="#" class="hover:text-teal-600">Instagram</a></li>
+        <li><a href="#" class="hover:text-teal-600">Refer & Earn</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter subscription -->
+    <div>
+      <h6 class="font-bold text-gray-700 mb-2 text-xs uppercase">Subscribe to Our Newsletter</h6>
+      <p class="text-xs mb-3">Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+      <form class="flex gap-2">
+        <input
+          type="email"
+          aria-label="Enter your email address"
+          placeholder="Enter your email address"
+          class="rounded border border-gray-300 px-3 py-2 text-xs flex-grow placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          required
+        />
+        <button
+          type="submit"
+          aria-label="Subscribe to newsletter"
+          class="rounded bg-teal-400 text-white px-3 py-2 text-xs hover:bg-teal-500 transition"
+        >
+          &rarr;
+        </button>
+      </form>
+      <div class="mt-3 flex gap-2 justify-start">
+        <a href="#" aria-label="Download on Google Play Store" class="block w-24">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94d830ad-44a8-4e75-aecf-a192036c958e.png" alt="Google Play Store badge black text on white" class="w-full h-auto" />
+        </a>
+        <a href="#" aria-label="Download on Apple App Store" class="block w-24">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de5288a3-cd2a-4a42-b766-98ce637b87d6.png" alt="Apple App Store badge black text on white" class="w-full h-auto" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment partners -->
+  <div class="max-w-7xl mx-auto px-4 mt-10">
+    <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-700">Our Payment Partners</p>
+    <div class="flex flex-wrap items-center gap-6">
+      <!-- Payment icons placeholders -->
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60354a20-4176-4c4e-ac1d-a225a4170efa.png" alt="Google Pay payment logo text in blue and red" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d08bc516-9180-49fb-b9c2-ffdfbe0e3a50.png" alt="PhonePe payment logo text in purple with white background" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/13c6ee3e-a0ac-497c-826e-078894c86c55.png" alt="Paytm payment logo text in blue with white background" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a34a9cf-a80c-4965-9559-171257943c1e.png" alt="Simpl payment logo text in teal with white background" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/606f6cae-d6f3-431e-ac93-ea0b37775739.png" alt="RuPay payment logo text with red, yellow, green and blue arrow symbol" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/db903f4b-e7f2-499e-94d9-0dd7da01d233.png" alt="VISA payment logo text in blue" class="h-6 w-auto" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b072b111-2c96-4f7f-ab69-c167ec994be2.png" alt="Mastercard payment logo with two overlapping circles red and yellow with black text" class="h-6 w-auto" />
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 mt-4 border-t border-gray-300 pt-4 text-xs text-gray-500 select-none grid grid-cols-5 text-center">
+    <span>Medicine</span>
+    <span>Wellness</span>
+    <span>Lab Tests</span>
+    <span>Beauty</span>
+    <span>Copyright© 2023. All Rights Reserved.</span>
+  </div>
+</footer>
+
+<!-- JavaScript for product rendering and filter functionality -->
+<script>
+(() => {
+  "use strict";
+
+  // Sample product data mimicking screenshot data for demonstration
+  const products = [
+    {
+      id: 1,
+      title: "Fogg Fresh Fougere Deo 120 Ml",
+      brand: "Vini Cosmetics Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 275,
+      originalPrice: null,
+      discountPercent: 0,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2e1e6166-fec7-4988-a164-f5b0c318868b.png",
+    },
+    {
+      id: 2,
+      title: "Fogg Scent Xpressio Eau De Parfum 100 ml",
+      brand: "Vini Cosmetics Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 552.5,
+      originalPrice: 650,
+      discountPercent: 15,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a0e86f32-65a4-43eb-8640-0aace4b2cbab.png",
+    },
+    {
+      id: 3,
+      title: "Fogg Scent Xtremo Eau De Parfum 100 ml",
+      brand: "Vini Cosmetics Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 650,
+      originalPrice: null,
+      discountPercent: 0,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62e42699-a2a5-45d4-96e0-573f5c2a6503.png",
+    },
+    {
+      id: 4,
+      title: "Fogg Fragrance Body Spray - Napolean 150 ml",
+      brand: "Vini Cosmetics Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 261.25,
+      originalPrice: 275,
+      discountPercent: 5,
+      rating: 5,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1aefd468-f2f0-434b-a9a0-ccf3522972f2.png",
+    },
+    {
+      id: 5,
+      title: "Nivea Men Roll On Deodorant - Fresh Active 72H 25 ml",
+      brand: "Nivea India Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 125,
+      originalPrice: null,
+      discountPercent: 0,
+      rating: 5,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d365e64-0bc7-4429-8e89-6a6ec0578c51.png",
+    },
+    {
+      id: 6,
+      title: "Kamasutra Deodorant - Spark 150 ml",
+      brand: "Raymond Consumer Care Private Limited",
+      categories: ["Fragrances", "Men"],
+      price: 184,
+      originalPrice: 230,
+      discountPercent: 20,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b172d86-7794-4ac1-ac37-0d5278e0d6aa.png",
+    },
+    {
+      id: 7,
+      title: "Fogg Fragrance Body Spray - Napoleon 120 ml",
+      brand: "Vini Cosmetics Pvt Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 191.25,
+      originalPrice: 225,
+      discountPercent: 15,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f63ff73-e4b5-42bb-bb94-af06d2304546.png",
+    },
+    {
+      id: 8,
+      title: "United Colors Of Benetton Colors Man Black Eau De Toilette 100 ml",
+      brand: "Beauty Concepts Pvt. Ltd",
+      categories: ["Fragrances", "Men"],
+      price: 2700,
+      originalPrice: null,
+      discountPercent: 0,
+      rating: null,
+      image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c4bd9a9-80d3-447f-abce-5bec0606dc19.png",
+    }
+    // More products can be added following this format
+  ];
+
+  // Root element for product cards
+  const productsGrid = document.getElementById("products-grid");
+
+  // Render product card item
+  function renderProduct(product) {
+    const card = document.createElement("article");
+    card.className = "bg-white rounded-lg shadow p-4 flex flex-col justify-between max-w-xs";
+
+    // Labels top left - discount label
+    const discountLabel = product.discountPercent > 0
+      ? `<span class="inline-block bg-green-600 text-white text-xs font-semibold rounded px-2 py-[1px] mb-1 select-none">${product.discountPercent}% OFF</span>`
+      : "";
+
+    // Rating star if present
+    const ratingStars = product.rating
+      ? `<div class="inline-flex items-center text-xs text-teal-500 gap-0.5 mb-1 select-none" title="${product.rating} rating">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.012 3.112a1 1 0 0 0 .95.69h3.18c.969 0 1.371 1.24.588 1.81l-2.573 1.866a1 1 0 0 0-.364 1.118l1.013 3.112c.3.921-.755 1.688-1.54 1.118L10 13.347l-2.573 1.866c-.784.57-1.838-.197-1.54-1.118l1.013-3.112a1 1 0 0 0-.364-1.118L4.962 8.54c-.783-.57-.38-1.81.588-1.81h3.18a1 1 0 0 0 .95-.69l1.012-3.112z"/>
+          </svg>
+          <span>${product.rating.toFixed(1)}</span>
+        </div>`
+      : "";
+
+    card.innerHTML = `
+      <div class="relative flex justify-center my-2">
+        <img src="${product.image}" alt="${product.title} image bottle with white background" class="h-36 object-contain" onerror="this.style.display='none'"/>
+        <div class="absolute top-2 left-2 z-10">${discountLabel}</div>
+      </div>
+      <div>
+        ${ratingStars}
+        <h3 class="font-semibold text-sm text-gray-900 mb-1 leading-tight">${product.title}</h3>
+        <div class="flex flex-wrap gap-1 mb-1 text-xs">
+          ${product.categories.map(cat => `<span class="rounded bg-teal-200 px-2 py-0.5 text-teal-800">${cat}</span>`).join("")}
+        </div>
+        <p class="text-xs italic text-gray-600 mb-0.5">Mkt: ${product.brand}</p>
+        <p class="font-semibold text-gray-900 leading-none">
+          ₹ ${product.price.toLocaleString('en-IN')}
+          ${product.originalPrice ? `<span class="line-through text-gray-400 ml-2 font-normal text-xs">₹ ${product.originalPrice.toLocaleString('en-IN')}</span>` : ""}
+        </p>
+        ${product.originalPrice ? `<p class="text-xs text-teal-600 cursor-pointer select-none">Get this at ₹ ${(product.price * 0.998).toFixed(2)} ▼</p>` : ""}
+      </div>
+      <button aria-label="Add ${product.title} to cart" class="mt-4 rounded bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 w-full transition-colors">
+        Add to Cart
+      </button>
+      <button aria-label="Add ${product.title} to wishlist" class="absolute top-4 right-4 heart-icon p-1 rounded-full hover:bg-gray-200 transition" type="button" title="Add to wishlist">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#94a3b8" stroke-width="1.5" viewBox="0 0 24 24" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.5 7a4.375 4.375 0 0 0-8.39-.44 4.376 4.376 0 0 0-7.11 6.01L12 21.375l7.605-7.636a4.375 4.375 0 0 0-2.105-6.74Z"/></svg>
+      </button>
+    `;
+
+    card.classList.add("relative");
+
+    return card;
+  }
+
+  // Clear and render all products in the grid
+  function renderProducts(productsList) {
+    productsGrid.innerHTML = "";
+    if (productsList.length === 0) {
+      productsGrid.innerHTML = `<p class="text-center col-span-full text-gray-500">No products found matching the criteria.</p>`;
+      return;
+    }
+    productsList.forEach(p => {
+      productsGrid.appendChild(renderProduct(p));
+    });
+  }
+
+  // Initial rendering of products
+  renderProducts(products);
+
+  // Sorting handlers
+  const sortButtons = document.querySelectorAll(".btn-sort");
+  sortButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      sortButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+      const sortBy = button.dataset.sort;
+      let sorted = [...products];
+      switch (sortBy) {
+        case "popularity":
+          sorted = products; // Assuming products are pre-sorted by popularity
+          break;
+        case "high-to-low":
+          sorted.sort((a, b) => b.price - a.price);
+          break;
+        case "low-to-high":
+          sorted.sort((a, b) => a.price - b.price);
+          break;
+        case "discount":
+          sorted.sort((a, b) => b.discountPercent - a.discountPercent);
+          break;
+      }
+      renderProducts(sorted);
+    });
+  });
+
+  // Search brand filter input
+  document.getElementById("brands-search").addEventListener("input", e => {
+    const val = e.target.value.toLowerCase();
+    const checkboxes = document.querySelectorAll(".checkbox-brand");
+    checkboxes.forEach(cb => {
+      cb.parentElement.style.display = cb.value.toLowerCase().includes(val) ? "" : "none";
+    });
+  });
+
+  // Search manufacturer filter input
+  document.getElementById("manufacturers-search").addEventListener("input", e => {
+    const val = e.target.value.toLowerCase();
+    const checkboxes = document.querySelectorAll(".checkbox-manufacturer");
+    checkboxes.forEach(cb => {
+      cb.parentElement.style.display = cb.value.toLowerCase().includes(val) ? "" : "none";
+    });
+  });
+
+  // TODO: Add event listeners to checkboxes to filter products accordingly and pagination logic if needed
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* 1. Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Element Selector */
+  h2 {
+    color: blue;
+    border: 2px dashed blue;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* 3. Class Selector */
+  .message {
+    background-color: lightyellow;
+    padding: 10px;
+    border: 3px solid orange;
+    margin-bottom: 15px;
+  }
+  
+  /* 4. ID Selector */
+  #highlighted-text {
+    color: darkgreen;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 2px dotted green;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* 5. Group Selector */
+  h3, span {
+    text-align: center;
+    color: purple;
+    border: 2px double purple;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  

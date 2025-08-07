@@ -1,0 +1,104 @@
+/* Base style for the entire page */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Common box styling: size, color, rounded corners, and transition */
+.box {
+  width: 200px;
+  height: 120px;
+  background-color: tomato;
+  color: white;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease; /* default transition */
+}
+
+/* 1. Only background-color transitions when hovered */
+.box1 {
+  transition-property: background-color;
+}
+.box1:hover {
+  background-color: seagreen;
+}
+
+/* 2. Background color changes over 3 seconds */
+.box2 {
+  transition-duration: 9s;
+}
+.box2:hover {
+  background-color: steelblue;
+}
+
+/* 3. Transition uses ease-in-out timing */
+.box3 {
+  transition: all 1s ease-in-out;
+}
+.box3:hover {
+  background-color: darkorange;
+}
+
+/* 4. Transition starts after a 1s delay */
+.box4 {
+  transition: all 1s ease 5s;
+}
+.box4:hover {
+  background-color: mediumslateblue;
+}
+
+/* 5. Animated box that continuously changes background color */
+.animation-box {
+  background-color: cadetblue;
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Keyframes for color changing animation */
+@keyframes colorChange {
+  0%   { background-color: darkorange; }
+  25%  { background-color: purple; }
+  50%  { background-color: teal; }
+  75%  { background-color: pink; }
+  100% { background-color: darkorange; }
+}
+
+/* 6. Moving box using keyframes to go around screen edges */
+.moving-box {
+  width: 120px;
+  height: 120px;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: moveBox;
+  animation-duration: 8s;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+}
+
+/* Keyframes for moving box in square path: top-left → top-right → bottom-right → bottom-left → back to top-left */
+@keyframes moveBox {
+  0%   { top: 0; left: 0; }
+  25%  { top: 0; left: 80%; }
+  50%  { top: 80%; left: 80%; }
+  75%  { top: 80%; left: 0; }
+  100% { top: 0; left: 0; }
+}

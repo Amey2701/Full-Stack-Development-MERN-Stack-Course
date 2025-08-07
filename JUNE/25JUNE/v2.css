@@ -1,0 +1,78 @@
+/* Paragraph - block-level by default */
+p {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* Span - inline by default, 
+but now behaves like a block */
+span {
+  width: 200px;
+  height: 100px;
+  background: lightgreen;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Anchor - inline, now styled 
+like a block box */
+a {
+  width: 200px;
+  height: 100px;
+  background: lightcoral;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none; /* removes underline */
+}
+
+/* h2 heading - block-level */
+h2 {
+  width: 200px;
+  height: 100px;
+  background: lightyellow;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* div - naturally block-level */
+div {
+  width: 200px;
+  height: 100px;
+  background: lightsalmon;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* strong - inline, made box-like */
+strong {
+  width: 200px;
+  height: 100px;
+  background: lightgray;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* em - inline, made block-like */
+em {
+  width: 200px;
+  height: 100px;
+  background: plum;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* button - already block-level, styled */
+button {
+  width: 200px;
+  height: 100px;
+  background: peachpuff;
+  border: 1px solid black;
+  margin: 10px;
+}

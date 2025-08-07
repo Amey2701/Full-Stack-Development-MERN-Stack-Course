@@ -1,0 +1,125 @@
+/* Global base font size and font family */
+html {
+  font-size: 16px; /* Base font for rem units */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ------------------ */
+/* 1. CSS Class Styling */
+/* ------------------ */
+
+.highlight {
+  color: red;               /* Red text color */
+  font-weight: bold;        /* Bold text */
+  background-color: #ffe5e5;/* Light red background */
+  padding: 10px;
+  border-left: 4px solid red; /* Visual marker */
+}
+
+.normal {
+  color: black;
+  padding: 10px;
+}
+
+/* ------------------ */
+/* 2. Font Size Examples */
+/* ------------------ */
+
+.px {
+  font-size: 32px;            /* Fixed pixel size */
+  background-color: #fff8dc;
+  padding: 10px;
+}
+
+/* Parent element with base font size of 20px */
+.parentem {
+  font-size: 20px;
+  background-color: #eef6ff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* 2em = 40px (2 × parent 20px) */
+.em {
+  font-size: 2em;
+  background-color: #cce5ff;
+  padding: 10px;
+}
+
+/* Root-relative font sizing example */
+.parentrem {
+  font-size: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+/* 2rem = 32px (2 × root 16px) */
+.rem {
+  font-size: 2rem;
+  background-color: #ffe4e1;
+  padding: 10px;
+}
+
+/* ------------------ */
+/* 3. calc() Function Example */
+/* ------------------ */
+
+.box {
+  background-color: #d4edda;
+  width: calc(100px + 100px); /* Total width: 200px */
+  height: 100px;
+  padding: 10px;
+  border: 2px dashed green;
+}
+
+/* ------------------ */
+/* 4. Background Colors */
+/* ------------------ */
+
+.blue {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.yellow {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.pink {
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.custom {
+  background-color: rgb(25, 55, 100); /* Light yellow using RGB */
+  padding: 10px;
+}
+
+/* ------------------ */
+/* 5. em vs rem inside parent */
+/* ------------------ */
+
+.childem {
+  font-size: 2em; /* 2 × 20px parent = 40px */
+  background-color: #add8e6;
+  padding: 10px;
+}
+
+.childrem {
+  font-size: 2rem; /* 2 × 16px = 32px */
+  background-color: #f08080;
+  padding: 10px;
+}
+
+/* Section box styling */
+section {
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  background-color: #fffefc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,27 @@
+/* Paragraph using content-box: total size = 250px x 250px */
+.box-sizing-content {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+    font-family: sans-serif;
+    overflow: auto;
+
+    box-sizing: content-box; /* Default box-sizing */
+    background-color: lightgreen;
+}
+
+/* Paragraph using border-box: total size = 200px x 200px */
+.box-sizing-border-content {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+    font-family: sans-serif;
+    overflow: auto;
+
+    box-sizing: border-box;
+    background-color: lightpink;
+}

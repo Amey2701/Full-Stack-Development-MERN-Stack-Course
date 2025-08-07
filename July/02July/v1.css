@@ -1,0 +1,80 @@
+/* ===== FLEX CONTAINER ===== */
+.container {
+  display: flex;                 /* Enables flexbox layout */
+  flex-direction: row;          /* Lays out items in a row (default) */
+  flex-wrap: nowrap;              /* Allows items to wrap if space runs out */
+  justify-content: space-evenly;/* Even spacing between items */
+  align-items: center;          /* Vertically center items */
+  height: 500px;
+  border: 2px solid green;
+  background-color: #e0f7fa;
+  padding: 10px;
+  gap: 10px;                    /* Space between items */
+}
+
+/* ===== COMMON FLEX ITEM STYLE ===== */
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #81d4fa;
+  border: 2px solid #0288d1;
+  display: flex;                 /* Center content inside item */
+  flex-direction: column;        /* Stack number and text vertically */
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Style for explanation text inside each box */
+.item small {
+  font-size: 12px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* ===== INDIVIDUAL ITEM PROPERTIES ===== */
+
+/* ITEM 1: flex-grow */
+.item1 {
+  flex-grow: 3; /* Grows to fill extra space */
+}
+
+/* ITEM 2: flex-basis */
+.item2 {
+  flex-basis: 200px; /* Initial size before grow/shrink */
+}
+
+/* ITEM 3: align-self */
+.item3 {
+  align-self: center; /* Overrides align-items for vertical position */
+}
+
+/* ITEM 4: flex-shrink */
+.item4 {
+  flex-shrink: 5; /* Can shrink when needed */
+}
+
+/* ITEM 5: order */
+.item5 {
+  order: 6; /* Appears later due to higher order */
+}
+
+/* ITEM 6: order + align-self */
+.item6 {
+  order: 2;            /* Appears earlier than item5 */
+  align-self: center;  /* Vertically centered */
+}
+
+/* ITEM 7: flex-grow + order */
+.item7 {
+  flex-grow: 2; /* Grows more than item1 */
+  order: 5;     /* Appears early due to low order */
+}
+
+/* ITEM 8: order only (negative) */
+.item8 {
+  order: 17;             /* Appears first */
+  background-color: #ffcc80; /* Different color to highlight it */
+}

@@ -3,5 +3,5 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Amey2701/Full-Stack-Development-MERN-Stack-Course.git
+git remote add origin https://github.com/Amey2701/Full-Stack-Development-MERN-Stack-Course/tree/main/Project/Mini_Project1
 git push -u origin main

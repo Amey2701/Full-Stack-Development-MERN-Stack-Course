@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Grid Example</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Properly centered heading using Bootstrap class -->
+  <h1 class="text-center my-4">Bootstrap Grid Column Example</h1>
+
+  <div class="container-fluid">
+    
+    <!-- Two equal columns -->
+    <div class="row border border-success p-3 mb-4">
+      <div class="col-6 border border-danger">
+        Column 1 (6 of 12)
+      </div>
+      <div class="col-6 border border-primary">
+        Column 2 (6 of 12)
+      </div>
+    </div>
+
+    <!-- Three equal columns -->
+    <div class="row border border-dark p-3 mb-4">
+      <div class="col-4 border border-warning">
+        Column 1 (4 of 12)
+      </div>
+      <div class="col-4 border border-warning">
+        Column 2 (4 of 12)
+      </div>
+      <div class="col-4 border border-warning">
+        Column 3 (4 of 12)
+      </div>
+    </div>
+
+    <!-- Responsive columns -->
+    <div class="row border border-secondary p-3 mb-4">
+      <div class="col-12 col-md-6 border border-purple">
+        Responsive Column A (12 on small, 6 on medium+)
+      </div>
+      <div class="col-12 col-md-6 border border-purple">
+        Responsive Column B (12 on small, 6 on medium+)
+      </div>
+    </div>
+
+    <!-- Nested grid -->
+    <div class="row border border-info p-3 mb-4">
+      <div class="col-12 border border-info">
+        Parent Column (12 of 12)
+        <div class="row mt-2">
+          <div class="col-6 border border-info border-dashed">
+            Nested Column 1 (6 of 12)
+          </div>
+          <div class="col-6 border border-info border-dashed">
+            Nested Column 2 (6 of 12)
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+          crossorigin="anonymous"></script>
+</body>
+</html>

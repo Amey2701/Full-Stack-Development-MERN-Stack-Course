@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Beginner Concepts - Full Examples</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SECTION 1: CSS Classes -->
+  <section>
+    <h2>1. CSS Classes</h2>
+    <p class="highlight">
+      This paragraph is styled using a custom CSS class called <code>.highlight</code>.
+      It applies bold red text and a background to emphasize importance.
+    </p>
+    <p class="normal">
+      This is a basic paragraph using a <code>.normal</code> class for comparison.
+    </p>
+  </section>
+
+  <!-- SECTION 2: Font Sizing (px, em, rem) -->
+  <section>
+    <h2>2. Font Sizes (px, em, rem)</h2>
+
+    <!-- Font size using fixed px unit -->
+    <p class="px">
+      Font size set using <strong>32px</strong>. This is a fixed-size font.
+    </p>
+
+    <!-- Font size using em (relative to parent element) -->
+    <div class="parentem">
+      <p class="em">
+        This paragraph is <strong>2em</strong> inside a parent of 20px font-size.
+        So it becomes 40px. EM scales with the parent element.
+      </p>
+    </div>
+
+    <!-- Font size using rem (relative to root html) -->
+    <div class="parentrem">
+      <p class="rem">
+        This text is <strong>2rem</strong>. Root html is 16px, so this becomes 32px.
+        REM is consistent regardless of parent styles.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: calc() Function -->
+  <section>
+    <h2>3. CSS calc()</h2>
+    <div class="box">
+      The width of this box is calculated as <code>calc(100px + 100px)</code>.
+      This allows dynamic sizing using math operations.
+    </div>
+  </section>
+
+  <!-- SECTION 4: Background Colors -->
+  <section>
+    <h2>4. Background Colors</h2>
+    <p class="blue">Using a blue background for this paragraph.</p>
+    <p class="yellow">Yellow background for attention-grabbing areas.</p>
+    <p class="pink">Pink background with dark readable text.</p>
+    <p class="custom">Custom RGB background using <code>rgb(255,255,100)</code>.</p>
+  </section>
+
+  <!-- SECTION 5: Nested em vs rem Comparison -->
+  <section>
+    <h2>5. Nested em vs rem</h2>
+    <div class="parentem">
+      <p class="childem">
+        Nested <strong>2em</strong> inside parent with 20px = 40px total.
+        Useful for modular scaling within components.
+      </p>
+    </div>
+
+    <div class="parentrem">
+      <p class="childrem">
+        <strong>2rem</strong> always = 32px (root-based).
+        Great for keeping consistent sizes across layout.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

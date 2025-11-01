@@ -1,0 +1,127 @@
+🔹 Arrays in JavaScript
+
+An Array is a non-primitive data type (an object in JS) used to store multiple values in a single variable.
+
+Values are stored in an ordered collection (indexed starting from 0).
+
+let arr = [10, 20, 30, 40];
+console.log(arr[0]); // 10 (first element)
+console.log(arr[3]); // 40 (fourth element)
+
+📌 Common Array Methods
+1. push()
+
+Adds one or more elements to the end of an array.
+
+Returns the new length of the array.
+
+let arr = [1, 2, 3];
+arr.push(4, 5);
+console.log(arr); // [1, 2, 3, 4, 5]
+
+2. pop()
+
+Removes the last element from an array.
+
+Returns the removed element.
+
+let arr = [1, 2, 3];
+let removed = arr.pop();
+console.log(arr); // [1, 2]
+console.log(removed); // 3
+
+3. shift()
+
+Removes the first element from an array.
+
+Returns the removed element.
+
+Shifts all other elements down by one index.
+
+let arr = [1, 2, 3];
+let removed = arr.shift();
+console.log(arr); // [2, 3]
+console.log(removed); // 1
+
+4. unshift()
+
+Adds one or more elements to the beginning of an array.
+
+Returns the new length of the array.
+
+let arr = [2, 3];
+arr.unshift(1);
+console.log(arr); // [1, 2, 3]
+
+5. reverse()
+
+Reverses the order of elements in the array.
+
+Changes the original array.
+
+let arr = [1, 2, 3];
+arr.reverse();
+console.log(arr); // [3, 2, 1]
+
+6. sort()
+
+Sorts elements lexicographically (alphabetical order by default).
+
+For numbers, you should pass a compare function.
+
+let arr = [40, 5, 100, 20];
+arr.sort(); // Default (lexicographic)
+console.log(arr); // [100, 20, 40, 5]
+
+arr.sort((a, b) => a - b); // Numeric ascending
+console.log(arr); // [5, 20, 40, 100]
+
+7. splice()
+
+Adds, removes, or replaces elements in the array.
+
+Syntax: array.splice(startIndex, deleteCount, item1, item2, ...)
+
+let arr = [1, 2, 3, 4, 5];
+
+// Remove elements
+arr.splice(2, 2);
+console.log(arr); // [1, 2, 5]
+
+// Insert elements
+arr.splice(2, 0, 10, 20);
+console.log(arr); // [1, 2, 10, 20, 5]
+
+// Replace elements
+arr.splice(1, 1, 99);
+console.log(arr); // [1, 99, 10, 20, 5]
+
+8. copyWithin()
+
+Copies a part of the array to another location in the same array.
+
+Syntax: array.copyWithin(target, start, end)
+
+let arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3); 
+console.log(arr); // [4, 5, 3, 4, 5]
+
+9. indexOf()
+
+Returns the first index of the given element.
+
+Returns -1 if not found.
+
+let arr = [1, 2, 3, 2];
+console.log(arr.indexOf(2)); // 1
+console.log(arr.indexOf(5)); // -1
+
+10. lastIndexOf()
+
+Returns the last index of the given element.
+
+Returns -1 if not found.
+
+let arr = [1, 2, 3, 2];
+console.log(arr.lastIndexOf(2)); // 3
+console.log(arr.lastIndexOf(5)); // -1

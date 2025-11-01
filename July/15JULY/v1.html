@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Page Title -->
+  <title>Bootstrap Grid Examples</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Page Heading -->
+  <h2 class="text-center my-4">Bootstrap Grid System – All Column Examples</h2>
+
+  <div class="container my-4">
+  
+    <!-- 🔹 Example 1: Basic fixed-width columns using col-6 and col-12 -->
+    <h4>1️⃣ Fixed Columns (col-12, col-6)</h4>
+    <div class="row mb-3">
+      <!-- Two equal columns each taking 6/12 of row width -->
+      <div class="col-6 bg-primary text-white text-center p-2">.col-6</div>
+      <div class="col-6 bg-info text-dark text-center p-2">.col-6</div>
+    </div>
+    <div class="row mb-4">
+      <!-- One full-width column -->
+      <div class="col-12 bg-warning text-center p-2">.col-12</div>
+    </div>
+
+    <!-- 🔹 Example 2: Responsive columns with varying sizes based on screen width -->
+    <h4>2️⃣ Responsive Columns (col-12 col-md-6 col-xl-3)</h4>
+    <div class="row mb-4">
+      <!-- Stacks on small screens, splits into 2 on medium, 4 on extra large -->
+      <div class="col-12 col-md-6 col-xl-3 bg-success text-white text-center p-2">Responsive Box 1</div>
+      <div class="col-12 col-md-6 col-xl-3 bg-secondary text-white text-center p-2">Responsive Box 2</div>
+      <div class="col-12 col-md-6 col-xl-3 bg-dark text-white text-center p-2">Responsive Box 3</div>
+      <div class="col-12 col-md-6 col-xl-3 bg-danger text-white text-center p-2">Responsive Box 4</div>
+    </div>
+
+    <!-- 🔹 Example 3: Auto-width columns that shrink to content size -->
+    <h4>3️⃣ Auto-width Columns (.col-auto)</h4>
+    <div class="row mb-4">
+      <!-- Columns will take only as much width as their content -->
+      <div class="col-auto bg-light border text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iste consequatur ut beatae commodi ex. A, dolore minima eius ab excepturi architecto, tenetur corporis quas animi ratione ea esse dolorum.</div>
+      <div class="col-auto bg-light border text-center p-2">.col-auto</div>
+      <div class="col-auto bg-light border text-center p-2">.col-auto</div>
+    </div>
+
+    <!-- 🔹 Example 4: Equal-width columns using .col -->
+    <h4>4️⃣ Equal Width with .col</h4>
+    <div class="row mb-4">
+      <!-- Each column automatically takes equal width -->
+      <div class="col bg-info text-center p-2">.col</div>
+      <div class="col bg-primary text-white text-center p-2">.col</div>
+      <div class="col bg-warning text-center p-2">.col</div>
+    </div>
+
+    <!-- 🔹 Example 5: Mixed layout with fixed and auto-width columns -->
+    <h4>5️⃣ Mixed Fixed + Auto Columns</h4>
+    <div class="row mb-4">
+      <!-- First column has fixed width (4/12), second fills remaining space -->
+      <div class="col-4 bg-danger text-white text-center p-2">.col-4</div>
+      <div class="col bg-light border text-center p-2">.col (auto fill)</div>
+    </div>
+
+    <!-- 🔹 Example 6: Nested grid - row inside a column -->
+    <h4>6️⃣ Nested Grid (Row inside Column)</h4>
+    <div class="row mb-4">
+      <!-- Parent column spans full width -->
+      <div class="col-12 bg-secondary text-white p-2">
+        Parent Column
+        <!-- Nested row inside parent column -->
+        <div class="row mt-2">
+          <!-- Two child columns inside the nested row -->
+          <div class="col-6 bg-light text-dark text-center p-2">Nested .col-6</div>
+          <div class="col-6 bg-light text-dark text-center p-2">Nested .col-6</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle including Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+📘 Functions in JavaScript
+
+A function is a reusable block of code that performs a specific task.
+Instead of writing the same logic again and again, you can define it once and reuse it whenever needed.
+
+✅ Declaring a Function
+
+Syntax:
+
+function functionName() {
+    // function block (the logic)
+    // statements to be executed
+}
+
+
+Example:
+
+function greet() {
+    console.log("Hello! Welcome to JavaScript Functions");
+}
+
+greet(); // Calling the function
+
+🔹 Types of Functions
+
+JavaScript functions can be divided into two main categories:
+
+Built-in Functions → already provided by JavaScript.
+
+User-defined Functions → created by developers.
+
+1) Built-in Functions
+
+These are predefined functions available in the JavaScript language.
+You don’t need to define them — just use them.
+
+Examples:
+
+alert("This is a built-in alert function");   // shows popup
+console.log("This is console.log function"); // prints to console
+console.error("This is console.error function"); // shows error
+
+2) User-defined Functions
+
+Created by developers to perform custom tasks.
+Types of user-defined functions are:
+
+🔸 1. Named Function
+
+A function with a name that can be reused anywhere.
+
+Syntax:
+
+function addNumbers(a, b) {
+    return a + b;
+}
+
+
+Example:
+
+let sum = addNumbers(5, 10);
+console.log("Sum = " + sum); // Output: Sum = 15
+
+
+👉 Benefits:
+
+Easy to reuse.
+
+Good for recursion (function calling itself).
+
+Name appears in debugging/stack trace.
+
+🔸 2. Anonymous / Function Expression
+
+A function without a name, usually stored inside a variable.
+
+Syntax:
+
+let variableName = function(parameters) {
+    // logic
+};
+
+
+Example:
+
+let multiply = function(x, y) {
+    return x * y;
+};
+
+console.log(multiply(4, 5)); // Output: 20
+
+
+👉 Benefits:
+
+Useful for callbacks (functions passed as arguments).
+
+Good for short, one-time logic.
+
+🔸 3. Arrow Function (ES6+)
+
+A shorter syntax for writing functions.
+Introduced in ES6, with a special behavior of lexical this.
+
+Syntax:
+
+let functionName = (parameters) => {
+    // logic
+};
+
+
+Examples:
+
+// one-line arrow function
+let square = (n) => n * n;
+
+console.log(square(5)); // Output: 25
+
+// multiple lines
+let greetUser = (name) => {
+    console.log("Hello, " + name);
+};
+greetUser("Amey"); // Output: Hello, Amey
+
+
+👉 Benefits:
+
+Short and clean.
+
+Keeps this from outer scope (useful in callbacks).
+
+⚠️ Note: Arrow functions cannot be used as constructors and don’t have their own this.
+
+🔸 4. Immediately Invoked Function Expression (IIFE)
+
+A function that runs immediately after it is defined.
+Used for initialization or to create a private scope.
+
+Syntax:
+
+(function() {
+    // logic
+})(); 
+
+
+Example:
+
+(function() {
+    console.log("IIFE executed immediately!");
+})();
+
+
+👉 Benefits:
+
+Helps to avoid polluting global scope.
+
+Great for one-time setups.
+
+Can be async:
+
+(async () => {
+    console.log("Async IIFE with await possible here!");
+})();

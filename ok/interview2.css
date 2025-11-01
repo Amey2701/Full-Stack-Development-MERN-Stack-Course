@@ -1,0 +1,51 @@
+/* Common styling for all divs */
+div {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    text-align: justify;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+/* Title styling */
+h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 4px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Overflow hidden */
+.para-1 {
+    overflow: hidden;
+}
+
+/* Overflow always scroll */
+.para-2 {
+    overflow: scroll;
+}
+
+/* Overflow auto (scroll only if needed) */
+.para-3 {
+    overflow: auto;
+}
+
+/* Mixed overflow control */
+.para-4 {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* Default visible overflow (browser default) */
+.para-5 {
+    overflow: visible;
+}

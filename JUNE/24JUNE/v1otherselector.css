@@ -1,0 +1,20 @@
+div p {
+    border: 1px solid gold;
+    color: rgb(231, 231, 0);
+  }
+  
+  .container > p {
+    background-color: #ffd6e8;
+    color: rgb(105, 0, 42);
+  }
+  
+  div ~ p {
+    background-color: #cceeff;
+    color: blue;
+  }
+
+  div+p{
+    color: rgb(0, 255, 0);
+  }
+
+  

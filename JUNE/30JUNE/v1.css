@@ -1,0 +1,59 @@
+/* ===== PSEUDO ELEMENTS ===== */
+p::first-letter {
+  font-size: x-large;
+}
+
+p::first-line {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+strong::after {
+  content: "";
+  display: inline-block;
+  background-image: url('https://tinyurl.com/4u4te7um');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+i::selection {
+  color: red;
+  background-color: yellow;
+}
+
+/* ===== PSEUDO CLASSES ===== */
+h1:hover {
+  color: pink;
+}
+
+h1:active {
+  color: gray;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: aqua;
+}
+
+a:hover {
+  color: #150eda;
+}
+
+a:active {
+  color: green;
+  background-color: yellow;
+}
+
+/* ===== OPACITY ===== */
+img {
+  opacity: 0.7;
+}
+
+p {
+  opacity: 0.2;
+}

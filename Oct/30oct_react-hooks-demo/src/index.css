@@ -1,0 +1,262 @@
+/* ===========================
+   Basic reset and layout
+   =========================== */
+
+/* Make sure the app fills the screen and uses a pleasant default font */
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb; /* blue */
+  --accent-600: #1e40af;
+  --success: #10b981;
+  --danger: #ef4444;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(16,24,40,0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* body styles */
+body {
+  background: linear-gradient(180deg, var(--bg), #eef2ff 120%);
+  color: #0f172a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 28px;
+}
+
+/* center the app and constrain width */
+#root {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   App shell and header
+   =========================== */
+
+.app-shell {
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+/* main title */
+.app-shell h1 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* subtitle / small helper */
+.app-shell p.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+/* hr style */
+.app-shell hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+  margin: 18px 0;
+  border-radius: 2px;
+}
+
+/* ===========================
+   Grid of feature cards
+   =========================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns on desktop */
+  gap: 18px;
+  align-items: start;
+}
+
+/* single card (Profile, UserDetails, Counter) */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+
+/* card header */
+.card h2, .card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+/* small muted text */
+.muted {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* paragraph spacing inside cards */
+.card p {
+  margin: 6px 0;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  box-shadow: 0 4px 10px rgba(16,24,40,0.06);
+  background: var(--accent);
+  color: white;
+}
+
+.btn:active { transform: translateY(1px); }
+.btn:focus { outline: 3px solid rgba(37,99,235,0.14); }
+
+/* outline / secondary style */
+.btn.secondary {
+  background: transparent;
+  color: var(--accent-600);
+  border: 1px solid rgba(30,64,175,0.08);
+  box-shadow: none;
+}
+
+/* danger style */
+.btn.danger {
+  background: var(--danger);
+  box-shadow: none;
+}
+
+/* small button */
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.88rem;
+  border-radius: 8px;
+}
+
+/* disabled look */
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===========================
+   Utility layout pieces
+   =========================== */
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* right aligned small control area */
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* small pill */
+.pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: white;
+  background: var(--success);
+}
+
+/* small info text */
+.info {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* ===========================
+   Visual tweaks for specific elements
+   =========================== */
+
+h2, h3 {
+  color: #0b1220;
+}
+
+/* profile avatar placeholder */
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #c7d2fe, #93c5fd);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #062436;
+  box-shadow: 0 6px 12px rgba(99,102,241,0.06);
+}
+
+/* counter number styling */
+.counter-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+/* pending / small status text */
+.pending {
+  color: var(--accent-600);
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Responsive tweaks
+   =========================== */
+
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+
+  #root { padding: 16px; }
+  .app-shell { padding: 18px; border-radius: 10px; }
+}
+
+/* ===========================
+   Helpful comments for beginners
+   =========================== */
+
+/*
+ - Use .card for any module box (Profile / Details / Counter).
+ - Use .btn to style your buttons (add .secondary, .danger, or .small for variations).
+ - Put the main layout into a container with class "app-shell" to get the blurred glass effect.
+ - The CSS is intentionally simple: change the color variables at the top to adapt theme.
+ */

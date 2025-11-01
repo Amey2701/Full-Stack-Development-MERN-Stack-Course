@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Concepts Demo</title>
+  
+  <!-- Linking the external CSS file -->
+  <link rel="stylesheet" href="12oct.css">
+</head>
+<body>
+  <!-- Main Heading -->
+  <h1>JavaScript Core Concepts Demo</h1>
+
+  <!-- ============================= -->
+  <!-- 1️⃣ Regular Expression Section -->
+  <!-- ============================= -->
+  <section class="card">
+    <h2>1. Regular Expression</h2>
+    <p>Enter text to extract digits using RegEx:</p>
+    <input type="text" id="regexInput" placeholder="Type something like: My number is 9876543210">
+    <button onclick="extractDigits()">Extract Digits</button>
+    <p id="regexOutput" class="output"></p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 2️⃣ Nullish Coalescing Section -->
+  <!-- ============================= -->
+  <section class="card">
+    <h2>2. Nullish Coalescing Operator (??)</h2>
+    <p>Enter your name (leave empty or type 'null'):</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="showName()">Show Display Name</button>
+    <p id="nameOutput" class="output"></p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 3️⃣ Date Object Section -->
+  <!-- ============================= -->
+  <section class="card">
+    <h2>3. Date Object</h2>
+    <button onclick="showDate()">Show Current Date and Time</button>
+    <p id="dateOutput" class="output"></p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 4️⃣ Math Object Section -->
+  <!-- ============================= -->
+  <section class="card">
+    <h2>4. Math Object</h2>
+    <button onclick="generateRandom()">Generate Random Number</button>
+    <p id="mathOutput" class="output"></p>
+  </section>
+
+  <!-- Link to external JS file -->
+  <script src="12oct.js"></script>
+</body>
+</html>

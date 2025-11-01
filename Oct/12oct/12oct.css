@@ -1,0 +1,72 @@
+/* //Basic Page Styling */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 40px;
+}
+
+/* Section Card Styling
+   ============================= */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+h2 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+/* =============================
+   Input and Button Styling
+   ============================= */
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* =============================
+   Output Text Styling
+   ============================= */
+.output {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  white-space: pre-line; /* To preserve newlines from JS output */
+}

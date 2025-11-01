@@ -1,0 +1,36 @@
+✨ JavaScript async and await (10 Marks)
+
+1. Introduction
+
+JavaScript is single-threaded and uses asynchronous programming to handle tasks like API calls, file loading, or timeouts.
+Earlier, this was done using callbacks and Promises, which could become complex.
+ES2017 introduced async and await to make Promises easier to write and read.
+
+2. async Keyword
+
+The async keyword is placed before a function.
+It makes the function return a Promise automatically, even if a normal value is returned.
+It allows us to write asynchronous logic inside the function in a clean way.
+
+3. await Keyword
+
+The await keyword can only be used inside an async function.
+It pauses the execution of the function until the Promise is settled (resolved or rejected).
+This makes asynchronous code look like synchronous code, improving readability.
+
+4. Advantages of async/await
+
+Simplifies asynchronous code compared to chaining .then() methods.
+Avoids callback hell and makes code easier to debug.
+Works naturally with try...catch for error handling.
+
+5. Browser Support
+
+Async and await were introduced in ECMAScript 2017.
+They are supported in all modern browsers (Chrome 55+, Edge 15+, Firefox 52+, Safari 11+, Opera 42+).
+
+6. Conclusion
+
+async makes a function return a Promise.
+await makes a function wait for a Promise.
+Together, they provide a powerful and cleaner way to handle asynchronous operations in JavaScript.

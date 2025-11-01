@@ -1,0 +1,19 @@
+.box-model-demo {
+    height: 180px;                     /* 1. Content height */
+    width: 300px;                      /* 2. Content width */
+  
+    background-color: #4a90e2;         /* 3. Content background color */
+    color: white;                      /* Text color for readability */
+  
+    padding-top: 20px;                 /* 4. Padding (Top) */
+    padding-right: 15px;               /* 5. Padding (Right) */
+    padding-bottom: 10px;              /* 6. Padding (Bottom) */
+    padding-left: 25px;                /* 7. Padding (Left) */
+  
+    border: 4px solid #000;            /* 8. Border (thickness, style, color) */
+  
+    margin: 30px;                      /* 9. Margin around the element */
+  
+    box-sizing: border-box;            /* 10. Includes border and padding in total width/height */
+  }
+  

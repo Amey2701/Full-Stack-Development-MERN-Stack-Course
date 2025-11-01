@@ -1,0 +1,180 @@
+📘 JavaScript Callbacks and Timers (Detailed)
+🔹 1. Callback Functions
+📖 Theory
+
+A callback function is a function passed as an argument to another function.
+
+The parent function decides when to execute the callback.
+
+Callbacks are essential in asynchronous programming because:
+
+They prevent blocking execution.
+
+They allow us to wait for tasks (like API calls, timers, or file loading).
+
+Without callbacks, JavaScript would stop and wait for a slow task, freezing the web page.
+
+👉 Analogy:
+Think of a callback like ordering food in a restaurant:
+
+You (the main function) place an order.
+
+The waiter (the browser) tells the chef (callback) what to do after cooking is done.
+
+Meanwhile, you can do other work instead of waiting at the counter.
+
+✅ Example 1: Simple Callback
+// Function that accepts a callback
+function greet(cb) {              // 'cb' is the callback function
+    cb();                         // execute the callback
+    console.log("hi");            // print "hi"
+    console.log("bye");           // print "bye"
+}
+
+// Callback function
+function sayHello() {
+    console.log("hello");         // print "hello"
+}
+
+// Calling greet() and passing sayHello as callback
+greet(sayHello);                  // sayHello will run first, then "hi" and "bye"
+
+
+Output:
+
+hello
+hi
+bye
+
+✅ Example 2: Callback with Asynchronous Task
+// Function that simulates fetching data (takes time)
+function fetchData(cb) {                                   
+    console.log("fetching data from database!");  // step 1: inform fetching
+
+    let data = { name: "Shubham", age: 20 };      // step 2: create dummy data
+
+    // step 3: delay with setTimeout to mimic real-world API/database
+    setTimeout(() => {
+        console.log("fetched data");              // step 4: print after delay
+        cb(data);                                 // step 5: execute callback with data
+    }, 2000);
+}
+
+// Callback function to display data
+function displayData(data) {
+    console.log("displayData:", data);            // log the received data
+}
+
+// Callback function to process data differently
+function getData(record) {
+    console.log("getData:", record);              // log the received record
+}
+
+// Call fetchData with two different callbacks
+fetchData(displayData);  // will print "displayData: {..}"
+fetchData(getData);      // will print "getData: {..}"
+
+🔹 2. Timers in JavaScript
+📖 Theory
+
+Timers are browser-provided functions (Web APIs) that allow scheduling:
+
+setTimeout(fn, time) → runs a function once after a delay.
+
+setInterval(fn, time) → runs a function repeatedly after delay.
+
+clearTimeout(id) → cancels a setTimeout.
+
+clearInterval(id) → cancels a setInterval.
+
+👉 Important:
+
+Timers are asynchronous. They don’t block code.
+
+The Event Loop ensures that when the timer finishes, the callback is added back to the Callback Queue for execution.
+
+✅ Example 1: setTimeout()
+console.log("start");              // step 1: prints immediately
+
+setTimeout(() => {
+    console.log("inside setTimeout (after 2s)"); // step 3: runs after 2 seconds
+}, 2000);
+
+console.log("end");                // step 2: prints immediately after "start"
+
+
+Output:
+
+start
+end
+inside setTimeout (after 2s)
+
+✅ Example 2: clearTimeout()
+// Store timeout reference
+const timeoutID = setTimeout(() => {
+    console.log("This will not run"); // would have run after 1 second
+}, 1000);
+
+// Cancel timeout
+clearTimeout(timeoutID);              // prevents the above code from running
+
+✅ Example 3: setInterval() + clearInterval()
+let counter = 1;   // initialize counter
+
+// Repeatedly runs every 1 second
+let intervalID = setInterval(() => {
+    console.log("Counter:", counter);  // print current counter
+    counter++;                         // increase counter each second
+
+    if (counter > 5) {                 // stop after 5
+        clearInterval(intervalID);     // cancel interval
+        console.log("Interval Stopped!");
+    }
+}, 1000);
+
+
+Output:
+
+Counter: 1
+Counter: 2
+Counter: 3
+Counter: 4
+Counter: 5
+Interval Stopped!
+
+🔹 3. Synchronous vs Asynchronous
+
+Synchronous → executes code line by line in order.
+
+Asynchronous → allows code to continue while waiting for slower tasks.
+
+Synchronous Example:
+
+console.log("A");
+console.log("B");
+console.log("C");
+
+
+Output:
+
+A
+B
+C
+
+
+Asynchronous Example:
+
+console.log("A");
+
+setTimeout(() => {
+    console.log("B (after 2s)");
+}, 2000);
+
+console.log("C");
+
+
+Output:
+
+A
+C
+B (after 2s)

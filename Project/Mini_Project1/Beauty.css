@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar-custom {
+  background-color: #2aa7aa;
+  padding: 0.6rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.cross-icon {
+  background-color: #7dc242;
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.cross-icon::before,
+.cross-icon::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  border-radius: 1px;
+}
+.cross-icon::before {
+  top: 6px; left: 3px; right: 3px; height: 3px;
+}
+.cross-icon::after {
+  top: 3px; bottom: 3px; left: 7px; width: 3px;
+}
+
+.navbar-search {
+  flex-grow: 1;
+}
+.navbar-search input {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+.navbar-menu li {
+  position: relative;
+}
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+.icon-circle {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: #eb4c96;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropdown popup style */
+.dropdown-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  display: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 10px;
+  width: 950px;
+}
+
+.dropdown-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.dropdown-column {
+  flex: 1;
+  min-width: 180px;
+}
+.dropdown-column h6 {
+  color: #00a7a7;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  font-size: 15px;
+}
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.dropdown-column ul li {
+  margin-bottom: 0.4rem;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+.dropdown-column ul li:hover {
+  color: #00a7a7;
+}

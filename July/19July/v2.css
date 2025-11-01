@@ -1,0 +1,35 @@
+:root {
+    --base-color: #1cda1c;
+    --base-color1: red;
+    --base-color2: black;
+}
+
+/* Font size examples */
+.small-text {
+    font-size: 0.8rem;
+}
+
+.medium-text {
+    font-size: 1.2rem;
+}
+
+.large-text {
+    font-size: 2rem;
+}
+
+.welcome {
+    font-size: var(--heading-size, 2rem); /* using a fallback variable */
+    font-weight: bold;
+    text-align: center;
+    color: var(--base-color);
+}
+
+.description {
+    color: var(--base-color1);
+}
+
+.para {
+    background-color: var(--base-color2);
+    padding: 1rem;
+    color: white;
+}

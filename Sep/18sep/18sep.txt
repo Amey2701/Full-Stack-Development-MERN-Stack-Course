@@ -1,0 +1,85 @@
+🌐 JavaScript: Callbacks vs Promises
+1. Asynchronous Programming
+
+JavaScript is single-threaded → it executes one task at a time.
+Some operations (like fetching data, file reading, timers, API calls) take time → these should not block the main thread.
+To handle such tasks, JavaScript uses asynchronous programming.
+
+2. Callbacks
+A callback is a function passed as an argument to another function.
+It is executed once the async operation completes.
+Example flow:
+
+Do step 1 → when done, call step 2 → when done, call step 3.
+
+Advantages of Callbacks:
+Simple to implement.
+Foundation of async handling in JS.
+
+
+Problems with Callbacks:
+Callback Hell: when callbacks are deeply nested, making code hard to read and maintain.
+Error handling becomes tricky.
+Difficult to scale in large applications.
+
+3. Callback Hell
+
+Callback hell occurs when many async functions are nested inside each other.
+Code becomes like a pyramid (indentation grows).
+Hard to debug, maintain, or reuse.
+
+Example real-life scenario:
+
+Login user → Fetch profile → Fetch order history.
+Using callbacks, this becomes deeply nested.
+
+4. Promises
+
+A Promise is an object that represents the eventual result of an async operation.
+It is more structured than callbacks.
+
+States of a promise:
+
+Pending → initial state.
+Fulfilled (Resolved) → operation completed successfully.
+Rejected → operation failed.
+
+Advantages of Promises:
+
+Avoids callback hell.
+Makes async code easier to read with chaining (.then() and .catch()).
+Centralized error handling.
+
+5. Promise Chaining
+
+Promises allow .then() to run sequentially.
+Each .then() receives the result of the previous promise.
+Errors are caught using .catch().
+This makes async code cleaner and avoids deep nesting.
+
+6. Promise Methods
+
+JavaScript provides utility methods to handle multiple promises together:
+
+Promise.all([p1, p2, p3])
+
+Runs all promises in parallel.
+Returns an array of results when all succeed.
+If any promise rejects → the whole thing rejects.
+
+Promise.allSettled([p1, p2, p3])
+
+Runs all promises.
+Returns results for all, with status (fulfilled/rejected).
+Never fails as a whole.
+
+Promise.race([p1, p2, p3])
+
+Returns the result of the first promise that settles (whether fulfilled or rejected).
+Useful when you only care about the fastest one.
+
+Promise.any([p1, p2, p3])
+
+Returns the first fulfilled promise.
+Ignores rejected ones.
+If all reject → throws AggregateError.

@@ -1,0 +1,261 @@
+📘 JavaScript Functions & Asynchronous Programming (Lecture Notes)
+🔹 1. Functions in JavaScript
+📖 Definition
+
+A function is a block of reusable code designed to perform a specific task.
+
+You write the logic once.
+
+You can execute it many times.
+
+Functions help keep code modular, reusable, and readable.
+
+📝 Syntax:
+function functionName(parameters) {
+    // block of code
+    return value;
+}
+
+📌 Types of Functions
+
+Built-in Functions (provided by JS)
+Examples: alert(), prompt(), parseInt(), setTimeout()
+
+User-defined Functions (written by developers)
+
+a) Named Function
+function greet() {
+    console.log("Hello!");
+}
+greet();
+
+
+✅ Reusable, readable.
+
+b) Function Expression / Anonymous Function
+const add = function(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // 5
+
+
+✅ Function without a name, stored in a variable.
+
+c) Arrow Function (ES6+)
+const square = (n) => n * n;
+console.log(square(5)); // 25
+
+
+✅ Shorter syntax, useful in callbacks.
+
+d) IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log("IIFE executed immediately!");
+})();
+
+
+✅ Runs as soon as it’s defined, avoids polluting global scope.
+
+🔹 2. Synchronous vs Asynchronous Programming
+📖 Synchronous
+
+Code runs line by line.
+
+Each task waits for the previous one to finish.
+
+❌ Problem: If one task takes time → blocks the whole program.
+
+console.log("Step 1");
+console.log("Step 2");
+console.log("Step 3");
+
+// Output: Step 1 -> Step 2 -> Step 3
+
+📖 Asynchronous
+
+Tasks don’t block each other.
+
+Some tasks run in the background.
+
+Browser helps handle async operations (like timers, fetch, events).
+
+console.log("Start");
+
+setTimeout(() => console.log("Async Task done"), 2000);
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Async Task done (after 2s)
+
+
+✅ Notice: "End" printed before async task completes.
+
+🔹 3. How Asynchronous JS Works Internally
+
+JavaScript is single-threaded → only one call stack.
+But event loop + callback queue + Web APIs make async possible.
+
+1️⃣ Call Stack (LIFO)
+
+Where JS executes functions.
+
+Last In, First Out.
+
+function a(){ console.log("A"); }
+function b(){ a(); console.log("B"); }
+b();
+// Call Stack flow: push b() → push a() → log A → pop a() → log B → pop b()
+
+2️⃣ Web APIs (Browser APIs)
+
+Provided by browser (not core JS).
+
+Examples: setTimeout, setInterval, fetch, DOM events.
+
+These APIs run tasks in the background.
+
+Example: setTimeout
+
+setTimeout(() => console.log("Executed after 1s"), 1000);
+
+
+✅ Runs after 1 second without blocking main thread.
+
+Example: setInterval
+
+let id = setInterval(() => console.log("Repeats every 2s"), 2000);
+clearInterval(id); // stops interval
+
+3️⃣ Callback Queue (FIFO)
+
+Stores callbacks waiting to run.
+
+Waits for call stack to be empty.
+
+Types:
+
+Macrotask Queue → setTimeout, setInterval, events
+
+Microtask Queue → Promises, async/await
+
+⚡ Microtasks have higher priority than Macrotasks.
+
+Example:
+
+console.log("Start");
+
+setTimeout(() => console.log("Macrotask (setTimeout)"), 0);
+
+Promise.resolve().then(() => console.log("Microtask (Promise)"));
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Microtask (Promise)
+// Macrotask (setTimeout)
+
+4️⃣ Event Loop
+
+Like a traffic controller.
+
+Keeps checking:
+
+Is the call stack empty?
+
+If yes → take first task from queue → push into stack.
+
+Example (macrotask.js explained):
+
+console.log('start');
+
+setTimeout(()=> console.log('Timeout executed!'), 500);
+setTimeout(()=> console.log('Timeout with ZERO delay!'), 0);
+
+console.log('end');
+
+
+Step-by-step working:
+
+Call stack → executes "start".
+
+Encounters setTimeout → browser handles it (Web API).
+
+Logs "end".
+
+Event loop checks → stack empty? Yes → push setTimeout callback from queue.
+
+Executes → "Timeout executed!" and "Timeout with ZERO delay!".
+
+✅ Final Output:
+
+start
+end
+Timeout with ZERO delay!
+Timeout executed!
+
+🔹 4. Practical Uses of Asynchronous JS
+
+Making API calls (fetch) without blocking UI.
+
+Handling user events (click, scroll).
+
+Running background tasks (timers, animations).
+
+Processing files/data without freezing page.
+
+2. Macrotasks (setTimeout)
+📖 Definition
+A Macrotask is a piece of code scheduled to run later, after the current call stack is empty.
+
+setTimeout and setInterval use the Macrotask Queue.
+
+Even if delay = 0 ms, the callback doesn’t run immediately; it waits until the call stack is free.
+
+📌 Flow with setTimeout
+setTimeout is encountered in code.
+
+Timer is handled by Web API (provided by browser).
+
+After delay, callback is moved to the Macrotask Queue.
+
+Event Loop checks: Is Call Stack empty?
+
+If yes → callback moved to stack → executes.
+
+If no → waits until stack clears.
+
+📄 Example Code
+// ==========================
+// MACROTASK with setTimeout
+// ==========================
+
+console.log("Start");
+
+// Schedule 2 tasks using setTimeout
+setTimeout(() => console.log("Timeout callback executed after 500ms!"), 500);
+setTimeout(() => console.log("Timeout callback executed with ZERO delay!"), 0);
+
+console.log("End");
+
+/*
+Step-by-step execution:
+1. Call Stack executes console.log("Start") → output: Start
+2. setTimeout(500) → handled by Web API, callback goes to Macrotask Queue after 500ms
+3. setTimeout(0) → handled by Web API, callback goes to Macrotask Queue after ~0ms
+4. Call Stack executes console.log("End") → output: End
+5. Event Loop checks → stack empty?
+   - YES → executes 0ms setTimeout callback
+   - Then executes 500ms setTimeout callback
+
+Output:
+Start
+End
+Timeout callback executed with ZERO delay!
+Timeout callback executed after 500ms!
+*/
+✅ Key Point: Even with 0ms, callback runs after synchronous code completes.

@@ -1,0 +1,25 @@
+📘 JavaScript Strings
+1. slice(start, end)
+
+Extracts part of a string (end not included).
+
+let str = "JavaScript";
+console.log(str.slice(0, 4));  // "Java"
+console.log(str.slice(-6, -3)); // "Scr"
+
+2. substring(start, end)
+
+Similar to slice but does not accept negative indexes.
+
+let str = "JavaScript";
+console.log(str.substring(0, 4)); // "Java"
+console.log(str.substring(4, 0)); // "Java" (swaps automatically)
+
+3. splice() (⚠️ Not available for strings)
+
+splice() exists only for arrays, not for strings.
+To mimic splice for strings, you use slice + concatenation:
+
+let str = "HelloWorld";
+let modified = str.slice(0, 5) + " JavaScript " + str.slice(5);
+console.log(modified); // "Hello JavaScript World"

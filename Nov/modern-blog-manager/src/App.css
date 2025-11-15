@@ -1,0 +1,176 @@
+/* App.css */
+/* 🌟 Modern & Professional Blog Manager UI 🌟 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* ==== GLOBAL RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f0f8ff 0%, #eaf6ff 100%);
+  margin: 0;
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==== HEADING ==== */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== MAIN CONTAINER ==== */
+.post-list {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== TABLE STYLING ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(90deg, #0077cc, #00aaff);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+th,
+td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+  background-color: #f4fbff;
+  transition: background 0.3s ease;
+}
+
+/* ==== FORM STYLING ==== */
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 14px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 240px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 6px rgba(0, 119, 204, 0.4);
+}
+
+/* ==== ACTION BUTTONS CONTAINER ==== */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==== COMMON BUTTON STYLES ==== */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* ==== PATCH BUTTON ==== */
+button.patch {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+}
+button.patch:hover {
+  background: linear-gradient(90deg, #ff784d, #ff424f);
+  transform: translateY(-2px);
+}
+
+/* ==== PUT BUTTON ==== */
+button.put {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+}
+button.put:hover {
+  background: linear-gradient(90deg, #009d8a, #7dbb25);
+  transform: translateY(-2px);
+}
+
+/* ==== DELETE BUTTON ==== */
+button.delete {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+}
+button.delete:hover {
+  background: linear-gradient(90deg, #e03e24, #e53658);
+  transform: translateY(-2px);
+}
+
+/* ==== DEFAULT BUTTON (e.g. form submit) ==== */
+button:not(.patch):not(.put):not(.delete) {
+  background: linear-gradient(90deg, #0077cc, #00aaff);
+}
+button:not(.patch):not(.put):not(.delete):hover {
+  background: linear-gradient(90deg, #005fa3, #0088cc);
+  transform: scale(1.05);
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  input {
+    width: 180px;
+  }
+}

@@ -1,0 +1,80 @@
+:root {
+  --bg: #eef6ff;
+  --text: #111;
+  --card: #fff;
+  --primary: #3163f6;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --bg: #1b1b1b;
+  --text: #eaeaea;
+  --card: #2a2a2a;
+  --primary: #6c8dff;
+  --shadow: rgba(255, 255, 255, 0.06);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: var(--card);
+  padding: 20px;
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar li:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* Cards */
+.post-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: 0.3s ease;
+}
+.post-card:hover {
+  transform: translateY(-6px);
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}

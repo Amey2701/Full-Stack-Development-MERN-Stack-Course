@@ -1,20 +1,17 @@
-echo "# Full-Stack-Development-MERN-Stack-Course" >> README.md
+FIRST TIME UPLOAD (Initial Push)
+
 git init
 git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Amey2701/Full-Stack-Development-MERN-Stack-Course
+git commit -m "Initial project upload"
+git remote add origin https://github.com/Amey2701/Full-Stack-Development-MERN-Stack-Course.git
 git push -u origin main
 
+If your branch name is master, run this instead:
+git push -u origin master
 
-✅ If you want to replace/refresh the entire repository with your local version
-cd /path/to/your/local/project-folder
+🔁 UPDATE PROJECT & PUSH AGAIN (New Upload after changes)
 
-git init
+git status
 git add .
-git commit -m "Re-uploading full project folders"
-
-git branch -M main
-git remote add origin https://github.com/Amey2701/Full-Stack-Development-MERN-Stack-Course.git
-
-git push -f origin main
+git commit -m "Updated project files and components"
+git push

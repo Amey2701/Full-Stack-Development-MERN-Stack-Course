@@ -1,0 +1,107 @@
+/* ---------------- General Layout ---------------- */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- Card Styling ---------------- */
+.card,
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+/* ---------------- Form Title ---------------- */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #213547;
+}
+
+/* ---------------- Input Fields ---------------- */
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #646cff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.input-field:focus {
+  border-color: #535bf2;
+  box-shadow: 0 0 10px rgba(83, 91, 242, 0.5);
+}
+
+/* ---------------- Error Messages ---------------- */
+.error {
+  font-size: 0.9rem;
+  color: #ff4d4d;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* ---------------- Submit Button ---------------- */
+.button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #535bf2;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: #535bf2;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(83, 91, 242, 0.5);
+}
+
+/* ---------------- Links ---------------- */
+a {
+  color: #213547;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .input-field {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 10px 0;
+  }
+}

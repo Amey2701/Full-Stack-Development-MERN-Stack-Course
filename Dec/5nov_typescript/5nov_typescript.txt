@@ -1,0 +1,199 @@
+1. What is TypeScript
+Theory
+
+        TypeScript is a superset of JavaScript that adds static typing for better type safety.
+        It helps catch errors at compile-time rather than runtime, reducing bugs.
+        TS code must be compiled to JavaScript since browsers cannot run .ts directly.
+        Improves code readability, maintenance, and productivity with IntelliSense support.
+        Great for large applications and scalable architecture.
+
+Code Example
+    let message: string = "Hello TS";
+    console.log(message);
+
+2. Basic Types
+Theory
+
+        TypeScript provides primitive types like string, number, boolean, array, etc.
+        Variables must follow the assigned type, preventing invalid assignments.
+        Helps avoid unexpected behavior by enforcing strict data types.
+        Improves predictability of code execution.
+
+Code Example
+        let age: number = 25;
+        let name: string = "Rahul";
+        let isActive: boolean = true;
+        let skills: string[] = ["JS", "React", "TS"];
+
+3. Union Types
+Theory
+
+        Union types allow a variable to store values of more than one type.
+        Written using the | symbol (OR).
+        Useful when values may come from dynamic sources like APIs or forms.
+        Helps retain type safety while offering flexibility.
+
+Code Example
+        let id: number | string;
+        id = 101;
+        id = "XYZ-123";
+
+4. Type Aliases
+Theory
+
+        Type aliases allow creating a custom type name for reuse.
+        Simplifies code by replacing repeated complex type definitions.
+        Improves readability and maintainability.
+        Commonly used for unions, objects, and function types.
+
+Code Example
+    type IDType = number | string;
+
+    let userId: IDType = 10;
+    let empId: IDType = "EMP-100";
+
+5. Functions with Types
+Theory
+
+        Types can be applied to parameters and return values.
+        Ensures correctness while calling functions.
+        Prevents passing or returning invalid data types.
+        Improves clarity of expected input/output.
+
+Code Example
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+add(5, 3);
+
+6. Optional Parameters
+Theory
+
+        Optional parameters are declared with ? and not mandatory in function calls.
+        Useful for functions with variable argument options.
+        Helps avoid multiple overloaded function versions.
+        Offers flexibility with parameter handling.
+
+Code Example
+    function greet(name: string, msg?: string): string {
+    return msg ? `${msg}, ${name}` : `Hello ${name}`;
+    }
+
+    greet("Rahul");
+    greet("Rahul", "Hey");
+
+7. Interfaces
+Theory
+
+        Interfaces define the structure or blueprint of an object.
+        Every object must follow the defined shape to prevent incorrect structure.
+        Can contain optional properties using ?.
+        Improves clarity, reusability, and contract enforcement.
+
+Code Example
+interface IUser {
+  id: number;
+  name: string;
+  email: string;
+  address?: string;
+}
+
+const user: IUser = {
+  id: 101,
+  name: "Rahul",
+  email: "rahul@gmail.com",
+};
+
+8. Function Types with Interfaces
+Theory
+
+        Interfaces can also specify function signatures.
+        Enforces how many parameters and what type is returned.
+        Useful in callback and functional programming patterns.
+        Guarantees consistent behavior across multiple functions.
+
+Code Example
+interface AddFn {
+  (x: number, y: number): number;
+}
+
+const addNum: AddFn = (a, b) => a + b;
+
+9. Classes & OOP
+Theory
+
+        TypeScript supports OOP with classes, objects, constructors, and methods.
+        Properties and functions are grouped together logically.
+        Enables reuse and abstraction of real-world models.
+        Supports optional class parameters and access modifiers.
+
+Code Example
+class Car {
+  brand: string;
+  year?: number;
+
+  constructor(brand: string, year?: number) {
+    this.brand = brand;
+    this.year = year;
+  }
+
+  details(): string {
+    return this.year ? `${this.brand} - ${this.year}` : this.brand;
+  }
+}
+
+const c1 = new Car("Toyota", 2022);
+
+10. Multiple Inheritance using Interfaces
+Theory
+
+        TypeScript does not support multiple inheritance directly like class C extends A, B.
+        Instead, a class can implement multiple interfaces.
+        Helps achieve polymorphism and mix different capabilities.
+        Prevents complexity and diamond inheritance problems.
+
+Code Example
+interface CanWalk {
+  walk(): void;
+}
+
+interface CanSwim {
+  swim(): void;
+}
+
+class Person implements CanWalk, CanSwim {
+  walk() { console.log("walking"); }
+  swim() { console.log("swimming"); }
+}
+
+11. Mixins
+Theory
+
+        Mixins allow combining behavior from multiple classes.
+        It copies properties and functions from other class prototypes.
+        Used to simulate true multiple inheritance in TS.
+        Useful for sharing functionality across unrelated objects.
+
+Code Example
+class Walker {
+  walk() { console.log("Walking..."); }
+}
+
+class Swimmer {
+  swim() { console.log("Swimming..."); }
+}
+
+function applyMixins(derivedCtor: any, baseCtors: any[]) {
+  baseCtors.forEach(baseCtor => {
+    Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {
+      derivedCtor.prototype[name] = baseCtor.prototype[name];
+    });
+  });
+}
+
+class Human {}
+applyMixins(Human, [Walker, Swimmer]);
+const h = new Human() as any;
+h.walk();
+h.swim();
